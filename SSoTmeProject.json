@@ -1,0 +1,27 @@
+{
+  "ShowHidden": false,
+  "ShowAllFiles": false,
+  "SaveDisabled": false,
+  "SSoTmeProjectId": "558d8b04-6c38-4f6f-822f-ffb4da7226ca",
+  "Name": "rock-paper-scissors",
+  "ProjectSettings": [
+    {
+      "ProjectSettingId": "70c1e426-080d-4b46-afad-8a275e3678a6",
+      "Name": "project-name",
+      "Value": "rock-paper-scissors"
+    }
+  ],
+  "ProjectTranspilers": [
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "b57bcecf-ae78-40f0-b475-95447d7f61a1",
+        "Name": "JsonToXml",
+        "Description": "Converts a json blob (or file) into Xml"
+      },
+      "ProjectTranspilerId": "15d8ee0e-95ac-4821-a849-ef3cbdc75ea3",
+      "Name": "JsonToXml",
+      "RelativePath": "/SSoT",
+      "CommandLine": "codee42/json-to-xml -i .\\rock-paper-scissors.json"
+    }
+  ]
+}

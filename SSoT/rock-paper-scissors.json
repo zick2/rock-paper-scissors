@@ -1,0 +1,64 @@
+{
+    "name": "Rock Paper Scissors",
+    "rules": {
+        "shapes": [
+            {
+                "code": "A",
+                "name": "Rock",
+                "defeats": "C",
+                "player_code": "X",
+                "score": 1
+            },
+            {
+                "code": "B",
+                "name": "Paper",
+                "defeats": "A",
+                "player_code": "Y",
+                "score": 2
+            },
+            {
+                "code": "C",
+                "name": "Scissors",
+                "defeats": "B",
+                "player_code": "Z",
+                "score": 3
+            }
+        ],
+        "outcomes": {
+            "win": 6,
+            "loss": 0,
+            "draw": 3
+        },
+        "games": [
+            {
+                "name": "sample-game",
+                "rounds": [
+                    {
+                        "opponent_code": "A",
+                        "player_code": "Y",
+                        "result": "win",
+                        "score": 8,
+                        "choice_score": 2,
+                        "outcome_score": 6
+                    },
+                    {
+                        "opponent_code": "B",
+                        "player_code": "X",
+                        "result": "loss",
+                        "score": 1,
+                        "choice_score": 1,
+                        "outcome_score": 0
+                    },
+                    {
+                        "opponent_code": "C",
+                        "player_code": "Z",
+                        "result": "draw",
+                        "score": 6,
+                        "choice_score": 3,
+                        "outcome_score": 3
+                    }
+                ]
+            }
+        ]
+    }
+}
