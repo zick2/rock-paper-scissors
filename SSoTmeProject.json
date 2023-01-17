@@ -21,7 +21,51 @@
       "ProjectTranspilerId": "15d8ee0e-95ac-4821-a849-ef3cbdc75ea3",
       "Name": "JsonToXml",
       "RelativePath": "/SSoT",
-      "CommandLine": "codee42/json-to-xml -i .\\rock-paper-scissors.json"
+      "CommandLine": "codee42/json-to-xml -i .\\single-source-of-truth.json"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "b62db28c-dfb5-47d0-ba08-eef8c65a5826",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/SSoT/ConciseXML",
+      "CommandLine": "xml-xslt-transform -i ..\\single-source-of-truth.json.xml -i .\\CreateConciseRPSXml.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "ba509977-74bf-486e-a405-1b2125bd5d15",
+        "Name": "XmlToJson",
+        "Description": "Converts XML to JSON using the NewtonSoft C# conversion tools."
+      },
+      "ProjectTranspilerId": "bd938d41-725c-40a8-af8a-9fe025b8829f",
+      "Name": "XmlToJson",
+      "RelativePath": "/SSoT",
+      "CommandLine": "xml-to-json -i .\\rps.xml -o rps.json"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "1f845527-1910-484c-b7e2-ee70d478a400",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/SSoT/DerivedDocs",
+      "CommandLine": "xml-xslt-transform -i ..\\rps.xml -i .\\CreateEnglishDocs.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "50c80b50-6432-43b4-97ab-59dda75ece24",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/WaysOfLooking/W01/ConsoleAppWithSSoT",
+      "CommandLine": "xml-xslt-transform -i ..\\..\\..\\SSoT\\rps.xml -i .\\CreateHelper.xslt"
     }
   ]
 }

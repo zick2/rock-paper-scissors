@@ -31,31 +31,19 @@
         },
         "games": [
             {
-                "name": "sample-game",
+                "name": "Example Game",
                 "rounds": [
                     {
                         "opponent_code": "A",
-                        "player_code": "Y",
-                        "result": "win",
-                        "score": 8,
-                        "choice_score": 2,
-                        "outcome_score": 6
+                        "player_code": "Y"
                     },
                     {
                         "opponent_code": "B",
-                        "player_code": "X",
-                        "result": "loss",
-                        "score": 1,
-                        "choice_score": 1,
-                        "outcome_score": 0
+                        "player_code": "X"
                     },
                     {
                         "opponent_code": "C",
-                        "player_code": "Z",
-                        "result": "draw",
-                        "score": 6,
-                        "choice_score": 3,
-                        "outcome_score": 3
+                        "player_code": "Z"
                     }
                 ]
             }
