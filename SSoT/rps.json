@@ -1,62 +1,69 @@
 {
   "rock-paper-scissors": {
-    "name": "Rock Paper Scissors",
+    "name": "Phaser, Shield, Klingon, Borg",
     "rules": {
       "shapes": [
         {
-          "code": "A",
-          "name": "Rock",
-          "defeats": "C",
+          "code": "P",
+          "name": "Phaser",
+          "defeats": "K",
           "player_code": "X",
-          "score": 1
+          "score": 5
+        },
+        {
+          "code": "S",
+          "name": "Shield",
+          "defeats": "B",
+          "player_code": "Y",
+          "score": 10
+        },
+        {
+          "code": "K",
+          "name": "Klingon",
+          "defeats": "S",
+          "player_code": "Z",
+          "score": 8
         },
         {
           "code": "B",
-          "name": "Paper",
-          "defeats": "A",
-          "player_code": "Y",
-          "score": 2
-        },
-        {
-          "code": "C",
-          "name": "Scissors",
-          "defeats": "B",
-          "player_code": "Z",
-          "score": 3
+          "name": "Borg",
+          "defeats": "P",
+          "player_code": "W",
+          "score": 7
         }
       ],
       "outcomes": {
-        "win": 6,
+        "win": 12,
         "loss": 0,
-        "draw": 3
+        "draw": 6
       },
       "games": {
         "name": "Example Game",
-        "score": 15,
+        "score": 58,
         "rounds": [
           {
             "player_code": "Y",
-            "opponent_code": "A",
+            "opponent_code": "B",
             "result": "win",
-            "score": 8,
-            "choice_score": 2,
-            "outcome_score": 6
+            "score": 22,
+            "choice_score": 10,
+            "outcome_score": 12
           },
           {
             "player_code": "X",
-            "opponent_code": "B",
-            "result": "loss",
-            "score": 1,
-            "choice_score": 1,
-            "outcome_score": 0
+            "opponent_code": "K",
+            "result": "win",
+            "score": 17,
+            "choice_score": 5,
+            "outcome_score": 12
           },
           {
-            "player_code": "Z",
-            "opponent_code": "C",
-            "result": "draw",
-            "score": 6,
-            "choice_score": 3,
-            "outcome_score": 3
+            "player_code": "W",
+            "opponent_code": "P",
+            "result": "win",
+            "score": 19,
+            "choice_score": 7,
+            "outcome_score": 12
           }
         ]
       }

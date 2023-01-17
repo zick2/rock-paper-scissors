@@ -1,52 +1,73 @@
 {
-    "name": "Rock Paper Scissors",
+    "name": "Phaser, Shield, Klingon, Borg",
     "rules": {
         "shapes": [
             {
-                "code": "A",
-                "name": "Rock",
-                "defeats": "C",
+                "code": "P",
+                "name": "Phaser",
+                "defeats": "K",
                 "player_code": "X",
-                "score": 1
+                "score": "5"
+            },
+            {
+                "code": "S",
+                "name": "Shield",
+                "defeats": "B",
+                "player_code": "Y",
+                "score": "10"
+            },
+            {
+                "code": "K",
+                "name": "Klingon",
+                "defeats": "S",
+                "player_code": "Z",
+                "score": "8"
             },
             {
                 "code": "B",
-                "name": "Paper",
-                "defeats": "A",
-                "player_code": "Y",
-                "score": 2
-            },
-            {
-                "code": "C",
-                "name": "Scissors",
-                "defeats": "B",
-                "player_code": "Z",
-                "score": 3
+                "name": "Borg",
+                "defeats": "P",
+                "player_code": "W",
+                "score": "7"
             }
         ],
         "outcomes": {
-            "win": 6,
-            "loss": 0,
-            "draw": 3
+            "win": 12.0,
+            "loss": 0.0,
+            "draw": 6.0
         },
-        "games": [
-            {
-                "name": "Example Game",
-                "rounds": [
-                    {
-                        "opponent_code": "A",
-                        "player_code": "Y"
-                    },
-                    {
-                        "opponent_code": "B",
-                        "player_code": "X"
-                    },
-                    {
-                        "opponent_code": "C",
-                        "player_code": "Z"
-                    }
-                ]
-            }
-        ]
+        "games": {
+            "name": [
+                "Example Game",
+                "Example Game"
+            ],
+            "score": 30.0,
+            "rounds": [
+                {
+                    "player_code": "Y",
+                    "opponent_code": "B",
+                    "result": "win",
+                    "score": "20",
+                    "choice_score": "10",
+                    "outcome_score": "12"
+                },
+                {
+                    "player_code": "X",
+                    "opponent_code": "K",
+                    "result": "loss",
+                    "score": "5",
+                    "choice_score": "5",
+                    "outcome_score": "0"
+                },
+                {
+                    "player_code": "W",
+                    "opponent_code": "P",
+                    "result": "draw",
+                    "score": "12",
+                    "choice_score": "7",
+                    "outcome_score": "6"
+                }
+            ]
+        }
     }
 }

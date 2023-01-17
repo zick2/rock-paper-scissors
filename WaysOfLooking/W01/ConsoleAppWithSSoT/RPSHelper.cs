@@ -1,8 +1,8 @@
 
 public static class RPSHelper {
-    public static string TestGameStrategyGuide { get { return @"A Y
-B X
-C Z
+    public static string TestGameStrategyGuide { get { return @"B Y
+K X
+P W
 "; } }
     public static int CalculateRoundScore(char opponentChoice, char playerChoice)
     {
@@ -11,19 +11,22 @@ C Z
         switch (playerChoice)
         {
             case 'X':
-                playerScore = 1;
+                playerScore = 5;
                 break;
             case 'Y':
-                playerScore = 2;
+                playerScore = 10;
                 break;
             case 'Z':
-                playerScore = 3;
+                playerScore = 8;
+                break;
+            case 'W':
+                playerScore = 7;
                 break;
         }
 
         if (IsWin(opponentChoice, playerChoice))
         {
-            outcomeScore = 6;
+            outcomeScore = 12;
         }
         else if (IsLoss(opponentChoice, playerChoice))
         {
@@ -31,7 +34,7 @@ C Z
         }
         else
         {
-            outcomeScore = 3;
+            outcomeScore = 6;
         }
         return playerScore + outcomeScore;
     }
@@ -40,12 +43,14 @@ C Z
     {
         switch (opponentChoice)
         {
-            case 'A':
-                return playerChoice == 'Y';
-            case 'B':
+            case 'P':
+                return playerChoice == 'W';
+            case 'S':
                 return playerChoice == 'Z';
-            case 'C':
+            case 'K':
                 return playerChoice == 'X';
+            case 'B':
+                return playerChoice == 'Y';
             default:
                 return false;
         }
@@ -55,12 +60,14 @@ C Z
     {
         switch (opponentChoice)
         {
-            case 'A':
+            case 'P':
                 return playerChoice == 'X';
-            case 'B':
+            case 'S':
                 return playerChoice == 'Y';
-            case 'C':
+            case 'K':
                 return playerChoice == 'Z';
+            case 'B':
+                return playerChoice == 'W';
             default:
                 return false;
         }
