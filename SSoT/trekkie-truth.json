@@ -1,0 +1,58 @@
+﻿{
+    "name": "Phaser, Shield, Klingon, Borg",
+    "rules": {
+        "shapes": [
+            {
+                "code": "P",
+                "name": "Phaser",
+                "defeats": "K",
+                "player_code": "X",
+                "score": 5
+            },
+            {
+                "code": "S",
+                "name": "Shield",
+                "defeats": "B",
+                "player_code": "Y",
+                "score": 10
+            },
+            {
+                "code": "K",
+                "name": "Klingon",
+                "defeats": "S",
+                "player_code": "Z",
+                "score": 8
+            },
+            {
+                "code": "B",
+                "name": "Borg",
+                "defeats": "P",
+                "player_code": "W",
+                "score": 7
+            }
+        ],
+        "outcomes": {
+            "win": 12,
+            "loss": 3,
+            "draw": 6
+        },
+        "games": {
+            "name": "Example Game",
+            "score": 30,
+            "rounds": [
+                {
+                    "player_code": "Y",
+                    "opponent_code": "B"
+                },
+                {
+                    "player_code": "Z",
+                    "opponent_code": "P"
+                },
+                {
+                    "player_code": "W",
+                    "opponent_code": "B"
+                }
+            ]
+        }
+    }
+}

@@ -64,11 +64,6 @@ class RockPaperScissors
         }
     }
 
-    static bool IsDraw(char opponentChoice, char playerChoice)
-    {
-        return opponentChoice == playerChoice;
-    }
-
     static int CalculateGameScore(string strategyGuide)
     {
         int totalScore = 0;

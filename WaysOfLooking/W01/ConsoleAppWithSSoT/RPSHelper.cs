@@ -1,8 +1,8 @@
 
 public static class RPSHelper {
-    public static string TestGameStrategyGuide { get { return @"B Y
-K X
-P W
+    public static string TestGameStrategyGuide { get { return @"A Y
+B X
+C Z
 "; } }
     public static int CalculateRoundScore(char opponentChoice, char playerChoice)
     {
@@ -10,23 +10,20 @@ P W
         int outcomeScore = 0;
         switch (playerChoice)
         {
-            case 'X':
-                playerScore = 5;
+            case 'X': // Rock
+                playerScore = 1;
                 break;
-            case 'Y':
-                playerScore = 10;
+            case 'Y': // Paper
+                playerScore = 2;
                 break;
-            case 'Z':
-                playerScore = 8;
-                break;
-            case 'W':
-                playerScore = 7;
+            case 'Z': // Scissors
+                playerScore = 3;
                 break;
         }
 
         if (IsWin(opponentChoice, playerChoice))
         {
-            outcomeScore = 12;
+            outcomeScore = 6;
         }
         else if (IsLoss(opponentChoice, playerChoice))
         {
@@ -34,7 +31,7 @@ P W
         }
         else
         {
-            outcomeScore = 6;
+            outcomeScore = 3;
         }
         return playerScore + outcomeScore;
     }
@@ -43,14 +40,12 @@ P W
     {
         switch (opponentChoice)
         {
-            case 'P':
-                return playerChoice == 'W';
-            case 'S':
-                return playerChoice == 'Z';
-            case 'K':
-                return playerChoice == 'X';
-            case 'B':
-                return playerChoice == 'Y';
+            case 'A': // Rock
+                return playerChoice == 'Y';// Paper
+            case 'B': // Paper
+                return playerChoice == 'Z';// Scissors
+            case 'C': // Scissors
+                return playerChoice == 'X';// Rock
             default:
                 return false;
         }
@@ -60,14 +55,12 @@ P W
     {
         switch (opponentChoice)
         {
-            case 'P':
-                return playerChoice == 'X';
-            case 'S':
-                return playerChoice == 'Y';
-            case 'K':
-                return playerChoice == 'Z';
-            case 'B':
-                return playerChoice == 'W';
+            case 'A': // Rock
+                return playerChoice == 'Z';// Scissors
+            case 'B': // Paper
+                return playerChoice == 'X';// Rock
+            case 'C': // Scissors
+                return playerChoice == 'Y';// Paper
             default:
                 return false;
         }

@@ -1,6 +1,4 @@
-﻿
-
-## ChatGPT Prompt 
+﻿## ChatGPT Prompt 
 
 **NOTE: This is the ChatGPT Pompt that produced the static "Fish" recorded in Program.cs**
 
@@ -17,10 +15,11 @@ The winner of the whole tournament is the player with the highest score. Your to
 Since you can't be sure if the Elf is trying to help you or trick you, you should calculate the score you would get if you were to follow the strategy guide.
 
 For example, suppose you were given the following strategy guide:
-
+```
 A Y
 B X
 C Z
+```
 This strategy guide predicts and recommends the following:
 
 In the first round, your opponent will choose Rock (A), and you should choose Paper (Y). This ends in a win for you with a score of 8 (2 because you chose Paper + 6 because you won).
@@ -29,6 +28,9 @@ The third round is a draw with both players choosing Scissors, giving you a scor
 In this example, if you were to follow the strategy guide, you would get a total score of 15 (8 + 1 + 6).
 
 What would your total score be if everything goes exactly according to your strategy guide?
+
+
+### Code Request:
 
 Please write a c# program to figure out the answer to this question.
 

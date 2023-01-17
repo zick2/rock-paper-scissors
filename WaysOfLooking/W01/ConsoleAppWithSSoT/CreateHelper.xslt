@@ -28,7 +28,9 @@ public static class RPSHelper {
         int outcomeScore = 0;
         switch (playerChoice)
         {</xsl:text><xsl:for-each select="rules/shapes"><xsl:text>
-            case '</xsl:text><xsl:value-of select="player_code"/><xsl:text>':
+            case '</xsl:text><xsl:value-of select="player_code"/><xsl:text>': // </xsl:text>
+            <xsl:value-of select="name" />
+            <xsl:text>
                 playerScore = </xsl:text><xsl:value-of select="score"/><xsl:text>;
                 break;</xsl:text></xsl:for-each><xsl:text>
         }
@@ -52,8 +54,12 @@ public static class RPSHelper {
     {
         switch (opponentChoice)
         {</xsl:text><xsl:for-each select="rules/shapes"><xsl:text>
-            case '</xsl:text><xsl:value-of select="code"/><xsl:text>':
-                return playerChoice == '</xsl:text><xsl:value-of select="//shapes[defeats=current()/code]/player_code"/><xsl:text>';</xsl:text></xsl:for-each><xsl:text>
+            case '</xsl:text><xsl:value-of select="code"/><xsl:text>': // </xsl:text>
+            <xsl:value-of select="name" />
+            <xsl:text>
+                return playerChoice == '</xsl:text><xsl:value-of select="//shapes[defeats=current()/code]/player_code"/><xsl:text>';// </xsl:text>
+            <xsl:value-of select="//shapes[defeats=current()/code]/name" />
+            <xsl:text></xsl:text></xsl:for-each><xsl:text>
             default:
                 return false;
         }
@@ -63,8 +69,12 @@ public static class RPSHelper {
     {
         switch (opponentChoice)
         {</xsl:text><xsl:for-each select="rules/shapes"><xsl:text>
-            case '</xsl:text><xsl:value-of select="code"/><xsl:text>':
-                return playerChoice == '</xsl:text><xsl:value-of select="player_code"/><xsl:text>';</xsl:text></xsl:for-each><xsl:text>
+            case '</xsl:text><xsl:value-of select="code"/><xsl:text>': // </xsl:text>
+            <xsl:value-of select="name" />
+            <xsl:text>
+                return playerChoice == '</xsl:text><xsl:value-of select="//shapes[code=current()/defeats]/player_code"/><xsl:text>';// </xsl:text>
+            <xsl:value-of select="//shapes[code=current()/defeats]/name" />
+            <xsl:text></xsl:text></xsl:for-each><xsl:text>
             default:
                 return false;
         }

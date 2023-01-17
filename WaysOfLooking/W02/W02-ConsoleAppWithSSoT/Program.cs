@@ -4,13 +4,13 @@ using System.Linq;
 
 class RockPaperScissors
 {
-    private static JObject _phaserShieldKlingonBorg;
+    private static JObject gameJson;
 
     static RockPaperScissors()
     {
         string jsonString = File.ReadAllText("../../../../../../SSoT/rps.json");
         var jo = JObject.Parse(jsonString);
-        _phaserShieldKlingonBorg = JObject.Parse(jo["rock-paper-scissors"].ToString());
+        gameJson = JObject.Parse(jo["rock-paper-scissors"].ToString());
     }
 
     static void Main(string[] args)
@@ -34,8 +34,8 @@ class RockPaperScissors
     }
     private static int CalculateRoundScore(char opponentChoice, char playerChoice)
     {
-        var outcomes = _phaserShieldKlingonBorg["rules"]["outcomes"];
-        var shapes = _phaserShieldKlingonBorg["rules"]["shapes"];
+        var outcomes = gameJson["rules"]["outcomes"];
+        var shapes = gameJson["rules"]["shapes"];
         var opponentShape = shapes.FirstOrDefault(s => $"{s["code"]}" == opponentChoice.ToString());
         var playerShape = shapes.First(s => s["player_code"].ToString() == playerChoice.ToString());
 
@@ -54,7 +54,7 @@ class RockPaperScissors
 
     private static string GetStrategyGuide()
     {
-        var games = _phaserShieldKlingonBorg["rules"]["games"];
+        var games = gameJson["rules"]["games"];
         var rounds = games["rounds"];
         var strategyGuide = "";
         foreach (var round in rounds)
