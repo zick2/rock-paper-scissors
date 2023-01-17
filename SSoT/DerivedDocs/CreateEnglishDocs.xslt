@@ -26,8 +26,8 @@ The Elves begin to set up camp on the beach. To decide whose tent gets to be clo
   <xsl:for-each select="//shapes">
     <xsl:if test="position() > 1"><xsl:text>,</xsl:text></xsl:if>
     <xsl:value-of select="name"/>
-    <xsl:text>&#32;defeats </xsl:text>
-    <xsl:value-of select="//shapes[code=current()/defeats]/name"/>
+    <xsl:text>&#32;wins against </xsl:text>
+    <xsl:value-of select="//shapes[opp_code=current()/wins_against]/name"/>
   </xsl:for-each>
   <xsl:text>.  If both players choose the same shape, the round instead ends in a draw. </xsl:text>
         <xsl:apply-templates select="*/rules"/>
@@ -55,7 +55,7 @@ Appreciative of your help yesterday, one Elf gives you an encrypted strategy gui
   <xsl:for-each select="//shapes">
     <xsl:if test="position() > 1"><xsl:text>,</xsl:text></xsl:if>
     <xsl:text>&#32;</xsl:text>
-    <xsl:value-of select="code"/>
+    <xsl:value-of select="opp_code"/>
     <xsl:text>&#32;for </xsl:text>
     <xsl:value-of select="name"/>
   </xsl:for-each>
@@ -92,11 +92,14 @@ Since you can't be sure if the Elf is trying to help you or trick you, you shoul
     </xsl:template>
 
     <xsl:template match="shapes">
+        <xsl:text> - </xsl:text>
         <xsl:value-of select="name"/>
         <xsl:text> (opp code: `</xsl:text>
-        <xsl:value-of select="code"/>
+        <xsl:value-of select="opp_code"/>
         <xsl:text>`, player code: `</xsl:text>
         <xsl:value-of select="player_code"/>
+        <xsl:text>`, wins against: `</xsl:text>
+        <xsl:value-of select="//shapes[opp_code = current()/wins_against]/name"/>
         <xsl:text>`, score: </xsl:text>
         <xsl:value-of select="score"/>
         <xsl:text>), </xsl:text>
@@ -104,17 +107,18 @@ Since you can't be sure if the Elf is trying to help you or trick you, you shoul
     </xsl:template>
 
     <xsl:template match="outcomes">
-        <xsl:text>The outcome scores are: Win: </xsl:text>
+        <xsl:text>&#10;&#10;The outcome scores are: </xsl:text>
+        <xsl:text>&#10; - Win: </xsl:text>
         <xsl:value-of select="win"/>
-        <xsl:text>, Loss: </xsl:text>
+        <xsl:text>&#10; - Loss: </xsl:text>
         <xsl:value-of select="loss"/>
-        <xsl:text>, Draw: </xsl:text>
+        <xsl:text>&#10; - Draw: </xsl:text>
         <xsl:value-of select="draw"/>
         <xsl:text>&#10;</xsl:text>
     </xsl:template>
 
    <xsl:template match="games">
-    <xsl:text>###</xsl:text>
+    <xsl:text>&#10;### </xsl:text>
     <xsl:value-of select="name"/>
     <xsl:text>
 
@@ -126,7 +130,7 @@ For example, suppose you were given the following strategy guide:
        <xsl:text>```
 </xsl:text>
     <xsl:for-each select="//rounds">
-        <xsl:value-of select="opponent_code"/>
+        <xsl:value-of select="opp_code"/>
         <xsl:text>&#32;</xsl:text>
         <xsl:value-of select="player_code"/>
         <xsl:text>&#10;</xsl:text>
@@ -138,11 +142,11 @@ For example, suppose you were given the following strategy guide:
 </xsl:text>
     <xsl:for-each select="rounds">
         <xsl:text>- Opponent chose </xsl:text>
-        <xsl:value-of select="//shapes[code=current()/opponent_code]/name"/>
+        <xsl:value-of select="//shapes[opp_code=current()/opp_code]/name"/>
         <xsl:text> (code </xsl:text>
-        <xsl:value-of select="opponent_code"/>
+        <xsl:value-of select="opp_code"/>
         <xsl:text>), player chose </xsl:text>
-        <xsl:value-of select="//shapes[code=current()/player_code]/name"/>
+        <xsl:value-of select="//shapes[player_code=current()/player_code]/name"/>
         <xsl:text> (code </xsl:text>
         <xsl:value-of select="player_code"/>
         <xsl:text>)</xsl:text>

@@ -2,3 +2,5 @@
 **/.ssotme/**/*
 **/obj/**/*
 **/bin/**/*
+**/__pycache__/**/*.pyc
+**/DSPXml/**/*

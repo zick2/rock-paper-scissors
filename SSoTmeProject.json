@@ -66,6 +66,17 @@
       "Name": "XmlXsltTransform",
       "RelativePath": "/WaysOfLooking/W01/ConsoleAppWithSSoT",
       "CommandLine": "xml-xslt-transform -i ..\\..\\..\\SSoT\\rps.xml -i .\\CreateHelper.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "e1af9be1-fbec-4e80-b88d-05505c26ff98",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/WaysOfLooking/W03/PythonApplicationWithSSoT",
+      "CommandLine": "xml-xslt-transform -i ..\\..\\..\\SSoT\\rps.xml -i .\\CreatePythonSolution.xslt"
     }
   ]
 }

@@ -1,33 +1,33 @@
 ﻿{
-    "name": "Phaser, Shield, Klingon, Borg",
+    "name": "Phaser, Shield, EMP, Transporter",
     "rules": {
         "shapes": [
             {
-                "code": "P",
                 "name": "Phaser",
-                "defeats": "K",
-                "player_code": "X",
+                "opp_code": "P",
+                "player_code": "W",
+                "wins_against": "T",
                 "score": 5
             },
             {
-                "code": "S",
                 "name": "Shield",
-                "defeats": "B",
-                "player_code": "Y",
+                "opp_code": "S",
+                "player_code": "X",
+                "wins_against": "P",
                 "score": 10
             },
             {
-                "code": "K",
-                "name": "Klingon",
-                "defeats": "S",
-                "player_code": "Z",
+                "name": "EMP",
+                "opp_code": "E",
+                "player_code": "Y",
+                "wins_against": "S",
                 "score": 8
             },
             {
-                "code": "B",
-                "name": "Borg",
-                "defeats": "P",
-                "player_code": "W",
+                "name": "Transporter",
+                "opp_code": "T",
+                "player_code": "Z",
+                "wins_against": "E",
                 "score": 7
             }
         ],
@@ -38,19 +38,18 @@
         },
         "games": {
             "name": "Example Game",
-            "score": 30,
             "rounds": [
                 {
-                    "player_code": "Y",
-                    "opponent_code": "B"
+                    "player_code": "Z",
+                    "opp_code": "E"
                 },
                 {
-                    "player_code": "Z",
-                    "opponent_code": "P"
+                    "player_code": "Y",
+                    "opp_code": "S"
                 },
                 {
                     "player_code": "W",
-                    "opponent_code": "B"
+                    "opp_code": "S"
                 }
             ]
         }

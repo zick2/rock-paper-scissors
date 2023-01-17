@@ -11,24 +11,24 @@ After ChatGPT had written the source code used in W01-ConsoleApp - I asked ChatG
     "rules": {
       "shapes": [
         {
-          "code": "A",
           "name": "Rock",
-          "defeats": "C",
+          "opp_code": "A",
           "player_code": "X",
+          "wins_against": "C",
           "score": 1
         },
         {
-          "code": "B",
           "name": "Paper",
-          "defeats": "A",
+          "opp_code": "B",
           "player_code": "Y",
+          "wins_against": "A",
           "score": 2
         },
         {
-          "code": "C",
           "name": "Scissors",
-          "defeats": "B",
+          "opp_code": "C",
           "player_code": "Z",
+          "wins_against": "B",
           "score": 3
         }
       ],
@@ -43,7 +43,7 @@ After ChatGPT had written the source code used in W01-ConsoleApp - I asked ChatG
         "rounds": [
           {
             "player_code": "Y",
-            "opponent_code": "A",
+            "opp_code": "A",
             "result": "win",
             "score": 8,
             "choice_score": 2,
@@ -51,7 +51,7 @@ After ChatGPT had written the source code used in W01-ConsoleApp - I asked ChatG
           },
           {
             "player_code": "X",
-            "opponent_code": "B",
+            "opp_code": "B",
             "result": "loss",
             "score": 1,
             "choice_score": 1,
@@ -59,7 +59,7 @@ After ChatGPT had written the source code used in W01-ConsoleApp - I asked ChatG
           },
           {
             "player_code": "Z",
-            "opponent_code": "C",
+            "opp_code": "C",
             "result": "draw",
             "score": 6,
             "choice_score": 3,

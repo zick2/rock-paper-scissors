@@ -36,21 +36,19 @@ class RockPaperScissors
     {
         var outcomes = gameJson["rules"]["outcomes"];
         var shapes = gameJson["rules"]["shapes"];
-        var opponentShape = shapes.FirstOrDefault(s => $"{s["code"]}" == opponentChoice.ToString());
+        var opponentShape = shapes.FirstOrDefault(s => $"{s["opp_code"]}" == opponentChoice.ToString());
         var playerShape = shapes.First(s => s["player_code"].ToString() == playerChoice.ToString());
 
-        if (playerShape["defeats"].ToString() == opponentShape["code"].ToString())
+        if (playerShape["wins_against"].ToString() == opponentShape["opp_code"].ToString())
         {
             return (int)outcomes["win"] + (int)playerShape["score"];
         }
-        else if (opponentShape["defeats"].ToString() == playerShape["code"].ToString())
+        else if (opponentShape["wins_against"].ToString() == playerShape["opp_code"].ToString())
         {
             return (int)outcomes["loss"] + (int)playerShape["score"];
         }
         else return (int)outcomes["draw"] + (int)playerShape["score"];
     }
-
-
 
     private static string GetStrategyGuide()
     {
@@ -59,9 +57,8 @@ class RockPaperScissors
         var strategyGuide = "";
         foreach (var round in rounds)
         {
-            strategyGuide += round["opponent_code"].ToString() + " " + round["player_code"].ToString() + "\r\n";
+            strategyGuide += round["opp_code"].ToString() + " " + round["player_code"].ToString() + "\r\n";
         }
         return strategyGuide;
     }
-
 }

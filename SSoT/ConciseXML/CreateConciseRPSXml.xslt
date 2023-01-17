@@ -64,17 +64,17 @@
     </xsl:template>
      <xsl:template match="/*/rules/games/rounds">
          <xsl:variable name="player" select="//shapes[player_code = current()/player_code]" />
-         <xsl:variable name="opp" select="//shapes[code = current()/opponent_code]" />
+         <xsl:variable name="opp" select="//shapes[opp_code = current()/opp_code]" />
          <xsl:variable name="result">
              <xsl:choose>
-                 <xsl:when test="opponent_code = $player/defeats">win</xsl:when>
-                 <xsl:when test="$player/code = $opp/defeats">loss</xsl:when>
+                 <xsl:when test="opp_code = $player/wins_against">win</xsl:when>
+                 <xsl:when test="$player/opp_code = $opp/wins_against">loss</xsl:when>
                  <xsl:otherwise>draw</xsl:otherwise>
              </xsl:choose>
          </xsl:variable>
          <rounds>
              <xsl:copy-of select="player_code"/>
-             <xsl:copy-of select="opponent_code"/>
+             <xsl:copy-of select="opp_code"/>
          <result>
              <xsl:value-of select="$result"/>
         </result>

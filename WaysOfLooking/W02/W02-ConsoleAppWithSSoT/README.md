@@ -9,24 +9,24 @@ Please describe the game defined by this json:
     "rules": {
         "shapes": [
             {
-                "code": "A",
                 "name": "Rock",
-                "defeats": "C",
+                "opp_code": "A",
                 "player_code": "X",
+                "wins_against": "C",
                 "score": 1
             },
             {
-                "code": "B",
                 "name": "Paper",
-                "defeats": "A",
+                "opp_code": "B",
                 "player_code": "Y",
+                "wins_against": "A",
                 "score": 2
             },
             {
-                "code": "C",
                 "name": "Scissors",
-                "defeats": "B",
+                "opp_code": "C",
                 "player_code": "Z",
+                "wins_against": "B",
                 "score": 3
             }
         ],
@@ -40,15 +40,15 @@ Please describe the game defined by this json:
                 "name": "Example Game",
                 "rounds": [
                     {
-                        "opponent_code": "A",
+                        "opp_code": "A",
                         "player_code": "Y"
                     },
                     {
-                        "opponent_code": "B",
+                        "opp_code": "B",
                         "player_code": "X"
                     },
                     {
-                        "opponent_code": "C",
+                        "opp_code": "C",
                         "player_code": "Z"
                     }
                 ]
@@ -107,30 +107,30 @@ changing all of the codes and scores.
     "rules": {
       "shapes": [
         {
-          "code": "P",
+          "opp_code": "P",
           "name": "Phaser",
-          "defeats": "K",
+          "wins_against": "K",
           "player_code": "X",
           "score": 5
         },
         {
-          "code": "S",
+          "opp_code": "S",
           "name": "Shield",
-          "defeats": "B",
+          "wins_against": "B",
           "player_code": "Y",
           "score": 10
         },
         {
-          "code": "K",
+          "opp_code": "K",
           "name": "Klingon",
-          "defeats": "S",
+          "wins_against": "S",
           "player_code": "Z",
           "score": 8
         },
         {
-          "code": "B",
+          "opp_code": "B",
           "name": "Borg",
-          "defeats": "P",
+          "wins_against": "P",
           "player_code": "W",
           "score": 7
         }
@@ -146,7 +146,7 @@ changing all of the codes and scores.
         "rounds": [
           {
             "player_code": "Y",
-            "opponent_code": "B",
+            "opp_code": "B",
             "result": "win",
             "score": 22,
             "choice_score": 10,
@@ -154,7 +154,7 @@ changing all of the codes and scores.
           },
           {
             "player_code": "X",
-            "opponent_code": "K",
+            "opp_code": "K",
             "result": "win",
             "score": 17,
             "choice_score": 5,
@@ -162,7 +162,7 @@ changing all of the codes and scores.
           },
           {
             "player_code": "W",
-            "opponent_code": "P",
+            "opp_code": "P",
             "result": "win",
             "score": 19,
             "choice_score": 7,
