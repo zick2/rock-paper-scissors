@@ -10,7 +10,7 @@
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>W03-PythonApplicationWithSSoT</Name>
+    <Name>W03-Python-Flowing-SSoT</Name>
     <RootNamespace>PythonApplicationWithSSoT</RootNamespace>
     <IsWindowsApplication>False</IsWindowsApplication>
     <InterpreterId>Global|PythonCore|3.9</InterpreterId>

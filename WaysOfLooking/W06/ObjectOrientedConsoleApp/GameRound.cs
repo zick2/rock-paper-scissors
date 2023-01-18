@@ -1,0 +1,47 @@
+﻿namespace ObjectOrientedConsoleApp
+{
+    public class GameRound
+    {
+        public char player_code { get; set; }
+        public char opp_code { get; set; }
+        public string result { get; set; }
+        public int score { get; set; }
+        public int choice_score { get; set; }
+        public int outcome_score { get; set; }
+
+        public GameRound(char player_code, char opp_code)
+        {
+            this.player_code = player_code;
+            this.opp_code = opp_code;
+        }
+
+
+        public void PlayRound(Game game)
+        {
+            Shape playerShape = game.CreateShape(player_code);
+            Shape opponentShape = game.CreateShape(opp_code);
+
+            if (playerShape.WinsTo(opponentShape))
+            {
+                result = "win";
+                outcome_score = game.WinScore;
+            }
+            else if (playerShape.LosesTo(opponentShape))
+            {
+                result = "loss";
+                outcome_score = game.LossScore;
+            }
+            else
+            {
+                result = "draw";
+                outcome_score = game.DrawScore;
+            }
+
+            choice_score = playerShape.Score;
+            score = choice_score + outcome_score;
+            game.Score += score;
+        }
+
+
+    }
+}

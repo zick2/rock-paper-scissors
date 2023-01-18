@@ -1,0 +1,772 @@
+
+{
+  "Ontology": {
+    "OntologyGroups": {
+      "OntologyGroup": {
+        "Name": "ODXMLSchema",
+        "Namespace": "com.anabstractlevel.Schemas",
+        "ObjectDefs": {
+          "ObjectDef": [
+            {
+              "Name": "Rule",
+              "OriginalName": "rules",
+              "DisplayName": "",
+              "AirtableEntity": "",
+              "AirtableData": "",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": {
+                  "Name": "RuleId",
+                  "OriginalName": "__rulesId",
+                  "Description": "",
+                  "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                  "DefaultValue": "(newid()))",
+                  "DataType": "GUID",
+                  "OriginalDataType": "GUID",
+                  "IsPrimaryKey": "1",
+                  "IsAttribute": "0",
+                  "IsCollection": "",
+                  "MatchingMetaData": {
+                    "FromName": "rules.__rulesId",
+                    "FromObjectName": "rules",
+                    "FromPropertyName": "__rulesId",
+                    "ToName": "RuleId",
+                    "ToObjectName": "Rule",
+                    "ToPropertyName": "RuleId",
+                    "Include": "true",
+                    "IsCollection": "false",
+                    "Description": "",
+                    "DataType": "GUID"
+                  }
+                }
+              },
+              "PluralName": "",
+              "MatchingMetaData": {
+                "FromName": "rules",
+                "FromObjectName": "rules",
+                "FromPropertyName": "",
+                "ToName": "Rule",
+                "ToObjectName": "Rule",
+                "ToPropertyName": "",
+                "Include": "true"
+              }
+            },
+            {
+              "Name": "Shape",
+              "OriginalName": "shapes",
+              "DisplayName": "",
+              "AirtableEntity": "",
+              "AirtableData": "",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "ShapeId",
+                    "OriginalName": "__shapesId",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DefaultValue": "(newid()))",
+                    "DataType": "GUID",
+                    "OriginalDataType": "GUID",
+                    "IsPrimaryKey": "1",
+                    "IsAttribute": "0",
+                    "IsCollection": "",
+                    "MatchingMetaData": {
+                      "FromName": "shapes.__shapesId",
+                      "FromObjectName": "shapes",
+                      "FromPropertyName": "__shapesId",
+                      "ToName": "ShapeId",
+                      "ToObjectName": "Shape",
+                      "ToPropertyName": "ShapeId",
+                      "Include": "true",
+                      "IsCollection": "false",
+                      "Description": "",
+                      "DataType": "GUID"
+                    }
+                  },
+                  {
+                    "Name": "Name",
+                    "OriginalName": "name",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "shapes.name",
+                      "FromObjectName": "shapes",
+                      "FromPropertyName": "name",
+                      "ToName": "Name",
+                      "ToObjectName": "Shape",
+                      "ToPropertyName": "Name",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "Oppcode",
+                    "OriginalName": "opp_code",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "shapes.opp_code",
+                      "FromObjectName": "shapes",
+                      "FromPropertyName": "opp_code",
+                      "ToName": "Oppcode",
+                      "ToObjectName": "Shape",
+                      "ToPropertyName": "Oppcode",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "Playercode",
+                    "OriginalName": "player_code",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "shapes.player_code",
+                      "FromObjectName": "shapes",
+                      "FromPropertyName": "player_code",
+                      "ToName": "Playercode",
+                      "ToObjectName": "Shape",
+                      "ToPropertyName": "Playercode",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "Winsagainst",
+                    "OriginalName": "wins_against",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "shapes.wins_against",
+                      "FromObjectName": "shapes",
+                      "FromPropertyName": "wins_against",
+                      "ToName": "Winsagainst",
+                      "ToObjectName": "Shape",
+                      "ToPropertyName": "Winsagainst",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "Score",
+                    "OriginalName": "score",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BYTE",
+                    "OriginalDataType": "BYTE",
+                    "Length": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "shapes.score",
+                      "FromObjectName": "shapes",
+                      "FromPropertyName": "score",
+                      "ToName": "Score",
+                      "ToObjectName": "Shape",
+                      "ToPropertyName": "Score",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "BYTE"
+                    }
+                  },
+                  {
+                    "Name": "Rules",
+                    "OriginalName": "__rules",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "GUID",
+                    "OriginalDataType": "GUID",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "Relationships": {
+                      "Relationship": {
+                        "KeyName": "FK_rules___rulesId",
+                        "OriginalReferencedObjectDef": "rules",
+                        "ReferencedObjectDef": "Rule",
+                        "ReferencedPropertyDef": "RuleId"
+                      }
+                    },
+                    "IsCollection": "1",
+                    "MatchingMetaData": {
+                      "FromName": "shapes.__rules",
+                      "FromObjectName": "shapes",
+                      "FromPropertyName": "__rules",
+                      "ToName": "Rules",
+                      "ToObjectName": "Shape",
+                      "ToPropertyName": "Rules",
+                      "Include": "true",
+                      "IsCollection": "1",
+                      "Description": "",
+                      "DataType": "GUID"
+                    }
+                  }
+                ]
+              },
+              "PluralName": "",
+              "MatchingMetaData": {
+                "FromName": "shapes",
+                "FromObjectName": "shapes",
+                "FromPropertyName": "",
+                "ToName": "Shape",
+                "ToObjectName": "Shape",
+                "ToPropertyName": "",
+                "Include": "true"
+              }
+            },
+            {
+              "Name": "Outcome",
+              "OriginalName": "outcomes",
+              "DisplayName": "",
+              "AirtableEntity": "",
+              "AirtableData": "",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "OutcomeId",
+                    "OriginalName": "__outcomesId",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DefaultValue": "(newid()))",
+                    "DataType": "GUID",
+                    "OriginalDataType": "GUID",
+                    "IsPrimaryKey": "1",
+                    "IsAttribute": "0",
+                    "IsCollection": "",
+                    "MatchingMetaData": {
+                      "FromName": "outcomes.__outcomesId",
+                      "FromObjectName": "outcomes",
+                      "FromPropertyName": "__outcomesId",
+                      "ToName": "OutcomeId",
+                      "ToObjectName": "Outcome",
+                      "ToPropertyName": "OutcomeId",
+                      "Include": "true",
+                      "IsCollection": "false",
+                      "Description": "",
+                      "DataType": "GUID"
+                    }
+                  },
+                  {
+                    "Name": "Win",
+                    "OriginalName": "win",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BYTE",
+                    "OriginalDataType": "BYTE",
+                    "Length": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "outcomes.win",
+                      "FromObjectName": "outcomes",
+                      "FromPropertyName": "win",
+                      "ToName": "Win",
+                      "ToObjectName": "Outcome",
+                      "ToPropertyName": "Win",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "BYTE"
+                    }
+                  },
+                  {
+                    "Name": "Loss",
+                    "OriginalName": "loss",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BYTE",
+                    "OriginalDataType": "BYTE",
+                    "Length": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "outcomes.loss",
+                      "FromObjectName": "outcomes",
+                      "FromPropertyName": "loss",
+                      "ToName": "Loss",
+                      "ToObjectName": "Outcome",
+                      "ToPropertyName": "Loss",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "BYTE"
+                    }
+                  },
+                  {
+                    "Name": "Draw",
+                    "OriginalName": "draw",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BYTE",
+                    "OriginalDataType": "BYTE",
+                    "Length": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "outcomes.draw",
+                      "FromObjectName": "outcomes",
+                      "FromPropertyName": "draw",
+                      "ToName": "Draw",
+                      "ToObjectName": "Outcome",
+                      "ToPropertyName": "Draw",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "BYTE"
+                    }
+                  },
+                  {
+                    "Name": "Rules",
+                    "OriginalName": "__rules",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "GUID",
+                    "OriginalDataType": "GUID",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "Relationships": {
+                      "Relationship": {
+                        "KeyName": "FK_rules___rulesId",
+                        "OriginalReferencedObjectDef": "rules",
+                        "ReferencedObjectDef": "Rule",
+                        "ReferencedPropertyDef": "RuleId"
+                      }
+                    },
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "outcomes.__rules",
+                      "FromObjectName": "outcomes",
+                      "FromPropertyName": "__rules",
+                      "ToName": "Rules",
+                      "ToObjectName": "Outcome",
+                      "ToPropertyName": "Rules",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "GUID"
+                    }
+                  }
+                ]
+              },
+              "PluralName": "",
+              "MatchingMetaData": {
+                "FromName": "outcomes",
+                "FromObjectName": "outcomes",
+                "FromPropertyName": "",
+                "ToName": "Outcome",
+                "ToObjectName": "Outcome",
+                "ToPropertyName": "",
+                "Include": "true"
+              }
+            },
+            {
+              "Name": "Game",
+              "OriginalName": "games",
+              "DisplayName": "",
+              "AirtableEntity": "",
+              "AirtableData": "",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "GameId",
+                    "OriginalName": "__gamesId",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DefaultValue": "(newid()))",
+                    "DataType": "GUID",
+                    "OriginalDataType": "GUID",
+                    "IsPrimaryKey": "1",
+                    "IsAttribute": "0",
+                    "IsCollection": "",
+                    "MatchingMetaData": {
+                      "FromName": "games.__gamesId",
+                      "FromObjectName": "games",
+                      "FromPropertyName": "__gamesId",
+                      "ToName": "GameId",
+                      "ToObjectName": "Game",
+                      "ToPropertyName": "GameId",
+                      "Include": "true",
+                      "IsCollection": "false",
+                      "Description": "",
+                      "DataType": "GUID"
+                    }
+                  },
+                  {
+                    "Name": "Name",
+                    "OriginalName": "name",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "games.name",
+                      "FromObjectName": "games",
+                      "FromPropertyName": "name",
+                      "ToName": "Name",
+                      "ToObjectName": "Game",
+                      "ToPropertyName": "Name",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "Score",
+                    "OriginalName": "score",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BYTE",
+                    "OriginalDataType": "BYTE",
+                    "Length": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "games.score",
+                      "FromObjectName": "games",
+                      "FromPropertyName": "score",
+                      "ToName": "Score",
+                      "ToObjectName": "Game",
+                      "ToPropertyName": "Score",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "BYTE"
+                    }
+                  },
+                  {
+                    "Name": "Rules",
+                    "OriginalName": "__rules",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "GUID",
+                    "OriginalDataType": "GUID",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "Relationships": {
+                      "Relationship": {
+                        "KeyName": "FK_rules___rulesId",
+                        "OriginalReferencedObjectDef": "rules",
+                        "ReferencedObjectDef": "Rule",
+                        "ReferencedPropertyDef": "RuleId"
+                      }
+                    },
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "games.__rules",
+                      "FromObjectName": "games",
+                      "FromPropertyName": "__rules",
+                      "ToName": "Rules",
+                      "ToObjectName": "Game",
+                      "ToPropertyName": "Rules",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "GUID"
+                    }
+                  }
+                ]
+              },
+              "PluralName": "",
+              "MatchingMetaData": {
+                "FromName": "games",
+                "FromObjectName": "games",
+                "FromPropertyName": "",
+                "ToName": "Game",
+                "ToObjectName": "Game",
+                "ToPropertyName": "",
+                "Include": "true"
+              }
+            },
+            {
+              "Name": "Round",
+              "OriginalName": "rounds",
+              "DisplayName": "",
+              "AirtableEntity": "",
+              "AirtableData": "",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "RoundId",
+                    "OriginalName": "__roundsId",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DefaultValue": "(newid()))",
+                    "DataType": "GUID",
+                    "OriginalDataType": "GUID",
+                    "IsPrimaryKey": "1",
+                    "IsAttribute": "0",
+                    "IsCollection": "",
+                    "MatchingMetaData": {
+                      "FromName": "rounds.__roundsId",
+                      "FromObjectName": "rounds",
+                      "FromPropertyName": "__roundsId",
+                      "ToName": "RoundId",
+                      "ToObjectName": "Round",
+                      "ToPropertyName": "RoundId",
+                      "Include": "true",
+                      "IsCollection": "false",
+                      "Description": "",
+                      "DataType": "GUID"
+                    }
+                  },
+                  {
+                    "Name": "PlayerCode",
+                    "OriginalName": "player_code",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "rounds.player_code",
+                      "FromObjectName": "rounds",
+                      "FromPropertyName": "player_code",
+                      "ToName": "PlayerCode",
+                      "ToObjectName": "Round",
+                      "ToPropertyName": "PlayerCode",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "Oppcode",
+                    "OriginalName": "opp_code",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "rounds.opp_code",
+                      "FromObjectName": "rounds",
+                      "FromPropertyName": "opp_code",
+                      "ToName": "Oppcode",
+                      "ToObjectName": "Round",
+                      "ToPropertyName": "Oppcode",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "Result",
+                    "OriginalName": "result",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "OriginalDataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "rounds.result",
+                      "FromObjectName": "rounds",
+                      "FromPropertyName": "result",
+                      "ToName": "Result",
+                      "ToObjectName": "Round",
+                      "ToPropertyName": "Result",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "TEXT"
+                    }
+                  },
+                  {
+                    "Name": "Score",
+                    "OriginalName": "score",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BYTE",
+                    "OriginalDataType": "BYTE",
+                    "Length": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "rounds.score",
+                      "FromObjectName": "rounds",
+                      "FromPropertyName": "score",
+                      "ToName": "Score",
+                      "ToObjectName": "Round",
+                      "ToPropertyName": "Score",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "BYTE"
+                    }
+                  },
+                  {
+                    "Name": "ChoiceScore",
+                    "OriginalName": "choice_score",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BYTE",
+                    "OriginalDataType": "BYTE",
+                    "Length": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "rounds.choice_score",
+                      "FromObjectName": "rounds",
+                      "FromPropertyName": "choice_score",
+                      "ToName": "ChoiceScore",
+                      "ToObjectName": "Round",
+                      "ToPropertyName": "ChoiceScore",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "BYTE"
+                    }
+                  },
+                  {
+                    "Name": "OutcomeScore",
+                    "OriginalName": "outcome_score",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BYTE",
+                    "OriginalDataType": "BYTE",
+                    "Length": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "MatchingMetaData": {
+                      "FromName": "rounds.outcome_score",
+                      "FromObjectName": "rounds",
+                      "FromPropertyName": "outcome_score",
+                      "ToName": "OutcomeScore",
+                      "ToObjectName": "Round",
+                      "ToPropertyName": "OutcomeScore",
+                      "Include": "true",
+                      "IsCollection": "0",
+                      "Description": "",
+                      "DataType": "BYTE"
+                    }
+                  },
+                  {
+                    "Name": "Games",
+                    "OriginalName": "__games",
+                    "Description": "",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "GUID",
+                    "OriginalDataType": "GUID",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "Relationships": {
+                      "Relationship": {
+                        "KeyName": "FK_games___gamesId",
+                        "OriginalReferencedObjectDef": "games",
+                        "ReferencedObjectDef": "Game",
+                        "ReferencedPropertyDef": "GameId"
+                      }
+                    },
+                    "IsCollection": "1",
+                    "MatchingMetaData": {
+                      "FromName": "rounds.__games",
+                      "FromObjectName": "rounds",
+                      "FromPropertyName": "__games",
+                      "ToName": "Games",
+                      "ToObjectName": "Round",
+                      "ToPropertyName": "Games",
+                      "Include": "true",
+                      "IsCollection": "1",
+                      "Description": "",
+                      "DataType": "GUID"
+                    }
+                  }
+                ]
+              },
+              "PluralName": "",
+              "MatchingMetaData": {
+                "FromName": "rounds",
+                "FromObjectName": "rounds",
+                "FromPropertyName": "",
+                "ToName": "Round",
+                "ToObjectName": "Round",
+                "ToPropertyName": "",
+                "Include": "true"
+              }
+            }
+          ]
+        },
+        "ComplexTypeCount": {
+          "ObjectDefs": "",
+          "PropertyDefs": ""
+        }
+      }
+    }
+  }
+}
+                    

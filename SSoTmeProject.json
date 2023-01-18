@@ -88,6 +88,28 @@
       "Name": "XmlXsltTransform",
       "RelativePath": "/WaysOfLooking/W05/VisualBasicConsoleAppWithSSoT",
       "CommandLine": "xml-xslt-transform -i ..\\..\\..\\SSoT\\rps.xml -i .\\CreateVBSolution.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "fd14a7d7-472c-4dc6-8f5c-ff7baeb4f5a7",
+        "Name": "XmlToOdxml",
+        "Description": "Extract the Schema of an Xml file and then convert that into Odxml"
+      },
+      "ProjectTranspilerId": "81ea1a1d-28c2-4187-9aee-9f6c4480e444",
+      "Name": "XmlToOdxml",
+      "RelativePath": "/ODXML/RAW",
+      "CommandLine": "xml-to-odxml -i ../../SSoT/rps.xml -o DataSchema.odxml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "bbea1b94-36ed-44f6-8d99-20ac4c49f982",
+        "Name": "OdxmlToCleanOdxml",
+        "Description": "Allows for any data model to be \"cleaned up\" while preserving a \"map\" between the old/new models"
+      },
+      "ProjectTranspilerId": "b81a8ad2-5b61-4a6a-aa82-62b926ccdce6",
+      "Name": "OdxmlToCleanOdxml",
+      "RelativePath": "/ODXML",
+      "CommandLine": "odxml-to-clean-odxml -i RAW/DataSchema.odxml -i renames.xml"
     }
   ]
 }
