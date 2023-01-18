@@ -4,3 +4,5 @@
 **/bin/**/*
 **/__pycache__/**/*.pyc
 **/DSPXml/**/*
+/out/**/*
+/WaysOfLooking/W04/readme/**/*
