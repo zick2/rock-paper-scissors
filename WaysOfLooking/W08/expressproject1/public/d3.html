@@ -1,0 +1,154 @@
+<html>
+  <head>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+      <style>
+          .links {
+              color: red;
+          }
+      </style>
+  </head>
+  <body>
+    <script>
+        // Fetch the json data
+        d3.json("data.json").then(function (rps) {
+            // Get the array of shapes
+
+            var data = rps["rock-paper-scissors"]
+
+            var width = 500, height = 500;
+            var svg = d3.select("body").append("svg")
+                .attr("width", width)
+                .attr("height", height);
+
+            // assign initial x and y positions to the nodes
+            data.nodes.forEach(function (d) {
+                d.x = width / (3 + Math.random());
+                d.y = height / (3 + Math.random());
+            });
+
+            console.error('SHAPES: ', JSON.stringify(data))
+
+            var simulation = d3.forceSimulation()
+                .nodes(data.nodes)
+                .force("link", d3.forceLink().links(data.nodes).id(function (d) { return d.index; }).strength(0.1))
+                .force("charge", d3.forceManyBody().strength(-600))
+                .force("center", d3.forceCenter(width / 2, height / 2))
+                .force("x", d3.forceX().x(width / 2))
+                .force("y", d3.forceY().y(height / 2))
+                .on("tick", ticked);
+
+
+
+            // Create the links between the nodes
+            var link = svg.append("g")
+                .attr("class", "links")
+                .selectAll("line")
+                .data(data.nodes)
+                .enter().append("line")
+                .attr("stroke-width", 5);
+
+            var node = svg.append("g")
+                .attr("class", "nodes")
+                .selectAll("circle")
+                .data(data.nodes)
+                .enter().append("circle")
+                .attr("r", 35)
+                .attr("fill", "white")
+                .attr("stroke", "black")
+                .attr("stroke-width", 1)
+                .call(d3.drag()
+                    .on("start", dragstarted)
+                    .on("drag", dragged)
+                    .on("end", dragended));
+
+            node
+                .style("fill", "#cccccc")
+                .style("fill-opacity", "0.9")
+                .style("stroke", "#424242")
+                .style("stroke-width", "1px");
+
+
+
+            var defs = svg.append("defs");
+            var arrowHead = defs.append("marker")
+                .attr("id", "arrow")
+                .attr("viewBox", "0 -5 10 10")
+                .attr("refX", 70)
+                .attr("refY", 0)
+                .attr("markerWidth", 3)
+                .attr("markerHeight", 3)
+                .attr("orient", "auto")
+                .append("path")
+                .attr("d", "M0,-5L10,0L0,5");
+
+            var link = svg.append("g")
+                .attr("class", "links")
+                .selectAll("line")
+                .data(data.nodes)
+                .enter().append("line")
+                .attr("stroke-width", 2)
+                .attr("marker-end", "url(#arrow)");
+
+
+
+
+            // Add the labels to the nodes
+            var label = svg.append("g")
+                .attr("class", "labels")
+                .selectAll("text")
+                .data(data.nodes)
+                .enter().append("text")
+                .text(function (d) { return d.name; })
+                .attr("class", "label")
+
+            label
+                .style("text-anchor", "middle")
+                .style("font-size", "10px");
+
+
+     
+            // Function to update the position of the links and nodes
+            function ticked() {
+                link
+                    .attr("x1", function (d) { return d.source.x; })
+                    .attr("y1", function (d) { return d.source.y; })
+                    .attr("x2", function (d) { return d.target.x; })
+                    .attr("y2", function (d) { return d.target.y; });
+
+                node
+                    .attr("cx", function (d) { return d.x + 5; })
+                    .attr("cy", function (d) { return d.y - 3; });
+
+                label
+                    .attr("x", function (d) { return d.x; })
+                    .attr("y", function (d) { return d.y; });
+            }
+
+            simulation
+                .nodes(data.nodes)
+                .on("tick", ticked);
+
+            simulation.force("link")
+                .links(data.nodes);
+
+
+            function dragstarted(d) {
+                if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+                d.fx = d.x;
+                d.fy = d.y;
+            }
+
+            function dragged(d) {
+                d.fx = d3.event.x;
+                d.fy = d3.event.y;
+            }
+
+            function dragended(d) {
+                if (!d3.event.active) simulation.alphaTarget(0);
+                d.fx = null;
+                d.fy = null;
+            }
+        });
+    </script>
+  </body>
+</html>

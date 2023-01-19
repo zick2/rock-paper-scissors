@@ -1,0 +1,36 @@
+{
+  "rock-paper-scissors": {
+    "nodes": [
+      {
+        "id": 1,
+        "name": "Rock",
+        "opp_code": "A",
+        "player_code": "X",
+        "wins_against": "C",
+        "score": 1,
+        "source": 0,
+        "target": 2
+      },
+      {
+        "id": 2,
+        "name": "Paper",
+        "opp_code": "B",
+        "player_code": "Y",
+        "wins_against": "A",
+        "score": 2,
+        "source": 1,
+        "target": 0
+      },
+      {
+        "id": 3,
+        "name": "Scissors",
+        "opp_code": "C",
+        "player_code": "Z",
+        "wins_against": "B",
+        "score": 3,
+        "source": 2,
+        "target": 1
+      }
+    ]
+  }
+}

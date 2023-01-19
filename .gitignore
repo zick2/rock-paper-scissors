@@ -6,3 +6,5 @@
 **/DSPXml/**/*
 /out/**/*
 /WaysOfLooking/W04/readme/**/*
+**/node_modules/**/*
+/**/**.user

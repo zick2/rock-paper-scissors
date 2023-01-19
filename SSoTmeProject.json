@@ -132,6 +132,39 @@
       "Name": "XmlXsltTransform",
       "RelativePath": "/WaysOfLooking/W06/ObjectOrientedConsoleAppWithSSoT/DataClasses",
       "CommandLine": "xml-xslt-transform -i ../../../../SSoT/rps.xml -i CreateConcreteClasses.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "9cd4b4b7-1995-43be-b7dd-b9e217d19235",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/WaysOfLooking/W08/expressproject1/public",
+      "CommandLine": "xml-xslt-transform -i ../../../../SSoT/rps.xml -i create-data.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "ba509977-74bf-486e-a405-1b2125bd5d15",
+        "Name": "XmlToJson",
+        "Description": "Converts XML to JSON using the NewtonSoft C# conversion tools."
+      },
+      "ProjectTranspilerId": "53fdafe4-b766-4cbe-930a-39430e3cfde6",
+      "Name": "XmlToJson",
+      "RelativePath": "/WaysOfLooking/W08/expressproject1/public",
+      "CommandLine": "xml-to-json -i data.xml -o data.json"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "cd4d8307-b168-43d2-b8dd-b385fbb2fcb1",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/WaysOfLooking/W02/W02-FSharp-FishingPole",
+      "CommandLine": "xml-xslt-transform -i ..\\..\\..\\SSoT\\rps.xml -i .\\CreateFSharpSolution.xslt"
     }
   ]
 }

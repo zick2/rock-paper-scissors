@@ -49,15 +49,12 @@
     <rock-paper-scissors>
         <name>
             <xsl:value-of select="/*/name"/>
-        </name>
+        </name>        
         <rules>
             <xsl:copy-of select="/*/rules/shapes"/>
             <xsl:copy-of select="/*/rules/outcomes"/>
             <games>
-                <name>
-                    <xsl:value-of select="/*/rules/games/name"/>
-                </name>
-                <xsl:apply-templates select="/*/rules/games/rounds"/>
+                <xsl:apply-templates select="/*/rules/games/*"/>
             </games>
         </rules>
     </rock-paper-scissors>

@@ -1,12 +1,4 @@
-using System;
-using System.ComponentModel;
-using Newtonsoft.Json;
-using System.Collections.Generic;
-using System.Linq;
-using CoreLibrary.Extensions;
 
-using System;
-            
 namespace TWOLAT.RPS.Lib
 {
     public static partial class CoreLibraryExtensions 
@@ -31,12 +23,12 @@ namespace TWOLAT.RPS.Lib
         
         public static void AddSampleGame(this Game game)
         {
-            // win
-            game.Games_GameRounds.Add(new GameRound('Y', 'A'));// Paper vs. Rock
-            // loss
-            game.Games_GameRounds.Add(new GameRound('X', 'B'));// Rock vs. Paper
-            // draw
-            game.Games_GameRounds.Add(new GameRound('Z', 'C'));// Scissors vs. Scissors
+            game.Games_GameRounds.Add(new GameRound('Y', 'A'));// win:
+            Paper vs. Rock
+            game.Games_GameRounds.Add(new GameRound('X', 'B'));// loss:
+            Rock vs. Paper
+            game.Games_GameRounds.Add(new GameRound('Z', 'C'));// draw:
+            Scissors vs. Scissors
         }
     }
 

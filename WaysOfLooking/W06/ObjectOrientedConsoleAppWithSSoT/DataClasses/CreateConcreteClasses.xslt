@@ -21,12 +21,7 @@
                         <xsl:value-of select="name"/>
                         <xsl:text>.cs</xsl:text>
                     </RelativePath>
-                    <xsl:element name="FileContents" xml:space="preserve">using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+                    <xsl:element name="FileContents" xml:space="preserve">
 namespace TWOLAT.RPS.Lib
 {
     public class <xsl:value-of select="name" /> : AbstractShape
@@ -44,15 +39,7 @@ namespace TWOLAT.RPS.Lib
                 </xsl:for-each>
                 <FileSetFile>
                     <RelativePath>CoreLibraryExtensions.designer.cs</RelativePath>
-                    <FileContents>using System;
-using System.ComponentModel;
-using Newtonsoft.Json;
-using System.Collections.Generic;
-using System.Linq;
-using CoreLibrary.Extensions;
-
-using System;
-            
+                    <FileContents>
 namespace TWOLAT.RPS.Lib
 {
     public static partial class CoreLibraryExtensions 
@@ -71,9 +58,8 @@ namespace TWOLAT.RPS.Lib
         
         public static void AddSampleGame(this Game game)
         {<xsl:for-each select="//games/rounds">
-            // <xsl:value-of select="result" />
             game.Games_GameRounds.Add(new GameRound('<xsl:value-of select="player_code"/>', '<xsl:value-of select="opp_code"/>'));<xsl:text></xsl:text>
-            <xsl:text>// </xsl:text>
+            <xsl:text>// </xsl:text><xsl:value-of select="result" />:
             <xsl:value-of select="//shapes[player_code=current()/player_code]/name" /> vs. <xsl:value-of select="//shapes[opp_code=current()/opp_code]/name" /> 
     </xsl:for-each>
         }
