@@ -37,7 +37,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SSoT", "SSoT\", "{36326EF0-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WayOfLooking-01", "WayOfLooking-01", "{334CB127-B0B6-4914-8CA6-2FB7D8196205}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W01-CS-ConcreteSyntax", "WaysOfLooking\W01\ConsoleApp1\W01-CS-ConcreteSyntax.csproj", "{BA699519-08A3-4CDD-ADB2-C07576AC3847}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W01-CS-Concrete-Fish", "WaysOfLooking\W01\ConsoleApp1\W01-CS-Concrete-Fish.csproj", "{BA699519-08A3-4CDD-ADB2-C07576AC3847}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W01-CS-Flowing-SSoT", "WaysOfLooking\W01\ConsoleAppWithSSoT\W01-CS-Flowing-SSoT.csproj", "{0789249C-D8A8-4DD4-BB49-3642B9773F35}"
 EndProject
@@ -47,7 +47,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W02-CS-Flowing-SSoT", "Ways
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WayOfLooking-03", "WayOfLooking-03", "{21AC5215-B0B9-416F-96F5-FF0A6556B51E}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "W03-Python-ConcreteSyntax", "WaysOfLooking\W03\PythonApplication1\W03-Python-ConcreteSyntax.pyproj", "{FC00E5A4-D517-4055-948C-6019F1E25B1E}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "W03-Python-Concrete-Fish", "WaysOfLooking\W03\PythonApplication1\W03-Python-Concrete-Fish.pyproj", "{FC00E5A4-D517-4055-948C-6019F1E25B1E}"
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "W03-Python-Flowing-SSoT", "WaysOfLooking\W03\PythonApplicationWithSSoT\W03-Python-Flowing-SSoT.pyproj", "{E02805D9-BAAA-4E9E-8B07-A3BA16BEFF0B}"
 EndProject
@@ -55,7 +55,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WayOfLooking-04", "WayOfLoo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPPConsoleApplication1", "WaysOfLooking\W04\CPPConsoleApplication1\CPPConsoleApplication1.vcxproj", "{FF7139B3-0D90-4307-84B6-342B11AEC8BB}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "W05-VisualBasic-ConcreteSyntax", "WaysOfLooking\W05\VisualBasicConsoleApp1\W05-VisualBasic-ConcreteSyntax.vbproj", "{0FD96A73-8F2D-45C2-A97C-DF6BA9BD4AAA}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "W05-VisualBasic-Concrete-Fish", "WaysOfLooking\W05\VisualBasicConsoleApp1\W05-VisualBasic-Concrete-Fish.vbproj", "{0FD96A73-8F2D-45C2-A97C-DF6BA9BD4AAA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WayOfLooking-05", "WayOfLooking-05", "{87B23FDB-9BB8-466B-85BE-2154E6E6D477}"
 EndProject
@@ -63,7 +63,9 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "W05-VisualBasic-Flowing-SSo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WayOfLooking-06", "WayOfLooking-06", "{FA2E1746-9135-422E-B0A1-A941ABA5FF36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W06-OOP-CS-ConcreteSyntax", "WaysOfLooking\W06\ObjectOrientedConsoleApp\W06-OOP-CS-ConcreteSyntax.csproj", "{4ADC24FA-2B02-49A1-9854-AE45FDBBDC13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W06-OOP-CS-Concrete-Fish", "WaysOfLooking\W06\ObjectOrientedConsoleApp\W06-OOP-CS-Concrete-Fish.csproj", "{4ADC24FA-2B02-49A1-9854-AE45FDBBDC13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W06-OOP-CS-Flowing-SSoT", "WaysOfLooking\W06\ObjectOrientedConsoleAppWithSSoT\W06-OOP-CS-Flowing-SSoT.csproj", "{DE66ABD5-D72E-45DD-AA5B-899540190A04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -289,6 +291,26 @@ Global
 		{4ADC24FA-2B02-49A1-9854-AE45FDBBDC13}.Release|x64.Build.0 = Release|Any CPU
 		{4ADC24FA-2B02-49A1-9854-AE45FDBBDC13}.Release|x86.ActiveCfg = Release|Any CPU
 		{4ADC24FA-2B02-49A1-9854-AE45FDBBDC13}.Release|x86.Build.0 = Release|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Debug|ARM.Build.0 = Debug|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Debug|x64.Build.0 = Debug|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Debug|x86.Build.0 = Debug|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Release|ARM.ActiveCfg = Release|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Release|ARM.Build.0 = Release|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Release|ARM64.Build.0 = Release|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Release|x64.ActiveCfg = Release|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Release|x64.Build.0 = Release|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Release|x86.ActiveCfg = Release|Any CPU
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -310,6 +332,7 @@ Global
 		{FCFAB09C-9318-4D9C-A1B1-99A9278CDA48} = {87B23FDB-9BB8-466B-85BE-2154E6E6D477}
 		{FA2E1746-9135-422E-B0A1-A941ABA5FF36} = {AF5F1FD3-FE59-48FF-BD18-035B780D8314}
 		{4ADC24FA-2B02-49A1-9854-AE45FDBBDC13} = {FA2E1746-9135-422E-B0A1-A941ABA5FF36}
+		{DE66ABD5-D72E-45DD-AA5B-899540190A04} = {FA2E1746-9135-422E-B0A1-A941ABA5FF36}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E06A3F43-24DA-461F-8D28-F58999BE70A1}

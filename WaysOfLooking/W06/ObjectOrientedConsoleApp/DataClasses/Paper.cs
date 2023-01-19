@@ -1,6 +1,6 @@
 ﻿namespace ObjectOrientedConsoleApp
 {
-    public class Paper : Shape
+    public class Paper : AbstractShape
     {
         public override int Score => 2;
         public override char OppCode => 'B';

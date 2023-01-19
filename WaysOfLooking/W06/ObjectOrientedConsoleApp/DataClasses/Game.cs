@@ -25,7 +25,7 @@
         }
 
 
-        public Shape CreateShape(char code)
+        public AbstractShape CreateShape(char code)
         {
             switch (code)
             {

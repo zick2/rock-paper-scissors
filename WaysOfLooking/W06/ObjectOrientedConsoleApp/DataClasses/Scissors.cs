@@ -1,6 +1,6 @@
 ﻿namespace ObjectOrientedConsoleApp
 {
-    public class Scissors : Shape
+    public class Scissors : AbstractShape
     {
         public override int Score => 3;
         public override char OppCode => 'C';

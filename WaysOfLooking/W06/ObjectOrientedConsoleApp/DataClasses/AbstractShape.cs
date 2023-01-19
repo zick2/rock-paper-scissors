@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ObjectOrientedConsoleApp
 {
-    public abstract class Shape
+    public abstract class AbstractShape
     {
-        public Shape(string name)
+        public AbstractShape(string name)
         {
             Name = name ?? throw new ArgumentNullException(nameof(name));
         }
@@ -19,12 +19,12 @@ namespace ObjectOrientedConsoleApp
         public abstract Char PlayerCode { get; }
         public abstract Char WinsAgainst { get; }
 
-        internal bool WinsTo(Shape opponentShape)
+        internal bool WinsTo(AbstractShape opponentShape)
         {
             return this.WinsAgainst == opponentShape.OppCode;
         }
 
-        internal bool LosesTo(Shape opponentShape)
+        internal bool LosesTo(AbstractShape opponentShape)
         {
             return opponentShape.WinsAgainst == this.OppCode;
         }

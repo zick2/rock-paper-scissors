@@ -18,8 +18,8 @@
 
         public void PlayRound(Game game)
         {
-            Shape playerShape = game.CreateShape(player_code);
-            Shape opponentShape = game.CreateShape(opp_code);
+            AbstractShape playerShape = game.CreateShape(player_code);
+            AbstractShape opponentShape = game.CreateShape(opp_code);
 
             if (playerShape.WinsTo(opponentShape))
             {

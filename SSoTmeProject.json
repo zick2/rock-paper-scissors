@@ -47,6 +47,28 @@
     },
     {
       "MatchedTranspiler": {
+        "TranspilerId": "fd14a7d7-472c-4dc6-8f5c-ff7baeb4f5a7",
+        "Name": "XmlToOdxml",
+        "Description": "Extract the Schema of an Xml file and then convert that into Odxml"
+      },
+      "ProjectTranspilerId": "81ea1a1d-28c2-4187-9aee-9f6c4480e444",
+      "Name": "XmlToOdxml",
+      "RelativePath": "/ODXML/RAW",
+      "CommandLine": "xml-to-odxml -i ../../SSoT/rps.xml -o DataSchema.odxml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "bbea1b94-36ed-44f6-8d99-20ac4c49f982",
+        "Name": "OdxmlToCleanOdxml",
+        "Description": "Allows for any data model to be \"cleaned up\" while preserving a \"map\" between the old/new models"
+      },
+      "ProjectTranspilerId": "b81a8ad2-5b61-4a6a-aa82-62b926ccdce6",
+      "Name": "OdxmlToCleanOdxml",
+      "RelativePath": "/ODXML",
+      "CommandLine": "odxml-to-clean-odxml -i RAW/DataSchema.odxml -i renames.xml"
+    },
+    {
+      "MatchedTranspiler": {
         "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
         "Name": "XmlXsltTransform",
         "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
@@ -91,25 +113,25 @@
     },
     {
       "MatchedTranspiler": {
-        "TranspilerId": "fd14a7d7-472c-4dc6-8f5c-ff7baeb4f5a7",
-        "Name": "XmlToOdxml",
-        "Description": "Extract the Schema of an Xml file and then convert that into Odxml"
+        "TranspilerId": "595b7fe7-7f64-44c2-b48c-d096d997211f",
+        "Name": "OdxmlToCSharpPOCOs",
+        "Description": "Odxml To CSharp POCOs"
       },
-      "ProjectTranspilerId": "81ea1a1d-28c2-4187-9aee-9f6c4480e444",
-      "Name": "XmlToOdxml",
-      "RelativePath": "/ODXML/RAW",
-      "CommandLine": "xml-to-odxml -i ../../SSoT/rps.xml -o DataSchema.odxml"
+      "ProjectTranspilerId": "d0994800-3db2-4dc9-808f-4e6a43b4eb99",
+      "Name": "OdxmlToCSharpPOCOs",
+      "RelativePath": "/WaysOfLooking/W06/ObjectOrientedConsoleAppWithSSoT/DataClasses",
+      "CommandLine": "odxml-to-csharp-pocos -i ..\\..\\..\\..\\ODXML\\DataSchema.odxml -p namespace=TWOLAT.RPS.Lib -p include-load-methods=false"
     },
     {
       "MatchedTranspiler": {
-        "TranspilerId": "bbea1b94-36ed-44f6-8d99-20ac4c49f982",
-        "Name": "OdxmlToCleanOdxml",
-        "Description": "Allows for any data model to be \"cleaned up\" while preserving a \"map\" between the old/new models"
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
       },
-      "ProjectTranspilerId": "b81a8ad2-5b61-4a6a-aa82-62b926ccdce6",
-      "Name": "OdxmlToCleanOdxml",
-      "RelativePath": "/ODXML",
-      "CommandLine": "odxml-to-clean-odxml -i RAW/DataSchema.odxml -i renames.xml"
+      "ProjectTranspilerId": "686040dc-b328-460a-93f3-71934704daa7",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/WaysOfLooking/W06/ObjectOrientedConsoleAppWithSSoT/DataClasses",
+      "CommandLine": "xml-xslt-transform -i ../../../../SSoT/rps.xml -i CreateConcreteClasses.xslt"
     }
   ]
 }

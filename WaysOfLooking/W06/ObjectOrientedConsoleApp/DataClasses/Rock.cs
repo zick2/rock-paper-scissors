@@ -1,6 +1,6 @@
 ﻿namespace ObjectOrientedConsoleApp
 {
-    public class Rock : Shape
+    public class Rock : AbstractShape
     {
         public override int Score => 1;
         public override char OppCode => 'A';
