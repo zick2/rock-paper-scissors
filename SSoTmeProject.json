@@ -80,6 +80,28 @@
     },
     {
       "MatchedTranspiler": {
+        "TranspilerId": "6dffda43-46a9-482a-9eca-c9061ab22fef",
+        "Name": "CsvToXml",
+        "Description": "Converts a CSV File into an XML File where the names of the elemnts are derived from the column names"
+      },
+      "ProjectTranspilerId": "e905757f-dd3b-4862-b324-168b93bbaaa7",
+      "Name": "CsvToXml",
+      "RelativePath": "/SSoT/WaysOfLooking",
+      "CommandLine": "csv-to-xml -i .\\WaysOfLooking.csv"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "b2cae332-b915-463e-8f21-0f83ab56e567",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/WaysOfLooking",
+      "CommandLine": "xml-xslt-transform -i ..\\SSoT\\WaysOfLooking\\WaysOfLooking.csv.xml -i CreateWaysOfLooking.xslt"
+    },
+    {
+      "MatchedTranspiler": {
         "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
         "Name": "XmlXsltTransform",
         "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."

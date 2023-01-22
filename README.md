@@ -1,3 +1,5 @@
+I have this readme:
+
 # 13 ways of Looking at Rock, Paper, Scissors
 
 ## Introduction
@@ -8,14 +10,20 @@ This repository is an omage to Scott Wlashin's article "13 ways of looking at a 
 The challenge used in this repository is the Rock, Paper, Scissors game from the 2022 Advent of Code day 2 prompt. The goal of the repository is to explore 13 different approaches to implementing the challenge, using various programming languages and techniques including C#, F#, Python, C++, JavaScript, TypeScript, D3 Visualizations, English README documentation and many more. 
 
 ## Actually 2 ways of looking at 13 ways....
-The "real" purpose of pulling the same problem apart 13 different ways is to demonstrate that there are 2 VERY different kinds of code. So almost 100% of the code in this repository was utlimately written by ChatGPT, and for each way of looking at the game, ChatGPT was actually asked to write the code in 3 different styles. 
+The "real" purpose of pulling the same problem apart 13 different ways is to demonstrate that there are 2 VERY different kinds of code. 
+
+### ChatGPT, Give me a Fish
+So almost 100% of the code in this repository was utlimately written by ChatGPT, and for each way of looking at the game, ChatGPT was actually asked to write the code in 3 different styles. 
 
 The first approach was just asking ChatGPT to give us a fish, where the prompt was given and the solution was provided in various programming languages like C#, F#, Python, C++, JavaScript and more. 
 
-I went through all 13 ways, and over, and over again, I asked ChatGPT for a fish.  First a C# fish.  Then an F# fish.  I call them "Concrete Fish" because it is a fish that represents a **specific set of choices** for how to solve the prompt, in the **concrete syntax** of a **specific language**.  English, C#, F#, Python, C++, JavaScript, OOP, D3 Visualization, Unit Tests, Documentation, Visual Basic, Golang and more.  So many different fish.
+I went through all 13 ways, and over, and over again, I asked ChatGPT for a fish.  First a C# fish.  Then an F# fish.  
+
+I call them "Concrete Fish" because it is a fish that represents a **specific set of choices** for how to solve the prompt, in the **concrete syntax** of a **specific language**.  English, C#, F#, Python, C++, JavaScript, OOP, D3 Visualization, Unit Tests, Documentation, Visual Basic, Golang and more.  So many different variations of concrete.
 
 At the end of 13 sessions with ChatGPT, I had 13 Concrete Fish, in 13 different languages.
 
+### ChatGPT, Teach me to Fish?
 The 2nd and 3rd styles involved asking ChatGPT to actually teach us how to fish - by providing reusable tools that can do the work we want now, and in the future, on-demand, without the need for ChatGPT's involvment on an ongoing basis.  
 
 This was accomplished using AI Capture.
@@ -31,50 +39,111 @@ So now, whenever the facts on the ground change, we can simply re-apply that kno
 We'll explore 13 here.
 
 ## How does this actually work?
-In the world of coding and problem-solving, the analogy of "giving a man a fish versus teaching him to fish" is particularly relevant. 
-
+In the world of coding and problem-solving, the analogy of "giving a man a fish versus teaching him to fish" is particularly relevant.
+ 
 Giving someone a fish, in this context, means providing them with a specific solution to a problem, while teaching them to fish means providing them with the tools and knowledge they need to solve similar problems on their own in the future. 
 
-ChatGPT can easily give you a fish, but the problem is that while often the fish is great, sometimes it's rotten, or it's such a big fish that ChatGPT gets 50% through the code and just stops.
+ChatGPT can easily give you fish.  The problem, however, is that while the fish is often great, sometimes it's also rotten, or it's such a big fish that ChatGPT can only describe 50% of it before it just stops.  
 
-Having it give us fishing poles that let us fish for the code ourselves is much more dynamic and flexible.
+Also, next time you ask it to write the same algorithm, the odds of the code following the same style/pattern is very unlikely.  These are problems that are likely to get better over time - but it will be a while before they are solved.
 
-In this section, we will explore the concept of "fish" vs. "fishing poles" in more detail.
+Having it give us fishing poles that let us fish for the code ourselves is much more dynamic and flexible approach.  In this section, we will explore the concept of "fish" vs. "fishing poles" in more detail.
 
-First, we will delve into the idea of "fish," which are specific solutions to problems that are based on a set of rules and conditions, provided in the concrete syntax of a specific language. They're basically "Concrete Fish".  As a result of this, these solutions are often brittle and inflexible, and may not adapt well to changes in the rules or conditions. 
+First, we will delve into the idea of "fish," which are specific solutions to problems that are based on a set of rules and conditions, provided in the concrete syntax of a specific language. They're basically "Concrete Fish".  
 
-In contrast, we will then discuss the idea of having ChatGPT first create a "knowledge graph" or "single source of truth" for the problem, and using that knowledge to create tools that are dramatically more adaptable and flexible to changes. 
+As a result of this, these solutions are often brittle and inflexible, and may not adapt well to changes in the rules or conditions. 
+
+In contrast, we will then discuss the idea of having ChatGPT first create a "knowledge graph" or "single source of truth" for the problem, in order that we can use that knowledge to create tools that are dramatically more adaptable and flexible to changes. 
 
 This approach allows for more dynamic and efficient problem-solving, akin to giving you a fishing pole instead of a fish.
 
-### ChatGPT - please teach me how to fish!
-In order for ChatGPT to "teach us how to fish", we first have to understand something that was not necessary - or documented during the first 13 sessions - and that is this:
+### ChatGPT - How do you fish?
+In the world of coding and problem-solving, the analogy of "giving a man a fish versus teaching him to fish" is particularly relevant. Giving someone a fish, in this context, means providing them with a specific solution to a problem, while teaching them to fish means providing them with the tools and knowledge they need to solve the problem.  This solution tends to be more flexible and responsive to changes, as well as sometimes being reusable for similar problems in the future.
 
-How do you, chat GPT understand the prompt I've given you?
+In order for ChatGPT to "teach us how to fish", we first have to understand something that was not necessary - or documented during the first 13 sessions - and that is this: 
 
-In other words, before we start writing code in a specific language, we might as ChatGPT:
+**Prompt:** How do you, ChatGPT, understand the prompt I've given you?
 
-Prompt: Please tell me YOUR understanding of the Rock Paper Scissors code challenge?
+In other words, before we start writing code in a specific language, we ask ChatGPT: "Please tell me YOUR understanding of the Rock, Paper, Scissors code challenge?". 
 
-This is obviously right in ChatGPT's wheel house and so it can easily spin off a few paragraphs explaing the game in it's own words.
+This is obviously right in ChatGPT's wheel house and so it can easily spin off a few paragraphs explaining the game in its own words. But then, you can do something interesting - you can ask it to give you those rules in a JSON format. 
 
-But then, you can do something interesting - you can ask it to give you those rules in a Json Format.  What we end up with (included below) Is rock-paper-scissors.json - basically a DATABASE with all of the rules from the prompt.  THe lists of the chapes, their codes, their scores, the outcomes of the games, the example game and what the expected outcomes are (helpful for automated united testing).  Basically - all of the important details from the initial english prompt - but in a format that will easily be accessible from all 13 ways, as well as virtually any OTHER way that we might come up with.
+What we end up with (included below) is rock-paper-scissors.json - basically a DATABASE with all of the rules from the prompt. The lists of the shapes, their codes, their scores, the outcomes
 
-So - for the 2nd round of questions - the prompt to ChatGPT is a little different.
+```
+{
+  "rock-paper-scissors": {
+    "name": "Rock Paper Scissors",
+    "rules": {
+      "shapes": [
+        {
+          "name": "Rock",
+          "opp_code": "A",
+          "player_code": "X",
+          "wins_against": "C",
+          "score": 1
+        },
+        {
+          "name": "Paper",
+          "opp_code": "B",
+          "player_code": "Y",
+          "wins_against": "A",
+          "score": 2
+        },
+        {
+          "name": "Scissors",
+          "opp_code": "C",
+          "player_code": "Z",
+          "wins_against": "B",
+          "score": 3
+        }
+      ],
+      "outcomes": {
+        "win": 6,
+        "loss": 0,
+        "draw": 3
+      },
+      "games": {
+        "name": "Example Game",
+        "score": 15,
+        "rounds": [
+          {
+            "player_code": "Y",
+            "opp_code": "A",
+            "result": "win",
+            "score": 8,
+            "choice_score": 2,
+            "outcome_score": 6
+          },
+          {
+            "player_code": "X",
+            "opp_code": "B",
+            "result": "loss",
+            "score": 1,
+            "choice_score": 1,
+            "outcome_score": 0
+          },
+          {
+            "player_code": "Z",
+            "opp_code": "C",
+            "result": "draw",
+            "score": 6,
+            "choice_score": 3,
+            "outcome_score": 3
+          }
+        ]
+      }
+    }
+  }
+}
+```
 
-Now - we can paste into the original prompt:
-    1) The original english prompt
-    2) the json "Single source of truth" that is just a machine readable list of the rules.
-    3) Finally (and most importantly) we can ChatGPT THIS question:
+So - for the 2nd round of questions, we can now ask ChatGPT a different kind of question. Assuming that ChatGPT has already given us the JSON "Single source of truth" that is a machine readable list of the rules that it created to constrain its own understanding of the parameters, we can now ask ChatGPT to write a C# program that calculates the answer to the sample game provided (and find the number 15). This can be done effortlessly by ChatGPT, with a couple of key observations about the 2nd kind of code:
 
-Assuming that you have this Json set of specific shapes, codes, rules etc, can you please write me a C# program that calculate the answer to the sample game provided (and find the number 15).
+1. When the rules change, the concrete fish that was based on all of the specific rules in the original prompt will all keep those original values in concrete. So even if we change ABC to DEF - the concrete fish will still all show ABC - because those values were essentially etched in stone.
 
-Add it turns out that ChatGPT can do this JUST as effortlessly, with a couple of REALLY key observations about the 2nd kind of code.
-
-1) When the rules change, the concrete fish that was based on all of the specific rules in the original prompt will all keep those original values in concrete.  So even if we change ABC to DEF - the concrete fish will still all show ABC - because those values were essentially etched in stone.
-
-2) ALl of the dynamic fish that are simply iterating over the collection of shapes in a JSON file provided at RUN time will continue to do so even if the names, or codes, or scores of those fish change, or even if we go from have 3 shapes to have 20.  Becuase the code in this dynamic version doesn't ever mention ROCKS or A or X or Z.  It will tend to be code that reads more like this:
-
+2. All of the dynamic fish that are simply iterating over the collection of shapes in a JSON file provided at run-time will continue to do so even if the names, or codes, or scores of those fish change, or even if we go from having 3 shapes to having 20. Because the code in this dynamic version doesn't ever mention ROCKS or A or X or Z. It will tend to be code that reads more like this:
+```
 var json = LoadJson("rps-rules.json")
 
 player_wins(opp_code, player_code)
@@ -84,10 +153,11 @@ player_wins(opp_code, player_code)
 player_loses(opp_code, player_code)
     if (json[shapes[matching opp_code]/wins_against] == player_code) return true
     else return false
+```
+As you can see - this code is completely decoupled from the specific shapes or codes. It describes how, RELATIVE TO an external model of the rules, to solve the problem. And so as the names/codes/scores or even complete lists of the shapes change - THIS code will just "follow along" where the brittle, concrete code will unsurprisingly, immediately start to crack and fall apart.
 
-As you can see - this code is completely decoupled from the specific shapes or codes.  It describes how ... RELATIVE TO an external model of the rules ... to solve the problem.  And so as the names/codes/scores or even complete lists of the shapes change - THIS Code will just "follow allong" where the brittle, concrete code will unsurprisingly, immediately start to crack and fall appart.
-
-3B - Please give me a fishing poll that I can use to fish for myself.
+### Give me a Fishing Pole - I'm ready to fish myself
+Please give me a fishing poll that I can use to fish for myself.
 
 The 3rd approach that I used with ChatGPT that can work on it's own in a variety of ways, but which AI Capture is specifically designed to help with - we can actually ask ChatGPT to write a tool for us.
 
@@ -160,6 +230,4 @@ This strategy guide predicts and recommends the following:
 In the first round, your opponent will choose Rock (A), and you should choose Paper (Y). This ends in a win for you with a score of 8 (2 because you chose Paper + 6 because you won).
 In the second round, your opponent will choose Paper (B), and you should choose Rock (X). This ends in a loss for you with a score of 1 (1 + 0).
 The third round is a draw with both players choosing Scissors, giving you a score of 3 + 3 = 6.
-In this example, if you were to follow the strategy guide, you would get a total score of 15 (8 + 1 + 6).
-
-What would your total score be if everything goes exactly according to your strategy guide?
+In this example, if you were to follow the strategy guide, you would get a total score of 15 (8 + 1 + 6). What would your total score be if everything goes exactly according to your strategy guide?

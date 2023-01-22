@@ -1,19 +1,18 @@
 
-// Shapes
+
 let player_Rock_code = "X"
-let opp_Rock_code = "A"
+let opp_Rock_code = "A
 
 let player_Paper_code = "Y"
-let opp_Paper_code = "B"
+let opp_Paper_code = "B
 
 let player_Scissors_code = "Z"
-let opp_Scissors_code = "C"
+let opp_Scissors_code = "C
 
-// Outcomes
 let win_score = 6
 let loss_score = 0
 let draw_score = 3
-// Gameplay
+
 // Function to check if player wins
 let PlayerWins (opponent_choice: char) (player_choice:char) =
     match (opponent_choice, player_choice) with
@@ -60,7 +59,6 @@ let CalculateGameScore (strategy_guide: string list) =
 
     total_score
 
-// Concusion
 let strategy_guide = [ "A Y"; "B X"; "C Z";]
 let total_score = CalculateGameScore strategy_guide
 printfn "Total score: %d" total_score
