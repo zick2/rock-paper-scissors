@@ -1,0 +1,46 @@
+{
+  "yaml": {
+    "shapes": [
+      {
+        "name": "Rock",
+        "opp_code": "A",
+        "player_code": "X",
+        "score": 1
+      },
+      {
+        "name": "Paper",
+        "opp_code": "B",
+        "player_code": "Y",
+        "score": 2
+      },
+      {
+        "name": "Scissors",
+        "opp_code": "C",
+        "player_code": "Z",
+        "score": 3
+      }
+    ],
+    "outcomes": {
+      "win": 6,
+      "loss": 0,
+      "draw": 3
+    },
+    "games": {
+      "name": "Example Game",
+      "rounds": [
+        {
+          "player_code": "Y",
+          "opp_code": "A"
+        },
+        {
+          "player_code": "X",
+          "opp_code": "B"
+        },
+        {
+          "player_code": "Z",
+          "opp_code": "C"
+        }
+      ]
+    }
+  }
+}

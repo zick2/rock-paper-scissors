@@ -32,24 +32,28 @@
             }
         ],
         "outcomes": {
-            "win": 12,
-            "loss": 3,
-            "draw": 6
+            "win": 13,
+            "loss": 4,
+            "draw": 7
         },
         "games": {
             "name": "Example Game",
             "rounds": [
                 {
-                    "player_code": "Z",
-                    "opp_code": "E"
-                },
-                {
-                    "player_code": "Y",
-                    "opp_code": "S"
+                    "player_code": "X",
+                    "opp_code": "P"
                 },
                 {
                     "player_code": "W",
                     "opp_code": "S"
+                },
+                {
+                    "player_code": "Y",
+                    "opp_code": "E"
+                },
+                {
+                    "player_code": "W",
+                    "opp_code": "T"
                 }
             ]
         }

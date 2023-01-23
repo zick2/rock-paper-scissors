@@ -28,9 +28,10 @@ namespace TWOLAT.RPS.Lib
                 outcome_score = Outcome.DrawScore;
             }
 
-            var score = choice_score + outcome_score;
+            var round_score = choice_score + outcome_score;
+            Console.WriteLine($"Round Score: {round_score}");
             if (game.Score is null) game.Score = 0;
-            game.Score += score;
+            game.Score += round_score;
         }
 
     }

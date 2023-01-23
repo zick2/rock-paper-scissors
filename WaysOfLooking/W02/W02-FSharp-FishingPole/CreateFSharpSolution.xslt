@@ -61,6 +61,8 @@ let CalculateGameScore (strategy_guide: string list) =
 
         let choice_score = CalculateChoiceScore player_choice
         let round_score = choice_score + outcome_score
+        printfn "Round score: %d" round_score
+
         total_score &lt;- total_score + round_score
 
     total_score

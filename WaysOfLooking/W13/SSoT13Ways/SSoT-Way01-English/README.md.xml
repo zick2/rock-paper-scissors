@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<TextFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <InputText># Advent of Code - Rock, Paper Scissors
+
+In this version, the only rules for the input format are that it contain these 6 sets of data, surrounded by parentheses.
+
+ - shape, names, separated, by commas
+ - player, codes, separated, by commas
+ - opponent, codes
+ - shape, scores
+ - wins, againt, player, codes
+ - outcome, scores
+
+Like this: These rules that define the traditiona game with the sames (Rock, Paper, and Scissors). 
+
+Each shape has a unique code for the player (X, Y, Z) and opponent (A, B, C) to use. Each shape also has a score (1, 2, 3) and a shape that it wins against (C, A, B). The game also has specific outcomes for win, loss, and draw with scores of (6, 0, and 3) respectively. </InputText>
+  <Lines>
+    <string># Advent of Code - Rock, Paper Scissors</string>
+    <string></string>
+    <string>In this version, the only rules for the input format are that it contain these 6 sets of data, surrounded by parentheses.</string>
+    <string></string>
+    <string> - shape, names, separated, by commas</string>
+    <string> - player, codes, separated, by commas</string>
+    <string> - opponent, codes</string>
+    <string> - shape, scores</string>
+    <string> - wins, againt, player, codes</string>
+    <string> - outcome, scores</string>
+    <string></string>
+    <string>Like this: These rules that define the traditiona game with the sames (Rock, Paper, and Scissors). </string>
+    <string></string>
+    <string>Each shape has a unique code for the player (X, Y, Z) and opponent (A, B, C) to use. Each shape also has a score (1, 2, 3) and a shape that it wins against (C, A, B). The game also has specific outcomes for win, loss, and draw with scores of (6, 0, and 3) respectively. </string>
+  </Lines>
+  <Words />
+  <PartsOfSpeech />
+  <Sentences />
+</TextFile>

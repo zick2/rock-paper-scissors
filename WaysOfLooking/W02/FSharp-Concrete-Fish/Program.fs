@@ -11,17 +11,17 @@ let opp_Scissors_code = "C"
 // Function to check if player wins
 let PlayerWins (opponent_choice: char) (player_choice: char) =
     match opponent_choice, player_choice with
-    | 'A', 'Z' -> true
-    | 'B', 'X' -> true
-    | 'C', 'Y' -> true
+    | 'A', 'Y' -> true
+    | 'B', 'Z' -> true
+    | 'C', 'X' -> true
     | _ -> false
 
 // Function to check if player loses
 let PlayerLosses (opponent_choice: char) (player_choice: char) =
     match opponent_choice, player_choice with
-    | 'A', 'Y' -> true
-    | 'B', 'Z' -> true
-    | 'C', 'X' -> true
+    | 'A', 'Z' -> true
+    | 'B', 'X' -> true
+    | 'C', 'Y' -> true
     | _ -> false
 
 // Function to calculate the score for a single round
@@ -51,7 +51,10 @@ let CalculateGameScore (strategy_guide: string list) =
 
         let choice_score = CalculateChoiceSCore player_choice
         let round_score = choice_score + outcome_score
+        printfn "Round score: %d" round_score
+        
         total_score <- total_score + round_score
+
 
     total_score
 

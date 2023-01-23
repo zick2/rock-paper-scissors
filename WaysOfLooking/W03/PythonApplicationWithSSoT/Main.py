@@ -4,4 +4,4 @@ from PythonApplicationWithSSoT import *
 total_score = CalculateGameScore(strategy_guide)
 
 # Print total score
-print(total_score)
+print("Total Score: " + str(total_score))

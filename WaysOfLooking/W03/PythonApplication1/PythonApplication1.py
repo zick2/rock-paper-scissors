@@ -19,7 +19,7 @@ def CalculateGameScore(strategy_guide):
 
         choice_score = CalculateChoiceSCore(player_choice)
         round_score = choice_score + outcome_score
-        print(round_score)
+        print("Round Score: " + str(round_score))
         total_score += round_score
     return total_score
 
@@ -65,4 +65,4 @@ strategy_guide = ['A Y', 'B X', 'C Z']
 total_score = CalculateGameScore(strategy_guide)
 
 # Print total score
-print(total_score)
+print("Total Score: " + str(total_score))

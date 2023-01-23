@@ -18,7 +18,7 @@ def CalculateGameScore(strategy_guide):
         outcome_score = CalculateRoundScore(opponent_choice, player_choice)
         choice_score = CalculateChoiceSCore(player_choice)
         round_score = choice_score + outcome_score
-        print(round_score)
+        print("Round Score: " + str(round_score))
         total_score += round_score
     return total_score
 

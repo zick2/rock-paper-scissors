@@ -193,6 +193,12 @@ public static class RPSHelper {
     }
 }```</PolePrompt>
     <Directory>W01</Directory>
+    <RelativePathToFish>/ConsoleApp1/bin/Debug/net7.0/W01-CSharp-Concrete-Fish.exe</RelativePathToFish>
+    <RelativePathToDynamicFish>/W01-Dynamic-Fish/bin/Debug/net7.0/W01-CSharp-Dynamic-Fish.exe</RelativePathToDynamicFish>
+    <RelativePathToFishingPole>/W01-Dynamic-Fish/bin/Debug/net7.0/W01-CSharp-Dynamic-Fish.exe</RelativePathToFishingPole>
+    <DataFormat>Custom</DataFormat>
+    <Game>Rock, Paper, Scissors</Game>
+    <Theme>Traditional</Theme>
   </WaysOfLooking>
   <WaysOfLooking>
     <Name>W02-Fsharp</Name>
@@ -209,6 +215,12 @@ public static class RPSHelper {
 
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W02</Directory>
+    <RelativePathToFish>/FSharp-Concrete-Fish\bin\Debug\net7.0\W02-FSharp-Concrete-Fish.exe</RelativePathToFish>
+    <RelativePathToDynamicFish>/W02-Dynamic-Fish\bin\Debug\net7.0\W02-FSharp-Dynamic-Fish.exe</RelativePathToDynamicFish>
+    <RelativePathToFishingPole>/W02-FSharp-FishingPole/bin/Debug/net7.0/W02-FSharp-Fishing-Pole.exe</RelativePathToFishingPole>
+    <DataFormat>YAML</DataFormat>
+    <Game>Rock, Paper, Scissors, Lizard, Spock</Game>
+    <Theme>Big Bang Theor</Theme>
   </WaysOfLooking>
   <WaysOfLooking>
     <Name>W03-Python</Name>
@@ -225,6 +237,12 @@ public static class RPSHelper {
 
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W03</Directory>
+    <RelativePathToFish>/PythonApplication1\PythonApplication1.py</RelativePathToFish>
+    <RelativePathToDynamicFish>/W03-Python-Dynamic-Fish\W03_Pyton_Dynamic_Fish.py</RelativePathToDynamicFish>
+    <RelativePathToFishingPole>/PythonApplicationWithSSoT\Main.py</RelativePathToFishingPole>
+    <DataFormat>JSON</DataFormat>
+    <Game>Rock, Paper, Scissors</Game>
+    <Theme>Advent of code</Theme>
   </WaysOfLooking>
   <WaysOfLooking>
     <Name>W04-Java</Name>
@@ -241,6 +259,13 @@ public static class RPSHelper {
 
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W04</Directory>
+    <RelativePathToFish>/Java-Concrete-Fish/RockPaperScissors.java</RelativePathToFish>
+    <RelativePathToDynamicFish>/Java-Dynamic-Fish\RockPaperScissors.java</RelativePathToDynamicFish>
+    <RelativePathToFishingPole>/Java-Fishing-Pole\RockPaperScissors.java</RelativePathToFishingPole>
+    <DynamicPrefix>java -cp ".;json-20220924.jar"</DynamicPrefix>
+    <DataFormat>TOML</DataFormat>
+    <Game>Hammer, Screwdriver, Saw</Game>
+    <Theme>Tools</Theme>
   </WaysOfLooking>
   <WaysOfLooking>
     <Name>W05-VisualBasic</Name>
@@ -257,6 +282,12 @@ public static class RPSHelper {
 
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W05</Directory>
+    <RelativePathToFish>/VisualBasicConsoleApp1\bin\Debug\net7.0\W05-VisualBasic-Concrete-Fish.exe</RelativePathToFish>
+    <RelativePathToDynamicFish>/W05-VisualBasic-Dynamic-Fish\bin\Debug\net7.0\W05-VisualBasic-Dynamic-Fish.exe</RelativePathToDynamicFish>
+    <RelativePathToFishingPole>/VisualBasicConsoleAppWithSSoT\bin\Debug\net7.0\W05-VisualBasic-Fishing-Pole.exe</RelativePathToFishingPole>
+    <DataFormat>HJSON</DataFormat>
+    <Game>Vampire, Werewolf, Hunter, Priest, Zombie</Game>
+    <Theme>Underworld</Theme>
   </WaysOfLooking>
   <WaysOfLooking>
     <Name>W06-CSharpOOP</Name>
@@ -273,6 +304,11 @@ public static class RPSHelper {
 
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W06</Directory>
+    <RelativePathToFish>/ObjectOrientedConsoleApp/bin/Debug/net7.0/W06-OOP-CS-Concrete-Fish.exe</RelativePathToFish>
+    <RelativePathToFishingPole>/ObjectOrientedConsoleAppWithSSoT/bin/Debug/net7.0/W06-OOP-CS-Flowing-SSoT.exe</RelativePathToFishingPole>
+    <DataFormat>CSV</DataFormat>
+    <Game>Knight, Archer, Mage</Game>
+    <Theme>Magical</Theme>
   </WaysOfLooking>
   <WaysOfLooking>
     <Name>W07-JavaScript</Name>
@@ -289,6 +325,9 @@ public static class RPSHelper {
 
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W07</Directory>
+    <DataFormat>XML</DataFormat>
+    <Game>Blade, Shield, Armor</Game>
+    <Theme>Medeval</Theme>
   </WaysOfLooking>
   <WaysOfLooking>
     <Name>W08-D3Visualization</Name>
@@ -305,6 +344,9 @@ public static class RPSHelper {
 
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W08</Directory>
+    <DataFormat>INI</DataFormat>
+    <Game>Fire, Water, Grass</Game>
+    <Theme>Pokeman</Theme>
   </WaysOfLooking>
   <WaysOfLooking>
     <Name>W09-Golang</Name>
@@ -321,6 +363,12 @@ public static class RPSHelper {
 
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W09</Directory>
+    <RelativePathToFish>/Concrete-Fish\RockPaperScissors.go</RelativePathToFish>
+    <RelativePathToDynamicFish>/Dynamic-Fish\RockPaperScissors.go</RelativePathToDynamicFish>
+    <RelativePathToFishingPole>/Fishing-Pole\RockPaperScissors.go</RelativePathToFishingPole>
+    <DataFormat>Avro</DataFormat>
+    <Game>Phaser, Shield, EMP, Transporter</Game>
+    <Theme>Star Trek</Theme>
   </WaysOfLooking>
   <WaysOfLooking>
     <Name>W10-Ruby</Name>
@@ -337,6 +385,9 @@ public static class RPSHelper {
 
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W10</Directory>
+    <DataFormat>SQL-Lite</DataFormat>
+    <Game>Earth, Fire, Water</Game>
+    <Theme>Elements</Theme>
   </WaysOfLooking>
   <WaysOfLooking>
     <Name>W11-PHP</Name>
@@ -353,6 +404,9 @@ public static class RPSHelper {
 
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W11</Directory>
+    <DataFormat>JSON-LD</DataFormat>
+    <Game>Dragon, Knight, Wizard, Sorcerer, Demon</Game>
+    <Theme>Fantasy</Theme>
   </WaysOfLooking>
   <WaysOfLooking>
     <Name>W12-CPP</Name>
@@ -369,6 +423,9 @@ public static class RPSHelper {
 
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W12</Directory>
+    <DataFormat>NA</DataFormat>
+    <Game>RPS 13 Ways</Game>
+    <Theme>Recursive</Theme>
   </WaysOfLooking>
   <WaysOfLooking>
     <Name>W13-ManySingleSourcesOfTruth</Name>

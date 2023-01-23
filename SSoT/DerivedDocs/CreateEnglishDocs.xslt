@@ -5,7 +5,7 @@
         <FileSet>
             <FileSetFiles>
                 <FileSetFile>
-                    <RelativePath>../../READMEwithSSoT.md</RelativePath>
+                    <RelativePath>../../README-Dynamic.md</RelativePath>
                     <FileContents>
         <xsl:text># </xsl:text>
         <xsl:value-of select="*/name"/>

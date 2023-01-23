@@ -19,7 +19,7 @@ Module Program
             Dim outcome_score As Integer = CalculateRoundScore(opponent_choice, player_choice)
             Dim choice_score As Integer = CalculateChoiceSCore(player_choice)
             Dim round_score As Integer = choice_score + outcome_score
-            Console.WriteLine(round_score)
+            Console.WriteLine($"Round Score: {round_score}")
             total_score += round_score
         Next
         Return total_score
@@ -78,6 +78,6 @@ Module Program
 
 
     Sub Main(args As String())
-        Console.WriteLine(total_score)
+        Console.WriteLine($"Total Score: {total_score}")
     End Sub
 End Module

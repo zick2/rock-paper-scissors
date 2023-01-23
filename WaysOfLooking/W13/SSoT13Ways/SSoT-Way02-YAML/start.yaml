@@ -1,0 +1,42 @@
+﻿yaml:
+    shapes:
+      - name: Rock
+        opp_code: A
+        player_code: X
+        score: 6
+      - name: Paper
+        opp_code: B
+        player_code: Y
+        score: 2
+      - name: Scissors
+        opp_code: C
+        player_code: Z
+        score: 3
+      - name: Lizard
+        opp_code: D
+        player_code: W
+        score: 4
+      - name: Spock
+        opp_code: E
+        player_code: V
+        score: 4
+
+    outcomes:
+      win: 8
+      loss: 3
+      draw: 5
+
+    games:
+      name: Example Game
+      score: 15
+      rounds:
+      - player_code: Y
+        opp_code: A
+      - player_code: X
+        opp_code: B
+      - player_code: Z
+        opp_code: C
+      - player_code: W
+        opp_code: D
+      - player_code: V
+        opp_code: E

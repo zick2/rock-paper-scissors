@@ -49,7 +49,7 @@
         <xsl:text>&#10;</xsl:text>
         <xsl:text>        Dim round_score As Integer = choice_score + outcome_score</xsl:text>
         <xsl:text>&#10;</xsl:text>
-        <xsl:text>        Console.WriteLine(round_score)</xsl:text>
+        <xsl:text>        Console.WriteLine($"Round Score: {round_score}")</xsl:text>
         <xsl:text>&#10;</xsl:text>
         <xsl:text>        total_score += round_score</xsl:text>
         <xsl:text>&#10;</xsl:text>
@@ -144,7 +144,7 @@
 
 
         Sub Main(args As String())
-        Console.WriteLine(total_score)
+        Console.WriteLine($"Total Score: {total_score}")
         End Sub
 
         End Module

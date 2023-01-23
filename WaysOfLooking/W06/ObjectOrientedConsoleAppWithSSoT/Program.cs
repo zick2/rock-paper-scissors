@@ -14,7 +14,7 @@ namespace ObjectOrientedConsoleApp
 
             game.PlayGame();
 
-            Console.WriteLine("Score: " + game.Score);
+            Console.WriteLine("Total Score: " + game.Score);
         }
     }
 }

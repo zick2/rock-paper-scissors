@@ -1,56 +1,81 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.Text;
 
 namespace TestProject
 {
-    public class SharedTests
+    public partial class SharedTests
     {
-        public string ExpectedOutput { get; private set; }
-        public string RootPath { get; private set; }
-        public string ExpectedOutput1
+        public static string RPSJsonFileName { get => "C:/Users/auto1/go/src/github.com/eejai42/rock-paper-scissors/SSoT/rps.json"; }
+        public static string WaysOfLookingRootPath { get => "C:/Users/auto1/go/src/github.com/eejai42/rock-paper-scissors/WaysOfLooking/"; }
+        private static dynamic jsonObject;
+
+        static SharedTests()
+        {
+            string jsonString = File.ReadAllText(RPSJsonFileName);
+            jsonObject = JsonConvert.DeserializeObject(jsonString);
+        }
+
+        public string ExpectedOutput
         {
             get
             {
-                return @"Round Score: 8
-Round Score: 1
-Round Score: 6
-Total Score: 15";
+                StringBuilder expectedOutput = new StringBuilder();
+                dynamic rounds = jsonObject["rock-paper-scissors"]["rules"]["games"]["rounds"];
+                foreach (dynamic round in rounds)
+                {
+                    expectedOutput.AppendLine($"Round Score: {round.score}");
+                }
+                expectedOutput.AppendLine($"Total Score: {jsonObject["rock-paper-scissors"]["rules"]["games"]["score"]}");
+                return expectedOutput.ToString().ToLower().Trim();
             }
         }
 
-        public string ExpectedOutput2
+        public int FinalScore
         {
-            get
-            { 
-                return @"Round Score: 80
-Round Score: 10
-Round Score: 60
-Total Score: 150";
-            }
-        }
-
-        public string ExpectedOutput3
-        {
-            get
-            {
-                return @"Round Score: 19
-Round Score: 20
-Round Score: 8
-Total Score: 47";
-            }
+            get { return jsonObject["rock-paper-scissors"]["rules"]["games"]["score"]; }
         }
 
         [SetUp]
         public virtual void Setup()
         {
-            this.ExpectedOutput = this.ExpectedOutput1.ToLower();
-            this.RootPath = "C:/Users/auto1/go/src/github.com/eejai42/rock-paper-scissors/";
+            // Do nothing here
         }
 
-        internal string Invoke(string relativePathToExecutable, string args = "", int timeout = 30)
+
+        internal string Invoke(string relativePathToExecutable, string args = "", int timeout = 30, bool _2ndJavaCall = false)
         {
-            var fullPathToExecutable = Path.Combine(this.RootPath, relativePathToExecutable.Trim("//".ToCharArray()));
+            var fullPathToExecutable = Path.Combine(WaysOfLookingRootPath, relativePathToExecutable.Trim("\\/".ToCharArray()));
+            if (fullPathToExecutable.EndsWith(".py"))
+            {
+                args = fullPathToExecutable;
+                fullPathToExecutable = "python";
+            }
+            if (fullPathToExecutable.EndsWith(".go"))
+            {
+                args = $"run {fullPathToExecutable}";
+                fullPathToExecutable = "go";
+            }
+            bool isJava = fullPathToExecutable.EndsWith(".java");
+            if (isJava)
+            {
+                Environment.CurrentDirectory = Path.GetDirectoryName(fullPathToExecutable);
+                if (_2ndJavaCall)
+                {
+                    args = Path.GetFileNameWithoutExtension(fullPathToExecutable);
+                }
+                else
+                {
+                    args = Path.GetFileName(fullPathToExecutable);
+                }
+                var jarFiles = Directory.GetFiles(".", "*.jar");
+                if (jarFiles.Any())
+                {
+                    args = " -cp \".;" + String.Join(",", jarFiles.Select(jarFile => Path.GetFileName(jarFile))) + "\" " + args;
+                }
+                fullPathToExecutable = _2ndJavaCall ? "java" : "javac";
+            }
             var process = new Process
             {
                 StartInfo = new ProcessStartInfo
@@ -115,6 +140,12 @@ Expect Output:
 ****************************
 Output Received:
 {outputBuilder.ToString().ToLower()}");
+
+                    if (isJava && !_2ndJavaCall)
+                    {
+                        var _2ndOutput = this.Invoke(relativePathToExecutable, args, timeout, true);
+                        outputBuilder.Append(_2ndOutput);
+                    }
 
                     return outputBuilder.ToString().ToLower().Trim();
                 }

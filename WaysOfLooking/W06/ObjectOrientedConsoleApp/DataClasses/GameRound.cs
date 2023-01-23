@@ -5,7 +5,7 @@
         public char player_code { get; set; }
         public char opp_code { get; set; }
         public string result { get; set; }
-        public int score { get; set; }
+        public int round_score { get; set; }
         public int choice_score { get; set; }
         public int outcome_score { get; set; }
 
@@ -38,8 +38,9 @@
             }
 
             choice_score = playerShape.Score;
-            score = choice_score + outcome_score;
-            game.Score += score;
+            round_score = choice_score + outcome_score;
+            Console.WriteLine($"Round Score: {round_score}");
+            game.Score += round_score;
         }
 
 

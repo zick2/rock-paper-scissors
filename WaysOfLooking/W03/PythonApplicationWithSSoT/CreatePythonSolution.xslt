@@ -25,7 +25,7 @@ opp_<xsl:value-of select="name"/>_code = "<xsl:value-of select="opp_code"/>"</xs
         <xsl:text>        outcome_score = CalculateRoundScore(opponent_choice, player_choice)&#10;</xsl:text>
         <xsl:text>        choice_score = CalculateChoiceSCore(player_choice)&#10;</xsl:text>
         <xsl:text>        round_score = choice_score + outcome_score&#10;</xsl:text>
-        <xsl:text>        print(round_score)&#10;</xsl:text>
+        <xsl:text>        print("Round Score: " + str(round_score))&#10;</xsl:text>
         <xsl:text>        total_score += round_score&#10;</xsl:text>
         <xsl:text>    return total_score&#10;&#10;</xsl:text>
         <xsl:apply-templates select="//rules/outcomes"/>

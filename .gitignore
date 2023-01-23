@@ -8,3 +8,4 @@
 /WaysOfLooking/W04/readme/**/*
 **/node_modules/**/*
 /**/**.user
+**/*.pyc
