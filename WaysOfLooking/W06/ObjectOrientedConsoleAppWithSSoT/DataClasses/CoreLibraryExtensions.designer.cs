@@ -23,12 +23,9 @@ namespace TWOLAT.RPS.Lib
         
         public static void AddSampleGame(this Game game)
         {
-            game.Games_GameRounds.Add(new GameRound('Y', 'A'));// win:
-            Paper vs. Rock
-            game.Games_GameRounds.Add(new GameRound('X', 'B'));// loss:
-            Rock vs. Paper
-            game.Games_GameRounds.Add(new GameRound('Z', 'C'));// draw:
-            Scissors vs. Scissors
+            game.Games_GameRounds.Add(new GameRound('Y', 'A'));// win: Paper vs. Rock
+            game.Games_GameRounds.Add(new GameRound('X', 'B'));// loss: Rock vs. Paper
+            game.Games_GameRounds.Add(new GameRound('Z', 'C'));// draw: Scissors vs. Scissors
         }
     }
 

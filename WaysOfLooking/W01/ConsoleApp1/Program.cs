@@ -54,11 +54,11 @@ class RockPaperScissors
         switch (opponentChoice)
         {
             case 'A':
-                return playerChoice == 'X';
-            case 'B':
-                return playerChoice == 'Y';
-            case 'C':
                 return playerChoice == 'Z';
+            case 'B':
+                return playerChoice == 'X';
+            case 'C':
+                return playerChoice == 'Y';
             default:
                 return false;
         }
@@ -73,6 +73,7 @@ class RockPaperScissors
             char playerChoice = strategyGuide[i + 1];
             int roundScore = CalculateRoundScore(opponentChoice, playerChoice);
             totalScore += roundScore;
+            Console.WriteLine($"Round Score: {roundScore}");
         }
         return totalScore;
     }
@@ -81,6 +82,6 @@ class RockPaperScissors
     {
         string strategyGuide = "AYBXCZ";
         int totalScore = CalculateGameScore(strategyGuide);
-        Console.WriteLine("Total score: " + totalScore);
+        Console.WriteLine($"Total Score: {totalScore}");
     }
 }

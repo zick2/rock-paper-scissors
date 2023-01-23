@@ -59,7 +59,8 @@ namespace TWOLAT.RPS.Lib
         public static void AddSampleGame(this Game game)
         {<xsl:for-each select="//games/rounds">
             game.Games_GameRounds.Add(new GameRound('<xsl:value-of select="player_code"/>', '<xsl:value-of select="opp_code"/>'));<xsl:text></xsl:text>
-            <xsl:text>// </xsl:text><xsl:value-of select="result" />:
+            <xsl:text>// </xsl:text><xsl:value-of select="result" />
+            <xsl:text>: </xsl:text>
             <xsl:value-of select="//shapes[player_code=current()/player_code]/name" /> vs. <xsl:value-of select="//shapes[opp_code=current()/opp_code]/name" /> 
     </xsl:for-each>
         }

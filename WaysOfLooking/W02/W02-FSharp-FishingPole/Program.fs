@@ -1,13 +1,13 @@
 
 
 let player_Rock_code = "X"
-let opp_Rock_code = "A
+let opp_Rock_code = "A"
 
 let player_Paper_code = "Y"
-let opp_Paper_code = "B
+let opp_Paper_code = "B"
 
 let player_Scissors_code = "Z"
-let opp_Scissors_code = "C
+let opp_Scissors_code = "C"
 
 let win_score = 6
 let loss_score = 0

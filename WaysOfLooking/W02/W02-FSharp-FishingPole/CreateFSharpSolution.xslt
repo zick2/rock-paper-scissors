@@ -29,8 +29,8 @@
     </xsl:template>
 
     <xsl:template match="shapes" mode="init">
-        <xsl:text>&#10;&#10;let player_</xsl:text><xsl:value-of select="name"/><xsl:text>_code = "</xsl:text><xsl:value-of select="player_code"/>
-        <xsl:text>"&#10;let opp_</xsl:text><xsl:value-of select="name"/><xsl:text>_code = "</xsl:text><xsl:value-of select="opp_code"/>
+        <xsl:text>&#10;&#10;let player_</xsl:text><xsl:value-of select="name"/><xsl:text>_code = "</xsl:text><xsl:value-of select="player_code"/><xsl:text>"</xsl:text>
+        <xsl:text>&#10;let opp_</xsl:text><xsl:value-of select="name"/><xsl:text>_code = "</xsl:text><xsl:value-of select="opp_code"/><xsl:text>"</xsl:text>
     </xsl:template>
 
     <xsl:template match="outcomes" mode="funcs">        
