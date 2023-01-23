@@ -6,6 +6,7 @@ namespace TestProject
 {
     public class SharedTests
     {
+        public string ExpectedOutput { get; private set; }
         public string RootPath { get; private set; }
         public string ExpectedOutput1
         {
@@ -18,10 +19,10 @@ Total Score: 15";
             }
         }
 
-        public string ExpectedOutput12
+        public string ExpectedOutput2
         {
             get
-            {
+            { 
                 return @"Round Score: 80
 Round Score: 10
 Round Score: 60
@@ -29,26 +30,27 @@ Total Score: 150";
             }
         }
 
-        public string ExpectedOutput12
+        public string ExpectedOutput3
         {
             get
             {
-                return @"Round Score: 80
-Round Score: 10
-Round Score: 60
-Total Score: 150";
+                return @"Round Score: 19
+Round Score: 20
+Round Score: 8
+Total Score: 47";
             }
         }
 
         [SetUp]
         public virtual void Setup()
         {
-            this.RootPath = "C:\\Users\\auto1\\go\\src\\github.com\\eejai42\\rock-paper-scissors\\";
+            this.ExpectedOutput = this.ExpectedOutput1.ToLower();
+            this.RootPath = "C:/Users/auto1/go/src/github.com/eejai42/rock-paper-scissors/";
         }
 
         internal string Invoke(string relativePathToExecutable, string args = "", int timeout = 30)
         {
-            var fullPathToExecutable = Path.Combine(this.RootPath, relativePathToExecutable.Trim("\\/".ToCharArray()));
+            var fullPathToExecutable = Path.Combine(this.RootPath, relativePathToExecutable.Trim("//".ToCharArray()));
             var process = new Process
             {
                 StartInfo = new ProcessStartInfo
@@ -105,9 +107,16 @@ Total Score: 150";
                         throw new Exception(errorBuilder.ToString());
                     }
 
-                    Console.WriteLine($"RAN: {relativePathToExecutable} and got this output: {Environment.NewLine}{outputBuilder.ToString()}");
+                    Console.WriteLine($@"RAN: {relativePathToExecutable}
+****************************
+Expect Output:
+{this.ExpectedOutput}
 
-                    return outputBuilder.ToString();
+****************************
+Output Received:
+{outputBuilder.ToString().ToLower()}");
+
+                    return outputBuilder.ToString().ToLower().Trim();
                 }
                 else
                 {

@@ -11,6 +11,7 @@ class RockPaperScissors
             char opponentChoice = strategyGuide[i];
             char playerChoice = strategyGuide[i + 2];
             int roundScore = RPSHelper.CalculateRoundScore(opponentChoice, playerChoice);
+            Console.WriteLine($"Round Score: {roundScore}");
             totalScore += roundScore;
         }
         return totalScore;

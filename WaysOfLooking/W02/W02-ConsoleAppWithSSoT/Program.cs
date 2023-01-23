@@ -8,7 +8,7 @@ class RockPaperScissors
 
     static RockPaperScissors()
     {
-        string jsonString = File.ReadAllText("../../../../../../SSoT/rps.json");
+        string jsonString = File.ReadAllText("C:/Users/auto1/go/src/github.com/eejai42/rock-paper-scissors/SSoT/rps.json");
         var jo = JObject.Parse(jsonString);
         gameJson = JObject.Parse(jo["rock-paper-scissors"].ToString());
     }
@@ -28,6 +28,7 @@ class RockPaperScissors
             char opponentChoice = strategyGuide[i];
             char playerChoice = strategyGuide[i + 2];
             int roundScore = CalculateRoundScore(opponentChoice, playerChoice);
+            Console.WriteLine($"Round Score: {roundScore}");
             totalScore += roundScore;
         }
         return totalScore;
