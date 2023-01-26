@@ -1,28 +1,30 @@
-﻿let player_Rock_code = "X"
-let opp_Rock_code = "A"
+﻿let player_Rock_code = 'X'
+let opp_Rock_code = 'A'
 
-let player_Paper_code = "Y"
-let opp_Paper_code = "B"
+let player_Paper_code = 'Y'
+let opp_Paper_code = 'B'
 
-let player_Scissors_code = "Z"
-let opp_Scissors_code = "C"
+let player_Scissors_code = 'Z'
+let opp_Scissors_code = 'C'
 
 
 // Function to check if player wins
 let PlayerWins (opponent_choice: char) (player_choice: char) =
-    match opponent_choice, player_choice with
-    | 'A', 'Y' -> true
-    | 'B', 'Z' -> true
-    | 'C', 'X' -> true
-    | _ -> false
+   if (opponent_choice = opp_Rock_code && player_choice = player_Paper_code) ||
+       (opponent_choice = opp_Paper_code && player_choice = player_Scissors_code) ||
+       (opponent_choice = opp_Scissors_code && player_choice = player_Rock_code) then
+        true
+    else
+        false
 
 // Function to check if player loses
 let PlayerLosses (opponent_choice: char) (player_choice: char) =
-    match opponent_choice, player_choice with
-    | 'A', 'Z' -> true
-    | 'B', 'X' -> true
-    | 'C', 'Y' -> true
-    | _ -> false
+  if (opponent_choice = opp_Rock_code && player_choice = player_Scissors_code) ||
+       (opponent_choice = opp_Paper_code && player_choice = player_Rock_code) ||
+       (opponent_choice = opp_Scissors_code && player_choice = player_Paper_code) then
+        true
+    else
+        false
 
 // Function to calculate the score for a single round
 let CalculateRoundScore (opponent_choice: char) (player_choice: char) =
@@ -34,12 +36,15 @@ let CalculateRoundScore (opponent_choice: char) (player_choice: char) =
         3
 
         
-let CalculateChoiceSCore (player_code: char) =
-    match player_code with
-    | 'X' -> 1
-    | 'Y' -> 2
-    | 'Z' -> 3
-    | _ -> 0
+let CalculateChoiceSCore (player_code: char) =    
+    if player_code = player_Rock_code then
+        1
+    elif player_code = player_Paper_code then
+        2
+    elif player_code = player_Scissors_code then
+        3
+    else
+        0
         
 // Function to calculate the total score for the strategy guide
 let CalculateGameScore (strategy_guide: string list) =

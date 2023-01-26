@@ -3,6 +3,28 @@ using System.Linq;
 
 class RockPaperScissors
 {
+
+    static void Main(string[] args)
+    {
+        string strategyGuide = "AYBXCZ";
+        int totalScore = CalculateGameScore(strategyGuide);
+        Console.WriteLine($"Total Score: {totalScore}");
+    }
+
+    static int CalculateGameScore(string strategyGuide)
+    {
+        int totalScore = 0;
+        for (int i = 0; i < strategyGuide.Length; i += 2)
+        {
+            char opponentChoice = strategyGuide[i];
+            char playerChoice = strategyGuide[i + 1];
+            int roundScore = CalculateRoundScore(opponentChoice, playerChoice);
+            totalScore += roundScore;
+            Console.WriteLine($"Round Score: {roundScore}");
+        }
+        return totalScore;
+    }
+    
     static int CalculateRoundScore(char opponentChoice, char playerChoice)
     {
         int playerScore = 0;
@@ -64,24 +86,5 @@ class RockPaperScissors
         }
     }
 
-    static int CalculateGameScore(string strategyGuide)
-    {
-        int totalScore = 0;
-        for (int i = 0; i < strategyGuide.Length; i += 2)
-        {
-            char opponentChoice = strategyGuide[i];
-            char playerChoice = strategyGuide[i + 1];
-            int roundScore = CalculateRoundScore(opponentChoice, playerChoice);
-            totalScore += roundScore;
-            Console.WriteLine($"Round Score: {roundScore}");
-        }
-        return totalScore;
-    }
 
-    static void Main(string[] args)
-    {
-        string strategyGuide = "AYBXCZ";
-        int totalScore = CalculateGameScore(strategyGuide);
-        Console.WriteLine($"Total Score: {totalScore}");
-    }
 }

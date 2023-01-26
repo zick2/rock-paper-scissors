@@ -20,7 +20,7 @@ namespace TestProject
         public void TestDynamicFish()
         {            
         
-            var result = this.Invoke(@"/W03/W03-Python-Dynamic-Fish\W03_Pyton_Dynamic_Fish.py");
+            var result = this.Invoke(@"/W03/W03-Python-Fluid-Fish\W03_Python_Fluid_Fish.py");
             Assert.That(result, Is.EqualTo(this.ExpectedOutput));
         }
 

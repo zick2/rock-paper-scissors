@@ -2,18 +2,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>e02805d9-baaa-4e9e-8b07-a3ba16beff0b</ProjectGuid>
+    <ProjectGuid>b8053935-4e09-4597-9e7e-f2f25377d2f6</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Main.py</StartupFile>
+    <StartupFile>W03_Python_Fluid_Fish.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>W03-Python-Flowing-SSoT</Name>
-    <RootNamespace>PythonApplicationWithSSoT</RootNamespace>
-    <IsWindowsApplication>False</IsWindowsApplication>
-    <InterpreterId>Global|PythonCore|3.9</InterpreterId>
+    <Name>W03-Python-Fluid-Fish</Name>
+    <RootNamespace>W03-Pyton-Dynamic-Fish</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -24,15 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Main.py" />
-    <Compile Include="PythonApplicationWithSSoT.py" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="CreatePythonSolution.xslt" />
-    <Content Include="README.md" />
-  </ItemGroup>
-  <ItemGroup>
-    <InterpreterReference Include="Global|PythonCore|3.9" />
+    <Compile Include="W03_Python_Fluid_Fish.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

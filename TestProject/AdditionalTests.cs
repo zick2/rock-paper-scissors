@@ -19,7 +19,7 @@ namespace TestProject
         [Test]
         public void TestDynamicReadme()
         {
-            var fileName = new FileInfo(Path.Combine(WaysOfLookingRootPath, @"../README-Dynamic.md"));
+            var fileName = new FileInfo(Path.Combine(WaysOfLookingRootPath, @"../README-Fluid-Fish.md"));
             var dynamicReadme = File.ReadAllText(fileName.FullName);
             StringAssert.Contains($"{this.FinalScore}", dynamicReadme);
         }

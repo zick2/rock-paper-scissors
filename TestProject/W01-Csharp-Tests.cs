@@ -20,7 +20,7 @@ namespace TestProject
         public void TestDynamicFish()
         {            
         
-            var result = this.Invoke(@"/W01/W01-Dynamic-Fish/bin/Debug/net7.0/W01-CSharp-Dynamic-Fish.exe");
+            var result = this.Invoke(@"/W01/W01-Fluid-Fish/bin/Debug/net7.0/W01-CSharp-Fluid-Fish.exe");
             Assert.That(result, Is.EqualTo(this.ExpectedOutput));
         }
 
@@ -28,7 +28,7 @@ namespace TestProject
         [Test]
         public void TestFishingPole()
         {            
-            var result = this.Invoke(@"/W01/W01-Dynamic-Fish/bin/Debug/net7.0/W01-CSharp-Dynamic-Fish.exe");
+            var result = this.Invoke(@"/W01/W01-Fluid-Fish/bin/Debug/net7.0/W01-CSharp-Fluid-Fish.exe");
             Assert.That(result, Is.EqualTo(this.ExpectedOutput));
         }
     }

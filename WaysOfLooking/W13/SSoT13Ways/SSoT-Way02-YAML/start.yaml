@@ -1,42 +1,43 @@
-﻿yaml:
-    shapes:
-      - name: Rock
-        opp_code: A
-        player_code: X
-        score: 6
-      - name: Paper
-        opp_code: B
-        player_code: Y
-        score: 2
-      - name: Scissors
-        opp_code: C
-        player_code: Z
-        score: 3
-      - name: Lizard
-        opp_code: D
-        player_code: W
-        score: 4
-      - name: Spock
-        opp_code: E
-        player_code: V
-        score: 4
-
-    outcomes:
-      win: 8
-      loss: 3
-      draw: 5
-
-    games:
-      name: Example Game
-      score: 15
-      rounds:
-      - player_code: Y
-        opp_code: A
-      - player_code: X
-        opp_code: B
-      - player_code: Z
-        opp_code: C
-      - player_code: W
-        opp_code: D
-      - player_code: V
-        opp_code: E
+﻿Game: 
+  Description: Version of Rock, Paper, Scissors from the TV Show "The Big Bang Theory"
+  Name: Rock, Paper, Scissors, Lizard, Spock
+  Hand Shapes:
+  - Shape Name: Rock
+    Code: X
+    Response Code: A
+    Points: 6
+  - Shape Name: Paper
+    Code: Y
+    Response Code: B
+    Points: 2
+  - Shape Name: Scissors
+    Code: Z
+    Response Code: C
+    Points: 3
+  - Shape Name: Lizard
+    Code: W
+    Response Code: D
+    Points: 4
+  - Shape Name: Spock
+    Code: V
+    Response Code: E
+    Points: 4
+  
+  Possible Results:
+    Choice Wins: 8
+    Choice Loses: 3
+    Ends in a Draw: 5
+    
+  Example Games:
+    Name: Example 1
+    Example Rounds:
+    - Code: Y
+      Response: A
+    - Code: X
+      Response: B
+    - Code: Z
+      Response: C
+    - Code: V
+      Response: D
+    - Code: W
+      Response: E

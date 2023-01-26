@@ -37,18 +37,24 @@ class RockPaperScissors
     {
         var outcomes = gameJson["rules"]["outcomes"];
         var shapes = gameJson["rules"]["shapes"];
-        var opponentShape = shapes.FirstOrDefault(s => $"{s["opp_code"]}" == opponentChoice.ToString());
-        var playerShape = shapes.First(s => s["player_code"].ToString() == playerChoice.ToString());
+        
+        var playerShape = shapes.First(s => $"{s["player_code"]}"[0] == playerChoice);
+        var shapeScore = (int)playerShape["score"];
+        var outcomeScore = 0;
 
-        if (playerShape["wins_against"].ToString() == opponentShape["opp_code"].ToString())
+        var opponentShape = shapes.First(s => $"{s["opp_code"]}"[0] == opponentChoice);
+
+        if ($"{playerShape["wins_against"]}" == $"{opponentShape["opp_code"]}")
         {
-            return (int)outcomes["win"] + (int)playerShape["score"];
+            outcomeScore = (int)outcomes["win"];
         }
-        else if (opponentShape["wins_against"].ToString() == playerShape["opp_code"].ToString())
+        else if ($"{opponentShape["wins_against"]}" == $"{playerShape["opp_code"]}")
         {
-            return (int)outcomes["loss"] + (int)playerShape["score"];
+            outcomeScore = (int)outcomes["loss"];
         }
-        else return (int)outcomes["draw"] + (int)playerShape["score"];
+        else outcomeScore = (int)outcomes["draw"];
+
+        return outcomeScore + shapeScore;
     }
 
     private static string GetStrategyGuide()

@@ -182,27 +182,27 @@ public static class RPSHelper {
                 return false;
         }
     }
-}```",W01,/ConsoleApp1/bin/Debug/net7.0/W01-CSharp-Concrete-Fish.exe,/W01-Dynamic-Fish/bin/Debug/net7.0/W01-CSharp-Dynamic-Fish.exe,/W01-Dynamic-Fish/bin/Debug/net7.0/W01-CSharp-Dynamic-Fish.exe,,Custom,"Rock, Paper, Scissors",Traditional
+}```",W01,/ConsoleApp1/bin/Debug/net7.0/W01-CSharp-Concrete-Fish.exe,/W01-Fluid-Fish/bin/Debug/net7.0/W01-CSharp-Fluid-Fish.exe,/W01-Fluid-Fish/bin/Debug/net7.0/W01-CSharp-Fluid-Fish.exe,,Custom,"Rock, Paper, Scissors",Traditional
 W02-Fsharp,Way02,Fsharp,"Please write an Fsharp program that can answer the Rock, Paper, Scissors prompt provided.","Given rps.json, Please write a Fsharp Program that can answer the given Rock, Paper, Scissors prompt.","Given rps.json, Please write a _tool_ that can generate the original Fsharp code created, that could answer the Rock, Paper, Scissors prompt provided","## ChatGPT Prompt 
 
 **NOTE: This is the ChatGPT Pompt that produced the static ""Fish"" recorded in (language specific main.xyz)**","Given the rps.json - write an algorithm that does not mention any specific shapes, codes or scores.","# ChatGPT Prompt
 
-**Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.",W02,/FSharp-Concrete-Fish\bin\Debug\net7.0\W02-FSharp-Concrete-Fish.exe,/W02-Dynamic-Fish\bin\Debug\net7.0\W02-FSharp-Dynamic-Fish.exe,/W02-FSharp-FishingPole/bin/Debug/net7.0/W02-FSharp-Fishing-Pole.exe,,YAML,"Rock, Paper, Scissors, Lizard, Spock",Big Bang Theor
+**Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.",W02,/FSharp-Concrete-Fish\bin\Debug\net7.0\W02-FSharp-Concrete-Fish.exe,/W02-Fluid-Fish\bin\Debug\net7.0\W02-FSharp-Fluid-Fish.exe,/W02-FSharp-FishingPole/bin/Debug/net7.0/W02-FSharp-Fishing-Pole.exe,,YAML,"Rock, Paper, Scissors, Lizard, Spock",Big Bang Theor
 W03-Python,Way03,Python,"Please write an Python program that can answer the Rock, Paper, Scissors prompt provided.","Given rps.json, Please write a Python Program that can answer the given Rock, Paper, Scissors prompt.","Given rps.json, Please write a _tool_ that can generate the original Python code created, that could answer the Rock, Paper, Scissors prompt provided","## ChatGPT Prompt 
 
 **NOTE: This is the ChatGPT Pompt that produced the static ""Fish"" recorded in (language specific main.xyz)**","Given the rps.json - write an algorithm that does not mention any specific shapes, codes or scores.","# ChatGPT Prompt
 
-**Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.",W03,/PythonApplication1\PythonApplication1.py,/W03-Python-Dynamic-Fish\W03_Pyton_Dynamic_Fish.py,/PythonApplicationWithSSoT\Main.py,,JSON,"Rock, Paper, Scissors",Advent of code
+**Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.",W03,/PythonApplication1\PythonApplication1.py,/W03-Python-Fluid-Fish\W03_Python_Fluid_Fish.py,/PythonApplicationWithSSoT\Main.py,,JSON,"Rock, Paper, Scissors",Advent of code
 W04-Java,Way04,Java,"Please write an Java program that can answer the Rock, Paper, Scissors prompt provided.","Given rps.json, Please write a Java Program that can answer the given Rock, Paper, Scissors prompt.","Given rps.json, Please write a _tool_ that can generate the original Java code created, that could answer the Rock, Paper, Scissors prompt provided","## ChatGPT Prompt 
 
 **NOTE: This is the ChatGPT Pompt that produced the static ""Fish"" recorded in (language specific main.xyz)**","Given the rps.json - write an algorithm that does not mention any specific shapes, codes or scores.","# ChatGPT Prompt
 
-**Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.",W04,/Java-Concrete-Fish/RockPaperScissors.java,/Java-Dynamic-Fish\RockPaperScissors.java,/Java-Fishing-Pole\RockPaperScissors.java,"java -cp "".;json-20220924.jar""",TOML,"Hammer, Screwdriver, Saw",Tools
+**Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.",W04,/Java-Concrete-Fish/RockPaperScissors.java,/Java-Fluid-Fish\RockPaperScissors.java,/Java-Fluid-Fish\RockPaperScissors.java,"java -cp "".;json-20220924.jar""",TOML,"Hammer, Screwdriver, Saw",Tools
 W05-VisualBasic,Way05,VisualBasic,"Please write an VisualBasic program that can answer the Rock, Paper, Scissors prompt provided.","Given rps.json, Please write a VisualBasic Program that can answer the given Rock, Paper, Scissors prompt.","Given rps.json, Please write a _tool_ that can generate the original VisualBasic code created, that could answer the Rock, Paper, Scissors prompt provided","## ChatGPT Prompt 
 
 **NOTE: This is the ChatGPT Pompt that produced the static ""Fish"" recorded in (language specific main.xyz)**","Given the rps.json - write an algorithm that does not mention any specific shapes, codes or scores.","# ChatGPT Prompt
 
-**Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.",W05,/VisualBasicConsoleApp1\bin\Debug\net7.0\W05-VisualBasic-Concrete-Fish.exe,/W05-VisualBasic-Dynamic-Fish\bin\Debug\net7.0\W05-VisualBasic-Dynamic-Fish.exe,/VisualBasicConsoleAppWithSSoT\bin\Debug\net7.0\W05-VisualBasic-Fishing-Pole.exe,,HJSON,"Vampire, Werewolf, Hunter, Priest, Zombie",Underworld
+**Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.",W05,/VisualBasicConsoleApp1\bin\Debug\net7.0\W05-VisualBasic-Concrete-Fish.exe,/W05-VisualBasic-Fluid-Fish\bin\Debug\net7.0\W05-VisualBasic-Fluid-Fish.exe,/VisualBasicConsoleAppWithSSoT\bin\Debug\net7.0\W05-VisualBasic-Fishing-Pole.exe,,HJSON,"Vampire, Werewolf, Hunter, Priest, Zombie",Underworld
 W06-CSharpOOP,Way06,CSharpOOP,"Please write an CSharpOOP program that can answer the Rock, Paper, Scissors prompt provided.","Given rps.json, Please write a CSharpOOP Program that can answer the given Rock, Paper, Scissors prompt.","Given rps.json, Please write a _tool_ that can generate the original CSharpOOP code created, that could answer the Rock, Paper, Scissors prompt provided","## ChatGPT Prompt 
 
 **NOTE: This is the ChatGPT Pompt that produced the static ""Fish"" recorded in (language specific main.xyz)**","Given the rps.json - write an algorithm that does not mention any specific shapes, codes or scores.","# ChatGPT Prompt
@@ -222,8 +222,8 @@ W09-Golang,Way09,Golang,"Please write an Golang program that can answer the Rock
 
 **NOTE: This is the ChatGPT Pompt that produced the static ""Fish"" recorded in (language specific main.xyz)**","Given the rps.json - write an algorithm that does not mention any specific shapes, codes or scores.","# ChatGPT Prompt
 
-**Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.",W09,/Concrete-Fish\RockPaperScissors.go,/Dynamic-Fish\RockPaperScissors.go,/Fishing-Pole\RockPaperScissors.go,,Avro,"Phaser, Shield, EMP, Transporter",Star Trek
-W10-Ruby,Way10,Ruby,"Please write an Ruby program that can answer the Rock, Paper, Scissors prompt provided.","Given rps.json, Please write a Ruby Program that can answer the given Rock, Paper, Scissors prompt.","Given rps.json, Please write a _tool_ that can generate the original Ruby code created, that could answer the Rock, Paper, Scissors prompt provided","## ChatGPT Prompt 
+**Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.",W09,/Concrete-Fish\RockPaperScissors.go,/Fluid-Fish\RockPaperScissors.go,/Fishing-Pole\RockPaperScissors.go,,Avro,"Phaser, Shield, EMP, Transporter",Star Trek
+W10-Ruby,Way10,Neo4J,"Please write an Ruby program that can answer the Rock, Paper, Scissors prompt provided.","Given rps.json, Please write a Ruby Program that can answer the given Rock, Paper, Scissors prompt.","Given rps.json, Please write a _tool_ that can generate the original Ruby code created, that could answer the Rock, Paper, Scissors prompt provided","## ChatGPT Prompt 
 
 **NOTE: This is the ChatGPT Pompt that produced the static ""Fish"" recorded in (language specific main.xyz)**","Given the rps.json - write an algorithm that does not mention any specific shapes, codes or scores.","# ChatGPT Prompt
 
@@ -233,7 +233,7 @@ W11-PHP,Way11,PHP,"Please write an PHP program that can answer the Rock, Paper, 
 **NOTE: This is the ChatGPT Pompt that produced the static ""Fish"" recorded in (language specific main.xyz)**","Given the rps.json - write an algorithm that does not mention any specific shapes, codes or scores.","# ChatGPT Prompt
 
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.",W11,,,,,JSON-LD,"Dragon, Knight, Wizard, Sorcerer, Demon",Fantasy
-W12-CPP,Way12,CPP,"Please write an CPP program that can answer the Rock, Paper, Scissors prompt provided.","Given rps.json, Please write a CPP Program that can answer the given Rock, Paper, Scissors prompt.","Given rps.json, Please write a _tool_ that can generate the original CPP code created, that could answer the Rock, Paper, Scissors prompt provided","## ChatGPT Prompt 
+W12-PlantUML,Way12,PlantUML,"Please write an CPP program that can answer the Rock, Paper, Scissors prompt provided.","Given rps.json, Please write a CPP Program that can answer the given Rock, Paper, Scissors prompt.","Given rps.json, Please write a _tool_ that can generate the original CPP code created, that could answer the Rock, Paper, Scissors prompt provided","## ChatGPT Prompt 
 
 **NOTE: This is the ChatGPT Pompt that produced the static ""Fish"" recorded in (language specific main.xyz)**","Given the rps.json - write an algorithm that does not mention any specific shapes, codes or scores.","# ChatGPT Prompt
 

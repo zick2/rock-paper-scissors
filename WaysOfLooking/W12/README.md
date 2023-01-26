@@ -1,5 +1,5 @@
 
-- W12-CPP
+- W12-PlantUML
 - ## ChatGPT Prompt 
 
 **NOTE: This is the ChatGPT Pompt that produced the static "Fish" recorded in (language specific main.xyz)**

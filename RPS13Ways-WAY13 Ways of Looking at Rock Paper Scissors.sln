@@ -9,9 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Global", "Global", "{E8C223
 	ProjectSection(SolutionItems) = preProject
 		ODXML\DataSchema.odxml = ODXML\DataSchema.odxml
 		README-Concrete-Fish.md = README-Concrete-Fish.md
-		README-Dynamic.md = README-Dynamic.md
+		README-Fluid-Fish.md = README-Fluid-Fish.md
 		README.md = README.md
 		SSoT\rps.json = SSoT\rps.json
+		SSoT\single-source-of-truth.json = SSoT\single-source-of-truth.json
 		SSoTmeProject.json = SSoTmeProject.json
 	EndProjectSection
 EndProject
@@ -82,7 +83,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Way06-OOP", "Way06-OOP", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W06-OOP-CS-Concrete-Fish", "WaysOfLooking\W06\ObjectOrientedConsoleApp\W06-OOP-CS-Concrete-Fish.csproj", "{4ADC24FA-2B02-49A1-9854-AE45FDBBDC13}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W06-OOP-CS-Flowing-SSoT", "WaysOfLooking\W06\ObjectOrientedConsoleAppWithSSoT\W06-OOP-CS-Flowing-SSoT.csproj", "{DE66ABD5-D72E-45DD-AA5B-899540190A04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W06-OOP-CS-Fluid-SSoT", "WaysOfLooking\W06\ObjectOrientedConsoleAppWithSSoT\W06-OOP-CS-Fluid-SSoT.csproj", "{DE66ABD5-D72E-45DD-AA5B-899540190A04}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Way07-JavaScript", "Way07-JavaScript", "{091BF465-FE33-4613-BCE9-3F0459AF320D}"
 	ProjectSection(SolutionItems) = preProject
@@ -102,7 +103,7 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "W02-FSharp-Concrete-Fish", 
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "W02-FSharp-Fishing-Pole", "WaysOfLooking\W02\W02-FSharp-FishingPole\W02-FSharp-Fishing-Pole.fsproj", "{E199444C-5874-44BE-BD77-FFD8F7A539BC}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "W02-FSharp-Dynamic-Fish", "WaysOfLooking\W02\W02-Dynamic-Fish\W02-FSharp-Dynamic-Fish.fsproj", "{D00436C8-DE93-4AFA-8AFB-6AF89C59D416}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "W02-FSharp-Fluid-Fish", "WaysOfLooking\W02\W02-Fluid-Fish\W02-FSharp-Fluid-Fish.fsproj", "{D00436C8-DE93-4AFA-8AFB-6AF89C59D416}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SSoTDetails", "SSoTDetails", "{E23748AE-2FF9-42BF-A948-7263236A2593}"
 	ProjectSection(SolutionItems) = preProject
@@ -117,7 +118,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Way09-Golang", "Way09-Golan
 		WaysOfLooking\W09\README.md = WaysOfLooking\W09\README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Way10-Ruby", "Way10-Ruby", "{0D2330DF-0DBE-4DE2-8217-AB4D8F18573B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Way10-Neo4J", "Way10-Neo4J", "{0D2330DF-0DBE-4DE2-8217-AB4D8F18573B}"
 	ProjectSection(SolutionItems) = preProject
 		WaysOfLooking\W10\README.md = WaysOfLooking\W10\README.md
 	EndProjectSection
@@ -137,20 +138,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Way13-Many Single Sources o
 		WaysOfLooking\W13\README.md = WaysOfLooking\W13\README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W01-CSharp-Dynamic-Fish", "WaysOfLooking\W01\W01-Dynamic-Fish\W01-CSharp-Dynamic-Fish.csproj", "{899A59FE-F592-49E7-A109-978EF6F4FEBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W01-CSharp-Fluid-Fish", "WaysOfLooking\W01\W01-Fluid-Fish\W01-CSharp-Fluid-Fish.csproj", "{899A59FE-F592-49E7-A109-978EF6F4FEBB}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "W03-Python-Dynamic-Fish", "WaysOfLooking\W03\W03-Python-Dynamic-Fish\W03-Python-Dynamic-Fish.pyproj", "{B8053935-4E09-4597-9E7E-F2F25377D2F6}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "W03-Python-Fluid-Fish", "WaysOfLooking\W03\W03-Python-Fluid-Fish\W03-Python-Fluid-Fish.pyproj", "{B8053935-4E09-4597-9E7E-F2F25377D2F6}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "W05-VisualBasic-Dynamic-Fish", "WaysOfLooking\W05\W05-VisualBasic-Dynamic-Fish\W05-VisualBasic-Dynamic-Fish.vbproj", "{5161BD53-8933-4F7F-B5E4-5C9AD4271C14}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "W05-VisualBasic-Fluid-Fish", "WaysOfLooking\W05\W05-VisualBasic-Fluid-Fish\W05-VisualBasic-Fluid-Fish.vbproj", "{5161BD53-8933-4F7F-B5E4-5C9AD4271C14}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "W04-Java-Concrete-Fish", "W04-Java-Concrete-Fish", "{5F50474B-A378-4B89-B4A0-0BD438FCB3DC}"
 	ProjectSection(SolutionItems) = preProject
 		WaysOfLooking\W04\Java-Concrete-Fish\RockPaperScissors.java = WaysOfLooking\W04\Java-Concrete-Fish\RockPaperScissors.java
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "W04-Java-Dynamic-Fish", "W04-Java-Dynamic-Fish", "{9BDD6014-56B1-408E-A2E2-7E697018E24D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "W04-Java-Fluid-Fish", "W04-Java-Fluid-Fish", "{9BDD6014-56B1-408E-A2E2-7E697018E24D}"
 	ProjectSection(SolutionItems) = preProject
-		WaysOfLooking\W04\Java-Dynamic-Fish\RockPaperScissors.java = WaysOfLooking\W04\Java-Dynamic-Fish\RockPaperScissors.java
+		WaysOfLooking\W04\Java-Fluid-Fish\RockPaperScissors.java = WaysOfLooking\W04\Java-Fluid-Fish\RockPaperScissors.java
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "W04-Java-Fishing-Pole", "W04-Java-Fishing-Pole", "{02BBDEE7-225A-45AF-8053-C626C3FEDC28}"
@@ -159,9 +160,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "W04-Java-Fishing-Pole", "W0
 		WaysOfLooking\W04\Java-Fishing-Pole\RockPaperScissors.java = WaysOfLooking\W04\Java-Fishing-Pole\RockPaperScissors.java
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dynamic-Fish", "Dynamic-Fish", "{BD6047FF-5791-4A4E-80E3-7F2AF88AA6EA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fluid-Fish", "Fluid-Fish", "{BD6047FF-5791-4A4E-80E3-7F2AF88AA6EA}"
 	ProjectSection(SolutionItems) = preProject
-		WaysOfLooking\W09\Dynamic-Fish\RockPaperScissors.go = WaysOfLooking\W09\Dynamic-Fish\RockPaperScissors.go
+		WaysOfLooking\W09\Fluid-Fish\RockPaperScissors.go = WaysOfLooking\W09\Fluid-Fish\RockPaperScissors.go
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Concrete-Fish", "Concrete-Fish", "{BB8C7962-50C1-4B17-81CC-12FE41BC87EA}"

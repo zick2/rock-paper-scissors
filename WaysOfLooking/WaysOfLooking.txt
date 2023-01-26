@@ -21,7 +21,7 @@
                     
                         - W11-PHP
                     
-                        - W12-CPP
+                        - W12-PlantUML
                     
                         - W13-ManySingleSourcesOfTruth
                     

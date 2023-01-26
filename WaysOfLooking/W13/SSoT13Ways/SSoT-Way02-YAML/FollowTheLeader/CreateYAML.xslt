@@ -19,23 +19,24 @@
                     <RelativePath>
                         <xsl:text>../rules.yaml</xsl:text>
                     </RelativePath>
-                    <xsl:element name="FileContents" xml:space="preserve">yaml:
-  shapes:<xsl:for-each select="//shapes">
-  - name: <xsl:value-of select="name"/>
-    opp_code: <xsl:value-of select="opp_code"/>
-    player_code: <xsl:value-of select="player_code"/>
-    score: <xsl:value-of select="score"/></xsl:for-each>
+                    <xsl:element name="FileContents" xml:space="preserve">Game:
+  Name: <xsl:for-each select="//shapes"><xsl:value-of select="name"/><xsl:if test="position() != last()">, </xsl:if></xsl:for-each>
+  Hand Shapes:<xsl:for-each select="//shapes">
+  - Shape Name: <xsl:value-of select="name"/>
+    Code: <xsl:value-of select="player_code"/>
+    Response Code: <xsl:value-of select="opp_code"/>
+    Points: <xsl:value-of select="score"/></xsl:for-each>
   
-  outcomes:
-    win: <xsl:value-of select="//outcomes/win"/>
-    loss: <xsl:value-of select="//outcomes/loss"/>
-    draw: <xsl:value-of select="//outcomes/draw"/>
+  Possible Results:
+    Choice Wins: <xsl:value-of select="//outcomes/win"/>
+    Choice Loses: <xsl:value-of select="//outcomes/loss"/>
+    Ends in a Draw: <xsl:value-of select="//outcomes/draw"/>
     
-  games:
-    name: Example Game
-    rounds:<xsl:for-each select="//games/rounds">
-    - player_code: <xsl:value-of select="player_code"/>
-      opp_code: <xsl:value-of select="opp_code"/></xsl:for-each>
+  Example Games:
+    Name: Example 1
+    Example Rounds:<xsl:for-each select="//games/rounds">
+    - Code: <xsl:value-of select="player_code"/>
+      Response: <xsl:value-of select="opp_code"/></xsl:for-each>
 </xsl:element>
                 </FileSetFile>
             </FileSetFiles>

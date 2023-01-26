@@ -24,12 +24,14 @@
                     <xsl:element name="FileContents" xml:space="preserve">
 namespace TWOLAT.RPS.Lib
 {
-    public class <xsl:value-of select="name" /> : AbstractShape
+    public class <xsl:value-of select="name" /> : Shape
     {
-        public <xsl:value-of select="name" />() :
-            base("<xsl:value-of select="name" />", '<xsl:value-of select="player_code" />', '<xsl:value-of select="opp_code" />', '<xsl:value-of select="wins_against" />', <xsl:value-of select="score" />)
-        {
-        }
+        public override int Score => <xsl:value-of select="score" />;
+        public override char OppCode => '<xsl:value-of select="opp_code" />';
+        public override char PlayerCode => '<xsl:value-of select="player_code" />';
+        public override char WinsAgainst => '<xsl:value-of select="wins_against" />';
+
+        public <xsl:value-of select="name" />() : base("<xsl:value-of select="name" />") { }
     }
 }
 

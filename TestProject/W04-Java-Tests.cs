@@ -20,7 +20,7 @@ namespace TestProject
         public void TestDynamicFish()
         {            
         
-            var result = this.Invoke(@"/W04/Java-Dynamic-Fish\RockPaperScissors.java");
+            var result = this.Invoke(@"/W04/Java-Fluid-Fish\RockPaperScissors.java");
             Assert.That(result, Is.EqualTo(this.ExpectedOutput));
         }
 
@@ -28,7 +28,7 @@ namespace TestProject
         [Test]
         public void TestFishingPole()
         {            
-            var result = this.Invoke(@"/W04/Java-Fishing-Pole\RockPaperScissors.java");
+            var result = this.Invoke(@"/W04/Java-Fluid-Fish\RockPaperScissors.java");
             Assert.That(result, Is.EqualTo(this.ExpectedOutput));
         }
     }

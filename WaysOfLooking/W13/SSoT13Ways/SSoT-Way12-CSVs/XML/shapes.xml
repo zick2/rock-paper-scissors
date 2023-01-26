@@ -1,0 +1,20 @@
+<shapes>
+  <shape>
+    <name>Rock</name>
+    <opp_code>A</opp_code>
+    <player_code>X</player_code>
+    <score>1</score>
+  </shape>
+  <shape>
+    <name>Paper</name>
+    <opp_code>B</opp_code>
+    <player_code>Y</player_code>
+    <score>2</score>
+  </shape>
+  <shape>
+    <name>Scissors</name>
+    <opp_code>C</opp_code>
+    <player_code>Z</player_code>
+    <score>3</score>
+  </shape>
+</shapes>

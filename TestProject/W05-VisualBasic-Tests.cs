@@ -20,7 +20,7 @@ namespace TestProject
         public void TestDynamicFish()
         {            
         
-            var result = this.Invoke(@"/W05/W05-VisualBasic-Dynamic-Fish\bin\Debug\net7.0\W05-VisualBasic-Dynamic-Fish.exe");
+            var result = this.Invoke(@"/W05/W05-VisualBasic-Fluid-Fish\bin\Debug\net7.0\W05-VisualBasic-Fluid-Fish.exe");
             Assert.That(result, Is.EqualTo(this.ExpectedOutput));
         }
 

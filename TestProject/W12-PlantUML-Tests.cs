@@ -1,6 +1,6 @@
 namespace TestProject
 {
-    public class W12CPPTests : SharedTests
+    public class W12PlantUMLTests : SharedTests
     {
         public override void Setup()
         {

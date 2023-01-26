@@ -12,6 +12,30 @@ The challenge used in this repository is the Rock, Paper, Scissors game from the
 ## Actually 2 ways of looking at 13 ways....
 The "real" purpose of pulling the same problem apart 13 different ways is to demonstrate that there are 2 VERY different kinds of code. 
 
+
+
+This repo demonstrates two very different _kinds_ of code.  
+
+## ChatGPT Alone - Feed me for a day
+### The Concrete Syntax of So Many Fish
+<img src="SSoT/concrete-wordcloud.png"
+     alt="Concrete code"
+     style="float: right; width: 40%; border: black 1px;" />
+The first type of code behaves as though the ideas have been etched in stone.  They are static, brittle and expensive to change, because they are literally stored stored in the "concrete syntax" of a particular language, usually first English, then Code in 1 or more additional languages.
+
+The Rock, Paper, Scissors game described by the Concrete Syntaxes of all 13 languages will be the same Rock, Paper, Scissors game at the end of the demo - even as we change every rule in the game, again and again, over 13 times.
+
+Completely unsurprisingly, the code doesn't move or respond, because it's been hardened in Concrete - what else would we expect from it?
+
+## ChatGPT + AI Capture - Teach me to fish
+### A Fluid Syntax in Any Language
+<img src="SSoT/dynanic-wordcloud.png"
+     alt="Fluid Code"
+     style="float: right; width: 50%;" />
+The second type of code behaves fundamentally differently, and is instead responsive to the changing needs and requirements of the project.  It evolves _with_ the rules, instead of constantly fighting against them.
+
+Every time we change the rules, all of code based on the single source of truth simple updates itself and evolves to follow along as the rules change and grow over time.  This includes not just simple changes scores, or the codes associated with specific shapes, but even adding entirely new shapes or even changing the game entirely.
+
 ### ChatGPT, Give me a Fish
 So almost 100% of the code in this repository was utlimately written by ChatGPT, and for each way of looking at the game, ChatGPT was actually asked to write the code in 3 different styles. 
 
@@ -28,11 +52,13 @@ The 2nd and 3rd styles involved asking ChatGPT to actually teach us how to fish 
 
 This was accomplished using AI Capture.
 
-Now, for this to work, before any fish are provided, we start by asking ChatGPT to explain how it actually "thinks about" / "understands the problem".  It shares it's own "knowledge graph" in a language agnostic format that AI Capture can save.
+Now, for this to work, before any fish are provided, we start by asking ChatGPT to explain how it actually "thinks about" / "understands the problem".  It shares it's own "knowledge graph" in a language agnostic format that AI Capture saves.
 
-With this "Knowledge Graph" in hand, we can now ask ChatGPT to teach us, by explaining to us how wrote the code, relative to that Knowledge Graph.  Logistically, in practice, it actually does this by writing a tool to do it, or redo it any time it's needed.  
+With this "Knowledge Graph" in hand, we can now ask ChatGPT to start teaching, by explaining to us **how** it wrote the original code, **relative to** that **Knowledge Graph**.  Logistically, in practice, it actually does this by writing a tool that is capable of doing it, or redoing it any time it's needed.  
 
-This code that ChatGPt writes explaining it's own thinking, can then be captured by AI Capture - and replayed on demand, at any time in the future. 
+The tool Captures what the AI actual "knows" about **how** to solve the problem, so that it can then "replay" those rules the next time we need updated code, because the rules changed.
+
+In other words, this code that ChatGPt writes explaining it's own thinking, can then be captured by AI Capture - and replayed on demand, at any time in the future 
 
 So now, whenever the facts on the ground change, we can simply re-apply that knowledge again. This creates a much more general solution and can be applied to multiple different scenarios. 
 

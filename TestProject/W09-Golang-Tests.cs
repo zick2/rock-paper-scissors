@@ -20,7 +20,7 @@ namespace TestProject
         public void TestDynamicFish()
         {            
         
-            var result = this.Invoke(@"/W09/Dynamic-Fish\RockPaperScissors.go");
+            var result = this.Invoke(@"/W09/Fluid-Fish\RockPaperScissors.go");
             Assert.That(result, Is.EqualTo(this.ExpectedOutput));
         }
 

@@ -1,0 +1,37 @@
+yaml:
+  options:
+  - id: Rock
+    code1: X
+    code2: A
+    value: 1
+
+
+  - id: Paper
+    code1: Y
+    code2: B
+    value: 2
+
+
+  - id: Scissors
+    code1: Z
+    code2: C
+    value: 3
+
+  
+  win_lose_draw: 6-0-3
+    
+  tests:
+    id: unit_test_1
+    test_cases:
+    - code1: Y
+      code2: A
+
+
+    - code1: X
+      code2: B
+
+
+    - code1: Z
+      code2: C
+
+

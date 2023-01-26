@@ -194,8 +194,8 @@ public static class RPSHelper {
 }```</PolePrompt>
     <Directory>W01</Directory>
     <RelativePathToFish>/ConsoleApp1/bin/Debug/net7.0/W01-CSharp-Concrete-Fish.exe</RelativePathToFish>
-    <RelativePathToDynamicFish>/W01-Dynamic-Fish/bin/Debug/net7.0/W01-CSharp-Dynamic-Fish.exe</RelativePathToDynamicFish>
-    <RelativePathToFishingPole>/W01-Dynamic-Fish/bin/Debug/net7.0/W01-CSharp-Dynamic-Fish.exe</RelativePathToFishingPole>
+    <RelativePathToDynamicFish>/W01-Fluid-Fish/bin/Debug/net7.0/W01-CSharp-Fluid-Fish.exe</RelativePathToDynamicFish>
+    <RelativePathToFishingPole>/W01-Fluid-Fish/bin/Debug/net7.0/W01-CSharp-Fluid-Fish.exe</RelativePathToFishingPole>
     <DataFormat>Custom</DataFormat>
     <Game>Rock, Paper, Scissors</Game>
     <Theme>Traditional</Theme>
@@ -216,7 +216,7 @@ public static class RPSHelper {
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W02</Directory>
     <RelativePathToFish>/FSharp-Concrete-Fish\bin\Debug\net7.0\W02-FSharp-Concrete-Fish.exe</RelativePathToFish>
-    <RelativePathToDynamicFish>/W02-Dynamic-Fish\bin\Debug\net7.0\W02-FSharp-Dynamic-Fish.exe</RelativePathToDynamicFish>
+    <RelativePathToDynamicFish>/W02-Fluid-Fish\bin\Debug\net7.0\W02-FSharp-Fluid-Fish.exe</RelativePathToDynamicFish>
     <RelativePathToFishingPole>/W02-FSharp-FishingPole/bin/Debug/net7.0/W02-FSharp-Fishing-Pole.exe</RelativePathToFishingPole>
     <DataFormat>YAML</DataFormat>
     <Game>Rock, Paper, Scissors, Lizard, Spock</Game>
@@ -238,7 +238,7 @@ public static class RPSHelper {
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W03</Directory>
     <RelativePathToFish>/PythonApplication1\PythonApplication1.py</RelativePathToFish>
-    <RelativePathToDynamicFish>/W03-Python-Dynamic-Fish\W03_Pyton_Dynamic_Fish.py</RelativePathToDynamicFish>
+    <RelativePathToDynamicFish>/W03-Python-Fluid-Fish\W03_Python_Fluid_Fish.py</RelativePathToDynamicFish>
     <RelativePathToFishingPole>/PythonApplicationWithSSoT\Main.py</RelativePathToFishingPole>
     <DataFormat>JSON</DataFormat>
     <Game>Rock, Paper, Scissors</Game>
@@ -260,8 +260,8 @@ public static class RPSHelper {
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W04</Directory>
     <RelativePathToFish>/Java-Concrete-Fish/RockPaperScissors.java</RelativePathToFish>
-    <RelativePathToDynamicFish>/Java-Dynamic-Fish\RockPaperScissors.java</RelativePathToDynamicFish>
-    <RelativePathToFishingPole>/Java-Fishing-Pole\RockPaperScissors.java</RelativePathToFishingPole>
+    <RelativePathToDynamicFish>/Java-Fluid-Fish\RockPaperScissors.java</RelativePathToDynamicFish>
+    <RelativePathToFishingPole>/Java-Fluid-Fish\RockPaperScissors.java</RelativePathToFishingPole>
     <DynamicPrefix>java -cp ".;json-20220924.jar"</DynamicPrefix>
     <DataFormat>TOML</DataFormat>
     <Game>Hammer, Screwdriver, Saw</Game>
@@ -283,7 +283,7 @@ public static class RPSHelper {
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W05</Directory>
     <RelativePathToFish>/VisualBasicConsoleApp1\bin\Debug\net7.0\W05-VisualBasic-Concrete-Fish.exe</RelativePathToFish>
-    <RelativePathToDynamicFish>/W05-VisualBasic-Dynamic-Fish\bin\Debug\net7.0\W05-VisualBasic-Dynamic-Fish.exe</RelativePathToDynamicFish>
+    <RelativePathToDynamicFish>/W05-VisualBasic-Fluid-Fish\bin\Debug\net7.0\W05-VisualBasic-Fluid-Fish.exe</RelativePathToDynamicFish>
     <RelativePathToFishingPole>/VisualBasicConsoleAppWithSSoT\bin\Debug\net7.0\W05-VisualBasic-Fishing-Pole.exe</RelativePathToFishingPole>
     <DataFormat>HJSON</DataFormat>
     <Game>Vampire, Werewolf, Hunter, Priest, Zombie</Game>
@@ -364,7 +364,7 @@ public static class RPSHelper {
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W09</Directory>
     <RelativePathToFish>/Concrete-Fish\RockPaperScissors.go</RelativePathToFish>
-    <RelativePathToDynamicFish>/Dynamic-Fish\RockPaperScissors.go</RelativePathToDynamicFish>
+    <RelativePathToDynamicFish>/Fluid-Fish\RockPaperScissors.go</RelativePathToDynamicFish>
     <RelativePathToFishingPole>/Fishing-Pole\RockPaperScissors.go</RelativePathToFishingPole>
     <DataFormat>Avro</DataFormat>
     <Game>Phaser, Shield, EMP, Transporter</Game>
@@ -373,7 +373,7 @@ public static class RPSHelper {
   <WaysOfLooking>
     <Name>W10-Ruby</Name>
     <WayOfLooking>Way10</WayOfLooking>
-    <Language>Ruby</Language>
+    <Language>Neo4J</Language>
     <PromptTitle>Please write an Ruby program that can answer the Rock, Paper, Scissors prompt provided.</PromptTitle>
     <FishingTitle>Given rps.json, Please write a Ruby Program that can answer the given Rock, Paper, Scissors prompt.</FishingTitle>
     <PoleTitle>Given rps.json, Please write a _tool_ that can generate the original Ruby code created, that could answer the Rock, Paper, Scissors prompt provided</PoleTitle>
@@ -409,9 +409,9 @@ public static class RPSHelper {
     <Theme>Fantasy</Theme>
   </WaysOfLooking>
   <WaysOfLooking>
-    <Name>W12-CPP</Name>
+    <Name>W12-PlantUML</Name>
     <WayOfLooking>Way12</WayOfLooking>
-    <Language>CPP</Language>
+    <Language>PlantUML</Language>
     <PromptTitle>Please write an CPP program that can answer the Rock, Paper, Scissors prompt provided.</PromptTitle>
     <FishingTitle>Given rps.json, Please write a CPP Program that can answer the given Rock, Paper, Scissors prompt.</FishingTitle>
     <PoleTitle>Given rps.json, Please write a _tool_ that can generate the original CPP code created, that could answer the Rock, Paper, Scissors prompt provided</PoleTitle>

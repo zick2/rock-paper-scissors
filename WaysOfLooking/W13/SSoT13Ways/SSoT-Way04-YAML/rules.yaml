@@ -1,0 +1,29 @@
+yaml:
+  Hand Shapes:
+  - Shape Name: Rock
+    Code: X
+    Response Code: A
+    Points: 1
+  - Shape Name: Paper
+    Code: Y
+    Response Code: B
+    Points: 2
+  - Shape Name: Scissors
+    Code: Z
+    Response Code: C
+    Points: 3
+  
+  Possible Results:
+    Choice Wins: 6
+    Choice Loses: 0
+    Ends in Draws: 3
+    
+  Example Games:
+    Name: Example 1
+    Example Rounds:
+    - Code: Y
+      Response: A
+    - Code: X
+      Response: B
+    - Code: Z
+      Response: C

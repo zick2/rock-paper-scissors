@@ -1,0 +1,17 @@
+<games>
+  <game>
+    <name>Example Game</name>
+    <player_code>Y</player_code>
+    <opp_code>A</opp_code>
+  </game>
+  <game>
+    <name>Example Game</name>
+    <player_code>X</player_code>
+    <opp_code>B</opp_code>
+  </game>
+  <game>
+    <name>Example Game</name>
+    <player_code>Z</player_code>
+    <opp_code>C</opp_code>
+  </game>
+</games>

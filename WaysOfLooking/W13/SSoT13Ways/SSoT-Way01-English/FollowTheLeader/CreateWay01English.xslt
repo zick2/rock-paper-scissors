@@ -21,16 +21,7 @@
                     </RelativePath>
                     <xsl:element name="FileContents" xml:space="preserve"># Advent of Code - Rock, Paper Scissors
 
-In this version, the only rules for the input format are that it contain these 6 sets of data, surrounded by parentheses.
-
- - shape, names, separated, by commas
- - player, codes, separated, by commas
- - opponent, codes
- - shape, scores
- - wins, againt, player, codes
- - outcome, scores
-
-Like this: These rules that define the traditiona game with the sames (<xsl:for-each select="//shapes"><xsl:value-of select="name"/><xsl:if test="position() != last()">, </xsl:if><xsl:if test="position() +1 = last()">and </xsl:if></xsl:for-each>). 
+These rules describe a game inspired by the traditional Rock, Paper, Scissors with these shapes (<xsl:for-each select="//shapes"><xsl:value-of select="name"/><xsl:if test="position() != last()">, </xsl:if><xsl:if test="position() +1 = last()">and </xsl:if></xsl:for-each>), that was described by the Day 2 Challenge of the annual event, Advent of Code 2022.
 
 Each shape has a unique code for the player (<xsl:for-each select="//shapes" xml:space="default">
     <xsl:value-of select="player_code"/><xsl:if test="position() != last()">, </xsl:if><xsl:if test="position() +1 = last()">and </xsl:if>
@@ -39,8 +30,17 @@ Each shape has a unique code for the player (<xsl:for-each select="//shapes" xml
 </xsl:for-each>) to use. Each shape also has a score (<xsl:for-each select="//shapes"  xml:space="default"><xsl:value-of select="score"/>
     <xsl:if test="position() != last()">, </xsl:if><xsl:if test="position() +1 = last()">and </xsl:if>
 </xsl:for-each>) and a shape that it wins against (<xsl:for-each select="//shapes"  xml:space="default"><xsl:value-of select="wins_against"/><xsl:if test="position() != last()">, </xsl:if><xsl:if test="position() +1 = last()">and </xsl:if>
-</xsl:for-each>). The game also has specific outcomes for win, loss, and draw with scores of (<xsl:value-of select="//outcomes/win" />, <xsl:value-of select="//outcomes/loss" /> and <xsl:value-of select="//outcomes/draw" />) respectively.
+</xsl:for-each>). The game also has specific outcomes for win, loss, and draw with scores of (<xsl:value-of select="//outcomes/win" />, <xsl:value-of select="//outcomes/loss" />, and <xsl:value-of select="//outcomes/draw" />) respectively.
 
+## Input Language Rules
+In this version, the only rules for the input format are that it contain these 6 sets of data, surrounded by parentheses.
+
+ - (shape, names, separated, by commas)
+ - (player, codes, separated, by commas)
+ - (opponent, codes)
+ - (shape, scores)
+ - (wins, againt, player, codes)
+ - (outcome, scores)
 </xsl:element>
                 </FileSetFile>
             </FileSetFiles>

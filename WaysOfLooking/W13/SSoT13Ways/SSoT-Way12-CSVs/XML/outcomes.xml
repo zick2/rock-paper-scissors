@@ -1,0 +1,14 @@
+<outcomes>
+  <outcome>
+    <outcome>win</outcome>
+    <value>6</value>
+  </outcome>
+  <outcome>
+    <outcome>loss</outcome>
+    <value>0</value>
+  </outcome>
+  <outcome>
+    <outcome>draw</outcome>
+    <value>3</value>
+  </outcome>
+</outcomes>

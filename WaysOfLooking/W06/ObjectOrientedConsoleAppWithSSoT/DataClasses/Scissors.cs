@@ -1,12 +1,14 @@
 
 namespace TWOLAT.RPS.Lib
 {
-    public class Scissors : AbstractShape
+    public class Scissors : Shape
     {
-        public Scissors() :
-            base("Scissors", 'Z', 'C', 'B', 3)
-        {
-        }
+        public override int Score => 3;
+        public override char OppCode => 'C';
+        public override char PlayerCode => 'Z';
+        public override char WinsAgainst => 'B';
+
+        public Scissors() : base("Scissors") { }
     }
 }
 
