@@ -5,6 +5,7 @@
     <xsl:output method="xml" indent="yes"/>
     <xsl:include href="../CommonXsltTemplates.xslt"/>
     <xsl:param name="output-filename" select="'output.txt'" />
+    <xsl:variable name="data" select="/" />
 
     <xsl:template match="@* | node()">
         <xsl:copy>
@@ -19,21 +20,19 @@
                     <RelativePath>
                         <xsl:text>../rules.yaml</xsl:text>
                     </RelativePath>
-                    <xsl:element name="FileContents" xml:space="preserve">yaml:
-  options:<xsl:for-each select="//shapes">
-  - id: <xsl:value-of select="name"/>
-    code1: <xsl:value-of select="player_code"/>
-    code2: <xsl:value-of select="opp_code"/>
-    value: <xsl:value-of select="score"/><xsl:text>&#10;</xsl:text>
-</xsl:for-each>  
-  win_lose_draw: <xsl:value-of select="//outcomes/win"/>-<xsl:value-of select="//outcomes/loss"/>-<xsl:value-of select="//outcomes/draw"/>
-    
-  tests:
-    id: unit_test_1
-    test_cases:<xsl:for-each select="//games/rounds">
-    - code1: <xsl:value-of select="player_code"/>
-      code2: <xsl:value-of select="opp_code"/><xsl:text>&#10;</xsl:text>
-</xsl:for-each>
+                    <xsl:element name="FileContents" xml:space="preserve">concise-yaml:
+  - desc: s1=floor(max_pt/initial_divider), s{index} = s1 + (increment * {index} * (alternate ? -1 or 1)), s3 = s1 + (...)...
+  <xsl:for-each select="//shapes">
+  - s<xsl:value-of select="position()"/>: <xsl:value-of select="name"/></xsl:for-each>
+                        
+  - max_pt: <xsl:for-each select="//shapes" xml:space="default">
+      <xsl:sort select="score" data-type="number" order="descending"/>
+      <xsl:if test="position() = 1">
+          <xsl:value-of select="score + //outcomes/win" />
+      </xsl:if></xsl:for-each>
+  - initial_divider: 9
+  - increment: 1
+  - alternate: false
 </xsl:element>
                 </FileSetFile>
             </FileSetFiles>

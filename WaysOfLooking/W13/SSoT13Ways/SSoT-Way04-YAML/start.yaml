@@ -1,42 +1,26 @@
 ﻿yaml:
-    shapes:
-      - name: Rock
-        opp_code: A
-        player_code: R
-        score: 6
-      - name: Paper
-        opp_code: B
-        player_code: P
-        score: 2
-      - name: Scissors
-        opp_code: C
-        player_code: C
-        score: 3
-      - name: Lizard
-        opp_code: D
-        player_code: L
-        score: 4
-      - name: Spock
-        opp_code: E
-        player_code: S
-        score: 5
+    options:
+      - id: Knight
+        code1: K
+        code2: k
+        value: 6
+      - id: Archer
+        code1: A
+        code2: a
+        value: 2
+      - id: Mage
+        code1: M
+        code2: m
+        value: 3
 
-    outcomes:
-      win: 8
-      loss: 3
-      draw: 5
+    win_lose_draw: 8-3-5
 
-    games:
-      name: Example Game
-      score: 15
-      rounds:
-      - player_code: Y
-        opp_code: A
-      - player_code: X
-        opp_code: B
-      - player_code: Z
-        opp_code: C
-      - player_code: W
-        opp_code: D
-      - player_code: V
-        opp_code: E
+    tests:
+      id: unit_test_1
+      test_cases:
+      - code1: K
+        code2: a
+      - code1: A
+        code2: m
+      - code1: M
+        code2: m

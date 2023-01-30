@@ -20,22 +20,20 @@
                         <xsl:text>../rules.yaml</xsl:text>
                     </RelativePath>
                     <xsl:element name="FileContents" xml:space="preserve">yaml:
-  Hand Shapes:<xsl:for-each select="//shapes">
-  - Shape Name: <xsl:value-of select="name"/>
-    Code: <xsl:value-of select="player_code"/>
-    Response Code: <xsl:value-of select="opp_code"/>
-    Points: <xsl:value-of select="score"/></xsl:for-each>
-  
-  Possible Results:
-    Choice Wins: <xsl:value-of select="//outcomes/win"/>
-    Choice Loses: <xsl:value-of select="//outcomes/loss"/>
-    Ends in Draws: <xsl:value-of select="//outcomes/draw"/>
+  options:<xsl:for-each select="//shapes">
+  - id: <xsl:value-of select="name"/>
+    code1: <xsl:value-of select="player_code"/>
+    code2: <xsl:value-of select="opp_code"/>
+    value: <xsl:value-of select="score"/><xsl:text>&#10;</xsl:text>
+</xsl:for-each>  
+  win_lose_draw: <xsl:value-of select="//outcomes/win"/>-<xsl:value-of select="//outcomes/loss"/>-<xsl:value-of select="//outcomes/draw"/>
     
-  Example Games:
-    Name: Example 1
-    Example Rounds:<xsl:for-each select="//games/rounds">
-    - Code: <xsl:value-of select="player_code"/>
-      Response: <xsl:value-of select="opp_code"/></xsl:for-each>
+  tests:
+    id: unit_test_1
+    test_cases:<xsl:for-each select="//games/rounds">
+    - code1: <xsl:value-of select="player_code"/>
+      code2: <xsl:value-of select="opp_code"/><xsl:text>&#10;</xsl:text>
+</xsl:for-each>
 </xsl:element>
                 </FileSetFile>
             </FileSetFiles>

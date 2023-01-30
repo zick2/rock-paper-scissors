@@ -1,64 +1,40 @@
 {
   "yaml": {
-    "Hand Shapes": [
+    "options": [
       {
-        "Shape Name": "Rock",
-        "Code": "X",
-        "Response Code": "A",
-        "Points": 6
+        "id": "Knight",
+        "code1": "K",
+        "code2": "k",
+        "value": 6
       },
       {
-        "Shape Name": "Paper",
-        "Code": "Y",
-        "Response Code": "B",
-        "Points": 2
+        "id": "Archer",
+        "code1": "A",
+        "code2": "a",
+        "value": 2
       },
       {
-        "Shape Name": "Scissors",
-        "Code": "Z",
-        "Response Code": "C",
-        "Points": 3
-      },
-      {
-        "Shape Name": "Lizard",
-        "Code": "W",
-        "Response Code": "D",
-        "Points": 4
-      },
-      {
-        "Shape Name": "Spock",
-        "Code": "V",
-        "Response Code": "E",
-        "Points": 4
+        "id": "Mage",
+        "code1": "M",
+        "code2": "m",
+        "value": 3
       }
     ],
-    "Possible Results": {
-      "Choice Wins": 8,
-      "Choice Loses": 3,
-      "Ends in Draw": 5
-    },
-    "Example Games": {
-      "Name": "Example 1",
-      "Example Rounds": [
+    "win_lose_draw": "8-3-5",
+    "tests": {
+      "id": "unit_test_1",
+      "test_cases": [
         {
-          "Code": "Y",
-          "Response": "A"
+          "code1": "K",
+          "code2": "a"
         },
         {
-          "Code": "X",
-          "Response": "B"
+          "code1": "A",
+          "code2": "m"
         },
         {
-          "Code": "Z",
-          "Response": "C"
-        },
-        {
-          "Code": "V",
-          "Response": "D"
-        },
-        {
-          "Code": "W",
-          "Response": "E"
+          "code1": "M",
+          "code2": "m"
         }
       ]
     }

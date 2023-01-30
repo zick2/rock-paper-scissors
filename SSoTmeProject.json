@@ -388,30 +388,6 @@
     },
     {
       "MatchedTranspiler": {
-        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
-        "Name": "XmlXsltTransform",
-        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
-      },
-      "ProjectTranspilerId": "df24ae7e-5814-424d-bb76-ddbb9254dfc1",
-      "Name": "XmlXsltTransform",
-      "RelativePath": "/WaysOfLooking/W13/SSoT13Ways/SSoT-Way04-YAML",
-      "CommandLine": "xml-xslt-transform -i .\\rules.yaml.json.xml -i CreateSSoT.xslt",
-      "IsDisabled": true
-    },
-    {
-      "MatchedTranspiler": {
-        "TranspilerId": "ba509977-74bf-486e-a405-1b2125bd5d15",
-        "Name": "XmlToJson",
-        "Description": "Converts XML to JSON using the NewtonSoft C# conversion tools."
-      },
-      "ProjectTranspilerId": "4ff70bef-3ae9-4e86-87f5-e0467e6fb6b3",
-      "Name": "XmlToJson",
-      "RelativePath": "/WaysOfLooking/W13/SSoT13Ways/SSoT-Way04-YAML",
-      "CommandLine": "xml-to-json -i .\\single-source-of-truth.xml -o ../../../../SSoT/single-source-of-truth.json",
-      "IsDisabled": true
-    },
-    {
-      "MatchedTranspiler": {
         "TranspilerId": "060bc71d-ec2c-4cdf-824d-0336fceb29c6",
         "Name": "YamlToJson",
         "Description": "yaml-to-json"
@@ -432,6 +408,30 @@
       "Name": "JsonToXml",
       "RelativePath": "/WaysOfLooking/W13/SSoT13Ways/SSoT-Way04-YAML",
       "CommandLine": "json-to-xml -i .\\rules.yaml.json",
+      "IsDisabled": true
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "df24ae7e-5814-424d-bb76-ddbb9254dfc1",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/WaysOfLooking/W13/SSoT13Ways/SSoT-Way04-YAML",
+      "CommandLine": "xml-xslt-transform -i .\\rules.yaml.json.xml -i CreateSSoT.xslt",
+      "IsDisabled": true
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "ba509977-74bf-486e-a405-1b2125bd5d15",
+        "Name": "XmlToJson",
+        "Description": "Converts XML to JSON using the NewtonSoft C# conversion tools."
+      },
+      "ProjectTranspilerId": "4ff70bef-3ae9-4e86-87f5-e0467e6fb6b3",
+      "Name": "XmlToJson",
+      "RelativePath": "/WaysOfLooking/W13/SSoT13Ways/SSoT-Way04-YAML",
+      "CommandLine": "xml-to-json -i .\\single-source-of-truth.xml -o ../../../../SSoT/single-source-of-truth.json",
       "IsDisabled": true
     },
     {
@@ -477,6 +477,17 @@
       "Name": "CsvToXml",
       "RelativePath": "/WaysOfLooking/W13/SSoT13Ways/SSoT-Way12-CSVs/XML/Games",
       "CommandLine": "csv-to-xml -i ../../games.csv  -o ../games.xml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "8d98cb0a-e17e-4a9d-beb1-24d46d91b537",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/DSPXml",
+      "CommandLine": "xml-xslt-transform -i .\\SSoTmeProject.spxml -i .\\CreateNeo4J.xslt"
     }
   ]
 }

@@ -1,4 +1,4 @@
-﻿# YAML Formatted Rock, Paper, Scissors
+﻿# YAML Formatted Rock, Paper, Scissors v1.0
 The yaml format is simple and easy to readme.  It updates the single source of truth with these commands:
 
 ```

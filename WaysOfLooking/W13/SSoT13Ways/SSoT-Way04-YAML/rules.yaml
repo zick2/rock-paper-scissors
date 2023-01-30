@@ -1,29 +1,37 @@
 yaml:
-  Hand Shapes:
-  - Shape Name: Rock
-    Code: X
-    Response Code: A
-    Points: 1
-  - Shape Name: Paper
-    Code: Y
-    Response Code: B
-    Points: 2
-  - Shape Name: Scissors
-    Code: Z
-    Response Code: C
-    Points: 3
+  options:
+  - id: Rock
+    code1: X
+    code2: A
+    value: 1
+
+
+  - id: Paper
+    code1: Y
+    code2: B
+    value: 2
+
+
+  - id: Scissors
+    code1: Z
+    code2: C
+    value: 3
+
   
-  Possible Results:
-    Choice Wins: 6
-    Choice Loses: 0
-    Ends in Draws: 3
+  win_lose_draw: 6-0-3
     
-  Example Games:
-    Name: Example 1
-    Example Rounds:
-    - Code: Y
-      Response: A
-    - Code: X
-      Response: B
-    - Code: Z
-      Response: C
+  tests:
+    id: unit_test_1
+    test_cases:
+    - code1: Y
+      code2: A
+
+
+    - code1: X
+      code2: B
+
+
+    - code1: Z
+      code2: C
+
+

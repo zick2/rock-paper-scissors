@@ -1,37 +1,11 @@
-yaml:
-  options:
-  - id: Rock
-    code1: X
-    code2: A
-    value: 1
-
-
-  - id: Paper
-    code1: Y
-    code2: B
-    value: 2
-
-
-  - id: Scissors
-    code1: Z
-    code2: C
-    value: 3
-
+concise-yaml:
+  - desc: s1=floor(max_pt/initial_divider), s{index} = s1 + (increment * {index} * (alternate ? -1 or 1)), s3 = s1 + (...)...
   
-  win_lose_draw: 6-0-3
-    
-  tests:
-    id: unit_test_1
-    test_cases:
-    - code1: Y
-      code2: A
-
-
-    - code1: X
-      code2: B
-
-
-    - code1: Z
-      code2: C
-
-
+  - s1: Rock
+  - s2: Paper
+  - s3: Scissors
+                        
+  - max_pt: 9
+  - initial_divider: 9
+  - increment: 1
+  - alternate: false
