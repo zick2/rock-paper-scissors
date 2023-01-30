@@ -1,11 +1,30 @@
-I have this readme:
+# 13 ways of Looking at Rock, Paper, Scissors 
+## ... actually ... it's more like 7K+ with _AI Capture_
 
-# 13 ways of Looking at Rock, Paper, Scissors
+```
+    13 different languages    
+   * 3 Ways that ChatGPT Writes the Code (per language)
+   + 2 Additional Tools - The Fluid README.md and Unit Tests that "follow along"
+  * 13 Ways to describe Rock Paper Scissors (English, Json, Xml, YAML, etc)
+  * 13 Variations of the Game (Rock, Paper, Scissors, Lizard, Spock or Wizard, Sourcer, Druid)
+  = 7000+ possible variations of the game, all in a single repository.
+```
+
+### Code your Own Adventure
+
+It's basically like a Chooose your own Adventure - but for Code.  
+
+1. We can start by picking what variation of the game we want to play
+2. Then we can pick which language we want to use to describe that variation of the game
+2. We can then further customize the default rules to further change them to our liking.  
+2. Then - we build the project, 
+2. At this point we end up with 39 variations of the game that we picked, in 13 different languages like C#, Python, Java, etc. 
+2. We also have documentation in 13 languages include English, Spanish, Chinese, German and more.
 
 ## Introduction
 This repo is an omage to both 13 ways of looking at a turtle (https://fsharpforfunandprofit.com/posts/13-ways-of-looking-at-a-turtle/), and Advent of Code (https://adventofcode.com/2022/day/2) by creating 13 ways of looking at the game Rock, Paper, Scissors.
 
-This repository is an omage to Scott Wlashin's article "13 ways of looking at a turtle", and the annual Advent of Code challenge (https://adventofcode.com/2022/day/2). 
+This repository is an omage to Scott Wlashin's article "13 ways of looking at a turtle", and the annual Advent of Code challenge (https://adventofcode.com  /2022/day/2). 
 
 The challenge used in this repository is the Rock, Paper, Scissors game from the 2022 Advent of Code day 2 prompt. The goal of the repository is to explore 13 different approaches to implementing the challenge, using various programming languages and techniques including C#, F#, Python, C++, JavaScript, TypeScript, D3 Visualizations, English README documentation and many more. 
 
@@ -34,25 +53,27 @@ Completely unsurprisingly, the code doesn't move or respond, because it's been h
      style="float: right; width: 50%;" />
 The second type of code behaves fundamentally differently, and is instead responsive to the changing needs and requirements of the project.  It evolves _with_ the rules, instead of constantly fighting against them.
 
-Every time we change the rules, all of code based on the single source of truth simple updates itself and evolves to follow along as the rules change and grow over time.  This includes not just simple changes scores, or the codes associated with specific shapes, but even adding entirely new shapes or even changing the game entirely.
+Every time we change the rules, all of code based on the single source of truth simply updates itself and evolves to follow along as the rules change and grow over time.  This includes not just simple changes to scores, or the codes associated with specific shapes, but even adding entirely new shapes or even changing the game entirely (think Magician, Sourcer, Wizard for example).
 
 ### ChatGPT, Give me a Fish
-So almost 100% of the code in this repository was utlimately written by ChatGPT, and for each way of looking at the game, ChatGPT was actually asked to write the code in 3 different styles. 
+Virtually 100% of the code in this repository was utlimately written by ChatGPT, and for each way of looking at the game, ChatGPT was actually asked to write the code in 3 different styles. 
 
-The first approach was just asking ChatGPT to give us a fish, where the prompt was given and the solution was provided in various programming languages like C#, F#, Python, C++, JavaScript and more. 
+The first approach involved just asking ChatGPT to give me a fish, where the prompt was provided as input, and the solution was provided by ChatGPT, in various programming languages like C#, F#, Python, C++, JavaScript and more. 
 
-I went through all 13 ways, and over, and over again, I asked ChatGPT for a fish.  First a C# fish.  Then an F# fish.  
+I went through all 13 ways, and over, and over again, I asked ChatGPT for a another fish.  First a C# fish.  Then an F# fish.  
 
-I call them "Concrete Fish" because it is a fish that represents a **specific set of choices** for how to solve the prompt, in the **concrete syntax** of a **specific language**.  English, C#, F#, Python, C++, JavaScript, OOP, D3 Visualization, Unit Tests, Documentation, Visual Basic, Golang and more.  So many different variations of concrete.
+I call them "Concrete Fish" because it is a fish that represents a **specific set of choices** for how to solve the prompt, in the **concrete syntax** of a **specific language**.  Usually English first, then C#, F#, Python, C++, JavaScript, OOP, D3 Visualization, Unit Tests, Documentation, Visual Basic, Golang and more.  So many different variations of concrete.
 
-At the end of 13 sessions with ChatGPT, I had 13 Concrete Fish, in 13 different languages.
+At the end of 13 sessions with ChatGPT, I had 13 Concrete Fish, in 13 different languages, each approaching the problem from a different angle and perspective.
 
-### ChatGPT, Teach me to Fish?
+### ChatGPT, Teach me to Fish with AI Capture?
 The 2nd and 3rd styles involved asking ChatGPT to actually teach us how to fish - by providing reusable tools that can do the work we want now, and in the future, on-demand, without the need for ChatGPT's involvment on an ongoing basis.  
 
-This was accomplished using AI Capture.
+This was accomplished using AI Capture, which can capture details about **how** ChatGPT both "thinks about", and then actually "solves the problem" in a specific language.  Once captured, this knowledge can be re-invoked as a tool using:
 
-Now, for this to work, before any fish are provided, we start by asking ChatGPT to explain how it actually "thinks about" / "understands the problem".  It shares it's own "knowledge graph" in a language agnostic format that AI Capture saves.
+`> aicapture -replay`
+
+For this to work as described, before any fish are provided, we must start by asking ChatGPT to explain how it actually "thinks about" / "understands the problem".  It shares it's own "knowledge graph" in a language agnostic format that AI Capture saves.
 
 With this "Knowledge Graph" in hand, we can now ask ChatGPT to start teaching, by explaining to us **how** it wrote the original code, **relative to** that **Knowledge Graph**.  Logistically, in practice, it actually does this by writing a tool that is capable of doing it, or redoing it any time it's needed.  
 

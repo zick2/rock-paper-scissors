@@ -24,14 +24,14 @@ public static class RPSHelper {
 </xsl:for-each><xsl:text>"; } }
     public static int CalculateRoundScore(char opponentChoice, char playerChoice)
     {
-        int playerScore = 0;
+        int shapeScore = 0;
         int outcomeScore = 0;
         switch (playerChoice)
         {</xsl:text><xsl:for-each select="rules/shapes"><xsl:text>
             case '</xsl:text><xsl:value-of select="player_code"/><xsl:text>': // </xsl:text>
             <xsl:value-of select="name" />
             <xsl:text>
-                playerScore = </xsl:text><xsl:value-of select="score"/><xsl:text>;
+                shapeScore = </xsl:text><xsl:value-of select="score"/><xsl:text>;
                 break;</xsl:text></xsl:for-each><xsl:text>
         }
 
@@ -47,7 +47,7 @@ public static class RPSHelper {
         {
             outcomeScore = </xsl:text><xsl:value-of select="rules/outcomes/draw"/><xsl:text>;
         }
-        return playerScore + outcomeScore;
+        return shapeScore + outcomeScore;
     }
 
     static bool IsWin(char opponentChoice, char playerChoice)

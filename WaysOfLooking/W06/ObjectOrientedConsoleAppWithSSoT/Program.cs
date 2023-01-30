@@ -12,6 +12,8 @@ namespace ObjectOrientedConsoleApp
 
             game.AddSampleGame();
 
+            var rock = new Rock();
+
             game.PlayGame();
 
             Console.WriteLine("Total Score: " + game.Score);

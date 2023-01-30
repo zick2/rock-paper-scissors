@@ -27,18 +27,18 @@ class RockPaperScissors
     
     static int CalculateRoundScore(char opponentChoice, char playerChoice)
     {
-        int playerScore = 0;
+        int shapeScore = 0;
         int outcomeScore = 0;
         switch (playerChoice)
         {
             case 'X':
-                playerScore = 1;
+                shapeScore = 1;
                 break;
             case 'Y':
-                playerScore = 2;
+                shapeScore = 2;
                 break;
             case 'Z':
-                playerScore = 3;
+                shapeScore = 3;
                 break;
         }
         if (IsWin(opponentChoice, playerChoice))
@@ -53,7 +53,7 @@ class RockPaperScissors
         {
             outcomeScore = 3;
         }
-        return playerScore + outcomeScore;
+        return shapeScore + outcomeScore;
     }
 
     static bool IsWin(char opponentChoice, char playerChoice)

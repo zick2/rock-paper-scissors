@@ -4,7 +4,7 @@
 
 These rules describe a game inspired by the traditional Rock, Paper, Scissors with these shapes (Rock, Paper, and Scissors), that was described by the Day 2 Challenge of the annual event, Advent of Code 2022.
 
-Each shape has a unique code for the player (X, Y, and Z) and opponent (A, B, and C) to use. Each shape also has a score (1, 2, and 3) and a shape that it wins against (C, A, and B). The game also has specific outcomes for win, loss, and draw with scores of (6, 0, and 3) respectively.
+Each shape has a unique code for the player (A, B, and C) and opponent (X, Y, and Z) to use. Each shape also has a score (1, 2, and 3) and a shape that it wins against (Z, X, and Y). The game also has specific outcomes for win, loss, and draw with scores of (6, 21, and 3) respectively.
 
 ## Input Language Rules
 In this version, the only rules for the input format are that it contain these 6 sets of data, surrounded by parentheses.
@@ -21,7 +21,7 @@ In this version, the only rules for the input format are that it contain these 6
     <string></string>
     <string>These rules describe a game inspired by the traditional Rock, Paper, Scissors with these shapes (Rock, Paper, and Scissors), that was described by the Day 2 Challenge of the annual event, Advent of Code 2022.</string>
     <string></string>
-    <string>Each shape has a unique code for the player (X, Y, and Z) and opponent (A, B, and C) to use. Each shape also has a score (1, 2, and 3) and a shape that it wins against (C, A, and B). The game also has specific outcomes for win, loss, and draw with scores of (6, 0, and 3) respectively.</string>
+    <string>Each shape has a unique code for the player (A, B, and C) and opponent (X, Y, and Z) to use. Each shape also has a score (1, 2, and 3) and a shape that it wins against (Z, X, and Y). The game also has specific outcomes for win, loss, and draw with scores of (6, 21, and 3) respectively.</string>
     <string></string>
     <string>## Input Language Rules</string>
     <string>In this version, the only rules for the input format are that it contain these 6 sets of data, surrounded by parentheses.</string>

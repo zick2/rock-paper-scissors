@@ -1,39 +1,52 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output method="xml" />
+    <xsl:variable name="data">
+        <xsl:text># </xsl:text>
+        <xsl:value-of select="*/name"/>
+        <xsl:text>
+The Elves begin to set up camp on the beach. To decide whose tent gets to be closest to the snack storage, a giant </xsl:text>
+        <xsl:value-of select="*/name"/>
+        <xsl:text> tournament is already in progress.
+
+</xsl:text>
+        <xsl:value-of select="*/name"/>
+        <xsl:text> is a game between two players. Each game contains many rounds; in each round, the players each simultaneously choose one of </xsl:text>
+        <xsl:for-each select="//shapes">
+            <xsl:if test="position() > 1">
+                <xsl:text>,</xsl:text>
+            </xsl:if>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="name"/>
+        </xsl:for-each>
+        <xsl:text>&#32;using a hand shape. Then, a winner for that round is selected :</xsl:text>
+        <xsl:for-each select="//shapes">
+            <xsl:if test="position() > 1">
+                <xsl:text>,</xsl:text>
+            </xsl:if>
+            <xsl:value-of select="name"/>
+            <xsl:text>&#32;wins against </xsl:text>
+            <xsl:value-of select="//shapes[opp_code=current()/wins_against]/name"/>
+        </xsl:for-each>
+        <xsl:text>.  If both players choose the same shape, the round instead ends in a draw. </xsl:text>
+        <xsl:apply-templates select="*/rules"/>
+    </xsl:variable>    
     <xsl:template match="/">
         <FileSet>
             <FileSetFiles>
                 <FileSetFile>
                     <RelativePath>../../README-Fluid-Fish.md</RelativePath>
-                    <FileContents>
-        <xsl:text># </xsl:text>
-        <xsl:value-of select="*/name"/>
-        <xsl:text>
-The Elves begin to set up camp on the beach. To decide whose tent gets to be closest to the snack storage, a giant </xsl:text>
-                        <xsl:value-of select="*/name"/>
-                        <xsl:text> tournament is already in progress.
-
-</xsl:text>
-                        <xsl:value-of select="*/name"/>
-                        <xsl:text> is a game between two players. Each game contains many rounds; in each round, the players each simultaneously choose one of </xsl:text>
-  <xsl:for-each select="//shapes">
-    <xsl:if test="position() > 1"><xsl:text>,</xsl:text></xsl:if>
-    <xsl:text> </xsl:text>
-    <xsl:value-of select="name"/>
-  </xsl:for-each>
-                        <xsl:text>&#32;using a hand shape. Then, a winner for that round is selected :</xsl:text>
-  <xsl:for-each select="//shapes">
-    <xsl:if test="position() > 1"><xsl:text>,</xsl:text></xsl:if>
-    <xsl:value-of select="name"/>
-    <xsl:text>&#32;wins against </xsl:text>
-    <xsl:value-of select="//shapes[opp_code=current()/wins_against]/name"/>
-  </xsl:for-each>
-  <xsl:text>.  If both players choose the same shape, the round instead ends in a draw. </xsl:text>
-        <xsl:apply-templates select="*/rules"/>
-                    </FileContents>
-                    <OverwriteMode>Always</OverwriteMode>
+                    <FileContents><xsl:copy-of select="$data"/></FileContents>
                 </FileSetFile>
+                <FileSetFile>
+                    <RelativePath>../../README-04-French.md</RelativePath>
+                    <FileContents><xsl:copy-of select="$data"/></FileContents>
+                </FileSetFile>
+                <FileSetFile>
+                    <RelativePath>../../README-05-German.md</RelativePath>
+                    <FileContents><xsl:copy-of select="$data"/></FileContents>
+                </FileSetFile>
+
             </FileSetFiles>
         </FileSet>    </xsl:template>
 
@@ -117,7 +130,7 @@ Since you can't be sure if the Elf is trying to help you or trick you, you shoul
         <xsl:text>&#10;</xsl:text>
     </xsl:template>
 
-   <xsl:template match="games">
+    <xsl:template match="games">
     <xsl:text>&#10;### </xsl:text>
     <xsl:value-of select="name"/>
     <xsl:text>

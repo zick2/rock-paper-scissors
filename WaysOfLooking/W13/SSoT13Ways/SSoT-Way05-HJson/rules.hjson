@@ -1,0 +1,40 @@
+Game: {
+  HandShapes: [{
+    Name: Rock
+    ResponseCode: X
+    Code: A
+    Points: 1
+  },{
+    Name: Paper
+    ResponseCode: Y
+    Code: B
+    Points: 2
+  },{
+    Name: Scissors
+    ResponseCode: Z
+    Code: C
+    Points: 3
+  }  
+  ],
+  
+  OutcomeResults: {
+    Win: 6
+    Loss: 0
+    Draw: 3
+  },
+    
+  ExampleGames: [{
+    Name: Example Game
+    ExampleRounds:[{
+      ResponseCode: Y
+      Code: A
+    },{
+      ResponseCode: X
+      Code: B
+    },{
+      ResponseCode: Z
+      Code: C
+    }
+    ]
+  }]
+}
