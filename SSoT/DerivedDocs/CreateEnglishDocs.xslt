@@ -39,11 +39,47 @@ The Elves begin to set up camp on the beach. To decide whose tent gets to be clo
                     <FileContents><xsl:copy-of select="$data"/></FileContents>
                 </FileSetFile>
                 <FileSetFile>
+                    <RelativePath>../../README-01-English.md</RelativePath>
+                    <FileContents><xsl:copy-of select="$data"/></FileContents>
+                </FileSetFile>
+                <FileSetFile>
                     <RelativePath>../../README-04-French.md</RelativePath>
                     <FileContents><xsl:copy-of select="$data"/></FileContents>
                 </FileSetFile>
                 <FileSetFile>
                     <RelativePath>../../README-05-German.md</RelativePath>
+                    <FileContents><xsl:copy-of select="$data"/></FileContents>
+                </FileSetFile>
+                <FileSetFile>
+                    <RelativePath>../../README-06-Greek.md</RelativePath>
+                    <FileContents><xsl:copy-of select="$data"/></FileContents>
+                </FileSetFile>
+                <FileSetFile>
+                    <RelativePath>../../README-07-Russian.md</RelativePath>
+                    <FileContents><xsl:copy-of select="$data"/></FileContents>
+                </FileSetFile>
+                <FileSetFile>
+                    <RelativePath>../../README-08-Old-English.md</RelativePath>
+                    <FileContents><xsl:copy-of select="$data"/></FileContents>
+                </FileSetFile>
+                <FileSetFile>
+                    <RelativePath>../../README-09-Portugese.md</RelativePath>
+                    <FileContents><xsl:copy-of select="$data"/></FileContents>
+                </FileSetFile>
+                <FileSetFile>
+                    <RelativePath>../../README-10-Korean.md</RelativePath>
+                    <FileContents><xsl:copy-of select="$data"/></FileContents>
+                </FileSetFile>
+                <FileSetFile>
+                    <RelativePath>../../README-11-Hebrew.md</RelativePath>
+                    <FileContents><xsl:copy-of select="$data"/></FileContents>
+                </FileSetFile>
+                <FileSetFile>
+                    <RelativePath>../../README-12-Latin.md</RelativePath>
+                    <FileContents><xsl:copy-of select="$data"/></FileContents>
+                </FileSetFile>
+                <FileSetFile>
+                    <RelativePath>../../README-13-Swedish.md</RelativePath>
                     <FileContents><xsl:copy-of select="$data"/></FileContents>
                 </FileSetFile>
 

@@ -32,3 +32,15 @@ The third round is a draw with both players choosing Scissors, giving you a scor
 In this example, if you were to follow the strategy guide, you would get a total score of 15 (8 + 1 + 6).
 
 What would your total score be if everything goes exactly according to your strategy guide?
+
+### Code Request:
+Please write a c# program to figure out the answer to this question.
+
+Please make sure that the calculation of the score is very verbose and clear in what it is doing, and how it relates to the input instructions.
+
+Please make sure that the code uses at least these functions:
+
+- CalculateGameScore 
+- CalculateRoundScore 
+- IsWin 
+- IsLoss

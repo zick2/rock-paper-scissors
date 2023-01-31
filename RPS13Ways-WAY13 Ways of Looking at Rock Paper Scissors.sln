@@ -7,13 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test-All-The-Ways", "TestPr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Global", "Global", "{E8C2232A-5D8B-462E-AA61-2668276AE75E}"
 	ProjectSection(SolutionItems) = preProject
+		aicapture.json = aicapture.json
 		ODXML\DataSchema.odxml = ODXML\DataSchema.odxml
 		README-Concrete-Fish.md = README-Concrete-Fish.md
 		README-Fluid-Fish.md = README-Fluid-Fish.md
 		README.md = README.md
 		SSoT\rps.json = SSoT\rps.json
 		SSoT\single-source-of-truth.json = SSoT\single-source-of-truth.json
-		SSoTmeProject.json = SSoTmeProject.json
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WaysOfLooking", "WaysOfLooking", "{AF5F1FD3-FE59-48FF-BD18-035B780D8314}"
@@ -103,7 +103,7 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "W02-FSharp-Fishing-Pole", "
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "W02-FSharp-Fluid-Fish", "WaysOfLooking\W02\W02-Fluid-Fish\W02-FSharp-Fluid-Fish.fsproj", "{D00436C8-DE93-4AFA-8AFB-6AF89C59D416}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SSoTDetails", "SSoTDetails", "{E23748AE-2FF9-42BF-A948-7263236A2593}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ways-SSoT", "Ways-SSoT", "{E23748AE-2FF9-42BF-A948-7263236A2593}"
 	ProjectSection(SolutionItems) = preProject
 		WaysOfLooking\CreateWaysOfLooking.xslt = WaysOfLooking\CreateWaysOfLooking.xslt
 		SSoT\WaysOfLooking\WaysOfLooking.csv = SSoT\WaysOfLooking\WaysOfLooking.csv
@@ -158,21 +158,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "W04-Java-Fishing-Pole", "W0
 		WaysOfLooking\W04\Java-Fishing-Pole\RockPaperScissors.java = WaysOfLooking\W04\Java-Fishing-Pole\RockPaperScissors.java
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fluid-Fish", "Fluid-Fish", "{BD6047FF-5791-4A4E-80E3-7F2AF88AA6EA}"
-	ProjectSection(SolutionItems) = preProject
-		WaysOfLooking\W09\Fluid-Fish\RockPaperScissors.go = WaysOfLooking\W09\Fluid-Fish\RockPaperScissors.go
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Concrete-Fish", "Concrete-Fish", "{BB8C7962-50C1-4B17-81CC-12FE41BC87EA}"
-	ProjectSection(SolutionItems) = preProject
-		WaysOfLooking\W09\Concrete-Fish\RockPaperScissors.go = WaysOfLooking\W09\Concrete-Fish\RockPaperScissors.go
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fishing-Pole", "Fishing-Pole", "{A82498EB-E654-4283-A7EC-B4586571ED59}"
-	ProjectSection(SolutionItems) = preProject
-		WaysOfLooking\W09\Fishing-Pole\RockPaperScissors.go = WaysOfLooking\W09\Fishing-Pole\RockPaperScissors.go
-	EndProjectSection
-EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SSoT13Ways", "WaysOfLooking\W13\SSoT13Ways\", "{439F434E-0A0D-4CCD-8917-251BC937842C}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
@@ -197,6 +182,44 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "W01-CSharp-Concrete-Fish", "WaysOfLooking\W01\ConsoleApp1\W01-CSharp-Concrete-Fish.csproj", "{0247E6B3-BC4E-4C5F-BFB2-5F8BC3BEB8EC}"
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "W03-Python-FishingPole-SSoT", "WaysOfLooking\W03\PythonApplicationWithSSoT\W03-Python-FishingPole-SSoT.pyproj", "{E02805D9-BAAA-4E9E-8B07-A3BA16BEFF0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "READMEs 13 Ways", "READMEs 13 Ways", "{83A9CD80-B3D7-43E4-A2D6-B445F6571311}"
+	ProjectSection(SolutionItems) = preProject
+		README-01-English.md = README-01-English.md
+		README-02-Chinese.md = README-02-Chinese.md
+		README-03-Spanish.md = README-03-Spanish.md
+		README-04-French.md = README-04-French.md
+		README-05-German.md = README-05-German.md
+		README-06-Greek.md = README-06-Greek.md
+		README-07-Russian.md = README-07-Russian.md
+		README-08-Old-English.md = README-08-Old-English.md
+		README-09-Portugese.md = README-09-Portugese.md
+		README-10-Korean.md = README-10-Korean.md
+		README-11-Hebrew.md = README-11-Hebrew.md
+		README-12-Latin.md = README-12-Latin.md
+		README-13-Swedish.md = README-13-Swedish.md
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "W09", "WaysOfLooking\W09\", "{91F60100-CFF4-4003-B392-A0F938B12CCA}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49391"
+		Debug.AspNetCompiler.PhysicalPath = "WaysOfLooking\W09\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49391\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49391"
+		Release.AspNetCompiler.PhysicalPath = "WaysOfLooking\W09\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49391\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49391"
+		SlnRelativePath = "WaysOfLooking\W09\"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -612,6 +635,26 @@ Global
 		{E02805D9-BAAA-4E9E-8B07-A3BA16BEFF0B}.Release|ARM64.ActiveCfg = Release|Any CPU
 		{E02805D9-BAAA-4E9E-8B07-A3BA16BEFF0B}.Release|x64.ActiveCfg = Release|Any CPU
 		{E02805D9-BAAA-4E9E-8B07-A3BA16BEFF0B}.Release|x86.ActiveCfg = Release|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Debug|ARM.Build.0 = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Debug|x64.Build.0 = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Debug|x86.Build.0 = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Release|ARM.ActiveCfg = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Release|ARM.Build.0 = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Release|ARM64.ActiveCfg = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Release|ARM64.Build.0 = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Release|x64.ActiveCfg = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Release|x64.Build.0 = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Release|x86.ActiveCfg = Debug|Any CPU
+		{91F60100-CFF4-4003-B392-A0F938B12CCA}.Release|x86.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -650,12 +693,10 @@ Global
 		{5F50474B-A378-4B89-B4A0-0BD438FCB3DC} = {7A684821-B310-47B9-89C4-178C8CD1F367}
 		{9BDD6014-56B1-408E-A2E2-7E697018E24D} = {7A684821-B310-47B9-89C4-178C8CD1F367}
 		{02BBDEE7-225A-45AF-8053-C626C3FEDC28} = {7A684821-B310-47B9-89C4-178C8CD1F367}
-		{BD6047FF-5791-4A4E-80E3-7F2AF88AA6EA} = {B4564633-0546-459E-8AAA-F7E4DEFF2E27}
-		{BB8C7962-50C1-4B17-81CC-12FE41BC87EA} = {B4564633-0546-459E-8AAA-F7E4DEFF2E27}
-		{A82498EB-E654-4283-A7EC-B4586571ED59} = {B4564633-0546-459E-8AAA-F7E4DEFF2E27}
 		{439F434E-0A0D-4CCD-8917-251BC937842C} = {A25963AC-1B13-471E-8927-FD664D2FB108}
 		{0247E6B3-BC4E-4C5F-BFB2-5F8BC3BEB8EC} = {334CB127-B0B6-4914-8CA6-2FB7D8196205}
 		{E02805D9-BAAA-4E9E-8B07-A3BA16BEFF0B} = {21AC5215-B0B9-416F-96F5-FF0A6556B51E}
+		{91F60100-CFF4-4003-B392-A0F938B12CCA} = {B4564633-0546-459E-8AAA-F7E4DEFF2E27}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E06A3F43-24DA-461F-8D28-F58999BE70A1}

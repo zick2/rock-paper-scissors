@@ -128,10 +128,32 @@
         "Name": "XmlXsltTransform",
         "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
       },
+      "ProjectTranspilerId": "cd4d8307-b168-43d2-b8dd-b385fbb2fcb1",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/WaysOfLooking/W02/W02-FSharp-FishingPole",
+      "CommandLine": "xml-xslt-transform -i ..\\..\\..\\SSoT\\rps.xml -i .\\CreateFSharpSolution.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
       "ProjectTranspilerId": "e1af9be1-fbec-4e80-b88d-05505c26ff98",
       "Name": "XmlXsltTransform",
       "RelativePath": "/WaysOfLooking/W03/PythonApplicationWithSSoT",
       "CommandLine": "xml-xslt-transform -i ..\\..\\..\\SSoT\\rps.xml -i .\\CreatePythonSolution.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "7dbe8045-7f78-4306-9c9f-45a64143c2ef",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/WaysOfLooking/W04/Java-Fishing-Pole",
+      "CommandLine": "xml-xslt-transform -i ..\\..\\..\\SSoT\\rps.xml -i CreateJavaFishingPole.xslt"
     },
     {
       "MatchedTranspiler": {
@@ -205,21 +227,10 @@
         "Name": "XmlXsltTransform",
         "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
       },
-      "ProjectTranspilerId": "cd4d8307-b168-43d2-b8dd-b385fbb2fcb1",
+      "ProjectTranspilerId": "c2b12368-00e9-41ff-90ea-5567f06dae03",
       "Name": "XmlXsltTransform",
-      "RelativePath": "/WaysOfLooking/W02/W02-FSharp-FishingPole",
-      "CommandLine": "xml-xslt-transform -i ..\\..\\..\\SSoT\\rps.xml -i .\\CreateFSharpSolution.xslt"
-    },
-    {
-      "MatchedTranspiler": {
-        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
-        "Name": "XmlXsltTransform",
-        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
-      },
-      "ProjectTranspilerId": "7dbe8045-7f78-4306-9c9f-45a64143c2ef",
-      "Name": "XmlXsltTransform",
-      "RelativePath": "/WaysOfLooking/W04/Java-Fishing-Pole",
-      "CommandLine": "xml-xslt-transform -i ..\\..\\..\\SSoT\\rps.xml -i CreateJavaFishingPole.xslt"
+      "RelativePath": "/WaysOfLooking/W09/Fishing-Pole",
+      "CommandLine": "xml-xslt-transform -i ..\\..\\..\\SSoT\\rps.xml -i CreateGolangFishingPole.xslt"
     },
     {
       "MatchedTranspiler": {
@@ -452,7 +463,7 @@
         "Description": "HJson-To-Xml"
       },
       "ProjectTranspilerId": "b46211d8-699d-4429-8d2d-f74a30b3dcba",
-      "Name": "YamlToJson",
+      "Name": "HJsonToXml",
       "RelativePath": "/WaysOfLooking/W13/SSoT13Ways/SSoT-Way05-HJson",
       "CommandLine": "hjson-to-xml -i .\\rules.hjson",
       "IsDisabled": true

@@ -50,23 +50,23 @@ func calculateChoiceScore(playerChoice string) int {
 	}
 }
 
-func playerWins(opponentChoice string, playerChoice string) bool {
-	if (opponentChoice == opponentScissorsCode && playerChoice == playerRockCode) ||
-		(opponentChoice == opponentPaperCode && playerChoice == playerScissorsCode) ||
-		(opponentChoice == opponentRockCode && playerChoice == playerPaperCode) {
-		return true
+	func playerWins(opponentChoice string, playerChoice string) bool {
+		if (opponentChoice == opponentScissorsCode && playerChoice == playerRockCode) ||
+			(opponentChoice == opponentPaperCode && playerChoice == playerScissorsCode) ||
+			(opponentChoice == opponentRockCode && playerChoice == playerPaperCode) {
+			return true
+		}
+		return false
 	}
-	return false
-}
 
-func playerLosses(opponentChoice string, playerChoice string) bool {
-	if (opponentChoice == opponentScissorsCode && playerChoice == playerPaperCode) ||
-		(opponentChoice == opponentPaperCode && playerChoice == playerRockCode) ||
-		(opponentChoice == opponentRockCode && playerChoice == playerScissorsCode) {
-		return true
+	func playerLosses(opponentChoice string, playerChoice string) bool {
+		if (opponentChoice == opponentScissorsCode && playerChoice == playerPaperCode) ||
+			(opponentChoice == opponentPaperCode && playerChoice == playerRockCode) ||
+			(opponentChoice == opponentRockCode && playerChoice == playerScissorsCode) {
+			return true
+		}
+		return false
 	}
-	return false
-}
 
 func main() {
 	strategyGuide := "AYBXCZ"

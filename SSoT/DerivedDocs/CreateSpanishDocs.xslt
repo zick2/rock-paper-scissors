@@ -5,7 +5,7 @@
         <FileSet>
             <FileSetFiles>
                 <FileSetFile>
-                    <RelativePath>../../../README-02-Spanish.md</RelativePath>
+                    <RelativePath>../../../README-03-Spanish.md</RelativePath>
                     <xsl:element name="FileContents" xml:space="default">
                         <xsl:text># </xsl:text>
                         <xsl:value-of select="*/name"/>

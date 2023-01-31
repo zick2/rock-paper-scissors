@@ -1,75 +1,95 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
 )
 
-const (
-	playerRockCode    = "X"
-	opponentRockCode  = "A"
-	playerPaperCode   = "Y"
-	opponentPaperCode = "B"
-	playerScissorsCode = "Z"
-	opponentScissorsCode = "C"
-)
+type RockPaperScissors struct {
+	gameJson map[string]interface{}
+}
 
-func calculateGameScore(strategyGuide string) int {
-	var totalScore int
-	for i := 0; i < len(strategyGuide); i += 2 {
-		opponentChoice := string(strategyGuide[i])
-		playerChoice := string(strategyGuide[i+1])
-		outcomeScore := calculateRoundScore(opponentChoice, playerChoice)
+func NewRockPaperScissors() *RockPaperScissors {
+	r := &RockPaperScissors{}
 
-		choiceScore := calculateChoiceScore(playerChoice)
-		roundScore := choiceScore + outcomeScore
+	file, err := ioutil.ReadFile("C:/Users/auto1/go/src/github.com/eejai42/rock-paper-scissors/SSoT/rps.json")
+	if err != nil {
+		fmt.Println(err)
+		return nil
+	}
+
+	var data map[string]interface{}
+	err = json.Unmarshal(file, &data)
+	if err != nil {
+		fmt.Println(err)
+		return nil
+	}
+
+	r.gameJson = data["rock-paper-scissors"].(map[string]interface{})
+
+	return r
+}
+
+func (r *RockPaperScissors) GetStrategyGuide() string {
+	games := r.gameJson["rules"].(map[string]interface{})["games"].(map[string]interface{})
+	rounds := games["rounds"].([]interface{})
+	var strategyGuide string
+	for _, round := range rounds {
+		r := round.(map[string]interface{})
+		strategyGuide += r["opp_code"].(string) + " " + r["player_code"].(string) + "\n"
+	}
+	// fmt.Printf("STRATEGY GUID: %v", strategyGuide)
+	return strategyGuide
+}
+
+func (r *RockPaperScissors) CalculateGameScore(strategyGuide string) int {
+	totalScore := 0
+	for i := 0; i < len(strategyGuide); i += 4 {
+		opponentChoice := rune(strategyGuide[i])
+		playerChoice := rune(strategyGuide[i+2])
+		roundScore := r.CalculateRoundScore(opponentChoice, playerChoice)
 		fmt.Printf("Round Score: %v\r\n", roundScore)
 		totalScore += roundScore
 	}
 	return totalScore
 }
 
-func calculateRoundScore(opponentChoice string, playerChoice string) int {
-	if playerWins(opponentChoice, playerChoice) {
-		return 6
-	} else if playerLosses(opponentChoice, playerChoice) {
-		return 0
+func (r *RockPaperScissors) CalculateRoundScore(opponentChoice rune, playerChoice rune) int {
+	outcomes := r.gameJson["rules"].(map[string]interface{})["outcomes"].(map[string]interface{})
+	shapes := r.gameJson["rules"].(map[string]interface{})["shapes"].([]interface{})
+	// fmt.Printf("SHAPES: %v - %c, %c", shapes, opponentChoice, playerChoice)
+	var opponentShape, playerShape map[string]interface{}
+	for _, shape := range shapes {
+		shape2 := shape.(map[string]interface{})
+
+		if string(opponentChoice) == shape2["opp_code"] {
+			opponentShape = shape2
+		}
+		if string(playerChoice) == shape2["player_code"] {
+			playerShape = shape2
+		}
+	}
+
+	// fmt.Printf("JSON: %v\nPlayer: %v\nOpp: %v", outcomes, playerShape, opponentShape)
+
+	if playerShape["wins_against"] == opponentShape["opp_code"] {
+		return int(outcomes["win"].(float64)) + int(playerShape["score"].(float64))
+	} else if opponentShape["wins_against"] == playerShape["opp_code"] {
+		return int(outcomes["loss"].(float64)) + int(playerShape["score"].(float64))
 	} else {
-		return 3
+		return int(outcomes["draw"].(float64)) + int(playerShape["score"].(float64))
 	}
 }
 
-func calculateChoiceScore(playerChoice string) int {
-	if playerChoice == playerRockCode {
-		return 1
-	} else if playerChoice == playerPaperCode {
-		return 2
-	} else if playerChoice == playerScissorsCode {
-		return 3
-	} else {
-		return 0
-	}
-}
-
-func playerWins(opponentChoice string, playerChoice string) bool {
-	if (opponentChoice == opponentScissorsCode && playerChoice == playerRockCode) ||
-		(opponentChoice == opponentPaperCode && playerChoice == playerScissorsCode) ||
-		(opponentChoice == opponentRockCode && playerChoice == playerPaperCode) {
-		return true
-	}
-	return false
-}
-
-func playerLosses(opponentChoice string, playerChoice string) bool {
-	if (opponentChoice == opponentScissorsCode && playerChoice == playerPaperCode) ||
-		(opponentChoice == opponentPaperCode && playerChoice == playerRockCode) ||
-		(opponentChoice == opponentRockCode && playerChoice == playerScissorsCode) {
-		return true
-	}
-	return false
+func (r *RockPaperScissors) Main() int {
+	strategyGuide := r.GetStrategyGuide()
+	totalScore := r.CalculateGameScore(strategyGuide)
+	fmt.Printf("Total score: %v", totalScore)
+	return totalScore
 }
 
 func main() {
-	strategyGuide := "AYBXCZ"
-	totalScore := calculateGameScore(strategyGuide)
-	fmt.Printf("Total Score: %v", totalScore)
+	r := NewRockPaperScissors()
+	r.Main()
 }

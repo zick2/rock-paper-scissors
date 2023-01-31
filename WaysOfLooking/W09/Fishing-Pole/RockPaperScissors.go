@@ -5,15 +5,15 @@ import (
 )
 
 const (
-	playerRockCode    = "X"
-	opponentRockCode  = "A"
-	playerPaperCode   = "Y"
+	playerRockCode = "X"
+	opponentRockCode = "A"
+	playerPaperCode = "Y"
 	opponentPaperCode = "B"
 	playerScissorsCode = "Z"
-	opponentScissorsCode = "C"
-)
+	opponentScissorsCode = "C")
 
-func calculateGameScore(strategyGuide string) int {
+
+ func calculateGameScore(strategyGuide string) int {
 	var totalScore int
 	for i := 0; i < len(strategyGuide); i += 2 {
 		opponentChoice := string(strategyGuide[i])
@@ -27,7 +27,7 @@ func calculateGameScore(strategyGuide string) int {
 	}
 	return totalScore
 }
-
+    
 func calculateRoundScore(opponentChoice string, playerChoice string) int {
 	if playerWins(opponentChoice, playerChoice) {
 		return 6
@@ -39,35 +39,34 @@ func calculateRoundScore(opponentChoice string, playerChoice string) int {
 }
 
 func calculateChoiceScore(playerChoice string) int {
-	if playerChoice == playerRockCode {
+		if playerChoice == playerRockCode {
 		return 1
-	} else if playerChoice == playerPaperCode {
+	} else 	if playerChoice == playerPaperCode {
 		return 2
-	} else if playerChoice == playerScissorsCode {
+	} else 	if playerChoice == playerScissorsCode {
 		return 3
-	} else {
+	} else  {
 		return 0
 	}
 }
 
 func playerWins(opponentChoice string, playerChoice string) bool {
-	if (opponentChoice == opponentScissorsCode && playerChoice == playerRockCode) ||
-		(opponentChoice == opponentPaperCode && playerChoice == playerScissorsCode) ||
-		(opponentChoice == opponentRockCode && playerChoice == playerPaperCode) {
-		return true
-	}
-	return false
+  if (opponentChoice == "A" && playerChoice == "Y") ||
+(opponentChoice == "B" && playerChoice == "Z") ||
+(opponentChoice == "C" && playerChoice == "X") {
+   return true
+  }
+  return false
 }
 
 func playerLosses(opponentChoice string, playerChoice string) bool {
-	if (opponentChoice == opponentScissorsCode && playerChoice == playerPaperCode) ||
-		(opponentChoice == opponentPaperCode && playerChoice == playerRockCode) ||
-		(opponentChoice == opponentRockCode && playerChoice == playerScissorsCode) {
-		return true
-	}
-	return false
+  if (opponentChoice == "B" && playerChoice == "X") ||
+(opponentChoice == "C" && playerChoice == "Y") ||
+(opponentChoice == "A" && playerChoice == "Z") {
+    return true
+  }
+  return false
 }
-
 func main() {
 	strategyGuide := "AYBXCZ"
 	totalScore := calculateGameScore(strategyGuide)
