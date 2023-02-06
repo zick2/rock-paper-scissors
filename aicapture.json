@@ -557,6 +557,50 @@
       "Name": "XmlXsltTransform",
       "RelativePath": "/SSoT/DerivedDocs/Chinese",
       "CommandLine": "xml-xslt-transform -i ../../rps.xml -i ../CreateChineseDocs.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "3dc9229d-8656-4a29-b34c-8b061e385405",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/WaysOfLooking/W10/Fishing-Pole",
+      "CommandLine": "xml-xslt-transform -i ../../../SSoT/rps.xml -i CreateNeo4JFishingPole.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "bcad143c-182c-4524-aeb8-fea2b2bd370c",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/SSoT/DerivedDocs/French",
+      "CommandLine": "xml-xslt-transform -i ../../rps.xml -i ../CreateFrenchDocs.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "dfadaf16-db2b-4ead-82b5-dbcbd63a7385",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/SSoT/DerivedDocs/German",
+      "CommandLine": "xml-xslt-transform -i ../../rps.xml -i ../CreateGermanDocs.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "7d266bc8-81ca-4b1d-9a7d-a6a083f0dac2",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/SSoT/DerivedDocs/Greek",
+      "CommandLine": "xml-xslt-transform -i ../../rps.xml -i ../CreateGreekDocs.xslt"
     }
   ]
 }

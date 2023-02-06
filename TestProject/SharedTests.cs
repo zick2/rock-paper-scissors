@@ -52,6 +52,11 @@ namespace TestProject
                 args = fullPathToExecutable;
                 fullPathToExecutable = "python";
             }
+            if (fullPathToExecutable.EndsWith(".js"))
+            {
+                args = fullPathToExecutable;
+                fullPathToExecutable = "node";
+            }
             if (fullPathToExecutable.EndsWith(".go"))
             {
                 args = $"run {fullPathToExecutable}";

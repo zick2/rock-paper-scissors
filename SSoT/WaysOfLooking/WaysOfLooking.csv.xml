@@ -325,6 +325,8 @@ public static class RPSHelper {
 
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W07</Directory>
+    <RelativePathToFish>/nodeconsoleproject1/app.js</RelativePathToFish>
+    <RelativePathToDynamicFish>/W07-NodeCLI-Fluid-Fish/app.js</RelativePathToDynamicFish>
     <DataFormat>XML</DataFormat>
     <Game>Blade, Shield, Armor</Game>
     <Theme>Medeval</Theme>

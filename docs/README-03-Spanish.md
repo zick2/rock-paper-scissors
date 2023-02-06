@@ -35,13 +35,13 @@ C Z
 ```
 Esta guía de estrategia predice y recomienda lo siguiente:
 
-- El oponente eligió  (código A), el jugador eligió  (código Y)
-la ronda fue un , con una puntuación de 
-      puntuación de elección: , puntuación de resultado: 
-- El oponente eligió  (código B), el jugador eligió  (código X)
-la ronda fue un , con una puntuación de 
-      puntuación de elección: , puntuación de resultado: 
-- El oponente eligió  (código C), el jugador eligió  (código Z)
-la ronda fue un , con una puntuación de 
-      puntuación de elección: , puntuación de resultado: 
+- El oponente eligió Rock (código A), el jugador eligió Paper (código Y)
+la ronda fue un win, con una puntuación de 8
+      puntuación de elección: 2, puntuación de resultado: 6
+- El oponente eligió Paper (código B), el jugador eligió Rock (código X)
+la ronda fue un loss, con una puntuación de 1
+      puntuación de elección: 1, puntuación de resultado: 0
+- El oponente eligió Scissors (código C), el jugador eligió Scissors (código Z)
+la ronda fue un draw, con una puntuación de 6
+      puntuación de elección: 3, puntuación de resultado: 3
 La puntuación final es: 15

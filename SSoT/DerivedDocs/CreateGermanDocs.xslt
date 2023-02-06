@@ -5,31 +5,38 @@
         <FileSet>
             <FileSetFiles>
                 <FileSetFile>
-                    <RelativePath>../../../docs/README-03-Spanish.md</RelativePath>
+                    <RelativePath>../../../docs/README-05-German.md</RelativePath>
                     <xsl:element name="FileContents" xml:space="default">
                         <xsl:text># </xsl:text>
                         <xsl:value-of select="*/name"/>
                         <xsl:text>
-Los Elfos comienzan a establecer su campamento en la playa. Para decidir cuál tienda estará más cerca del almacenamiento de aperitivos, un torneo gigante </xsl:text>
+Die Elfen beginnen ihr Lager am Strand aufzubauen. Um zu entscheiden, welches Zelt näher am Snack-Lager sein wird, findet bereits ein riesiges 
+</xsl:text>
                         <xsl:value-of select="/name"/>
-                        <xsl:text xml:space="preserve"> ya está en marcha.
+                        <xsl:text xml:space="preserve">-Turnier statt.
 
 </xsl:text>
                         <xsl:value-of select="*/name"/>
-                        <xsl:text> es un juego entre dos jugadores. Cada juego contiene muchas rondas; en cada ronda, los jugadores eligen simultáneamente uno de </xsl:text>
+                        <xsl:text> ist ein Spiel zwischen zwei Spielern. Jedes Spiel besteht aus vielen Runden; in jeder Runde wählen die Spieler gleichzeitig eine von 
+</xsl:text>
                         <xsl:for-each select="//shapes">
-                            <xsl:if test="position() > 1"><xsl:text>,</xsl:text></xsl:if>
+                            <xsl:if test="position() > 1">
+                                <xsl:text>,</xsl:text>
+                            </xsl:if>
                             <xsl:text> </xsl:text>
                             <xsl:value-of select="name"/>
                         </xsl:for-each>
-                        <xsl:text>&#32; usando una forma de mano. Luego, se selecciona un ganador para esa ronda:</xsl:text>
+                        <xsl:text>&#32; Formen mit einer Handform. Dann wird ein Gewinner für diese Runde ausgewählt: 
+</xsl:text>
                         <xsl:for-each select="//shapes">
-                            <xsl:if test="position() > 1"><xsl:text>,</xsl:text></xsl:if>
+                            <xsl:if test="position() > 1">
+                                <xsl:text>,</xsl:text>
+                            </xsl:if>
                             <xsl:value-of select="name"/>
-                            <xsl:text>&#32; gana contra </xsl:text>
+                            <xsl:text>&#32; gewinnt gegen </xsl:text>
                             <xsl:value-of select="//shapes[opp_code=current()/wins_against]/name"/>
                         </xsl:for-each>
-                        <xsl:text>. Si ambos jugadores eligen la misma forma, la ronda termina en un empate. </xsl:text>
+                        <xsl:text>. Wenn beide Spieler dieselbe Form wählen, endet die Runde unentschieden. </xsl:text>
                         <xsl:apply-templates select="*/rules"/>
                     </xsl:element>
                     <OverwriteMode>Always</OverwriteMode>
@@ -38,42 +45,43 @@ Los Elfos comienzan a establecer su campamento en la playa. Para decidir cuál t
         </FileSet>
     </xsl:template>
 
+
     <xsl:template match="rules">
         <xsl:text>
 </xsl:text>
         <xsl:text>
-## Formas y Resultados
+## Formen und Ergebnisse
 
-Hay </xsl:text>
+Es gibt </xsl:text>
         <xsl:value-of select="count(shapes)"/>
-        <xsl:text> formas. Son:
+        <xsl:text> Formen. Dies sind:
 </xsl:text>
 
         <xsl:apply-templates select="shapes"/>
         <xsl:apply-templates select="outcomes"/>
-        <xsl:text>&#32;## Las Reglas 
+        <xsl:text>&#32;## Die Regeln 
 
-Agradecido por su ayuda ayer, un Elfo le da una guía de estrategia encriptada (su entrada de puzzle) que dicen que lo ayudará a ganar. "La primera columna es lo que su oponente va a jugar:</xsl:text>
+Als Dank für Ihre Hilfe gestern gibt Ihnen ein Elf eine verschlüsselte Strategieanleitung (sein Puzzle-Eingabedatum), die sagt, dass es Ihnen helfen wird, zu gewinnen. "Die erste Spalte ist das, was Ihr Gegner spielen wird:</xsl:text>
         <xsl:for-each select="//shapes">
             <xsl:if test="position() > 1">
                 <xsl:text>,</xsl:text>
             </xsl:if>
             <xsl:text> </xsl:text>
             <xsl:value-of select="opp_code"/>
-            <xsl:text> para </xsl:text>
+            <xsl:text> für </xsl:text>
             <xsl:value-of select="name"/>
         </xsl:for-each>
-        <xsl:text> y la segunda columna es lo que debes jugar en respuesta:</xsl:text>
+        <xsl:text> und die zweite Spalte ist das, was Sie in Antwort spielen sollen:</xsl:text>
         <xsl:for-each select="//shapes">
             <xsl:text> </xsl:text>
             <xsl:value-of select="player_code"/>
-            <xsl:text> para </xsl:text>
+            <xsl:text> für </xsl:text>
             <xsl:value-of select="name"/>
             <xsl:text>,</xsl:text>
         </xsl:for-each>
-        <xsl:text> Ganar siempre sería sospechoso, por lo que las respuestas deben haber sido cuidadosamente elegidas.
+        <xsl:text> Immer zu gewinnen wäre verdächtig, deshalb müssen die Antworten sorgfältig ausgewählt worden sein.
 
-El ganador de todo el torneo es el jugador con la puntuación más alta. Tu puntuación total es la suma de tus puntuaciones por cada ronda. La puntuación de una sola ronda es la puntuación de la forma que seleccionó (</xsl:text>
+Der Sieger des gesamten Turniers ist der Spieler mit der höchsten Punktzahl. Ihre Gesamtpunktzahl ist die Summe Ihrer Punktzahlen pro Runde. Die Punktzahl einer einzigen Runde ist die Punktzahl der gewählten Form (</xsl:text>
         <xsl:for-each select="shapes">
             <xsl:if test="position() > 1">
                 <xsl:text>,</xsl:text>
@@ -82,7 +90,7 @@ El ganador de todo el torneo es el jugador con la puntuación más alta. Tu punt
             <xsl:text> = </xsl:text>
             <xsl:value-of select="score"/>
         </xsl:for-each>
-        <xsl:text>) más la puntuación del resultado de la ronda (</xsl:text>
+        <xsl:text>) plus die Punktzahl des Rundenergebnisses (</xsl:text>
         <xsl:for-each select="outcomes/*">
             <xsl:if test="position() > 1">
                 <xsl:text>,</xsl:text>
@@ -92,8 +100,8 @@ El ganador de todo el torneo es el jugador con la puntuación más alta. Tu punt
             <xsl:value-of select="."/>
         </xsl:for-each>
         <xsl:text>).
-            
-Como no puedes estar seguro de si el Elf está tratando de ayudarte o engañarte, debes calcular la puntuación que obtendrías si sigues la guía de estrategia.
+
+Da man nicht sicher sein kann, ob der Elf versucht, dir zu helfen oder dich zu täuschen, musst du die Punktzahl berechnen, die du erzielen würdest, wenn du der Strategieanleitung folgst.
 
 </xsl:text>
         <xsl:apply-templates select="games"/>
@@ -102,29 +110,30 @@ Como no puedes estar seguro de si el Elf está tratando de ayudarte o engañarte
     <xsl:template match="shapes">
         <xsl:text> - </xsl:text>
         <xsl:value-of select="name"/>
-        <xsl:text> (código de oponente: `</xsl:text>
+        <xsl:text> (Gegnercode: `</xsl:text>
         <xsl:value-of select="opp_code"/>
-        <xsl:text>`, código de jugador: `</xsl:text>
+        <xsl:text>`, Spielercode: `</xsl:text>
         <xsl:value-of select="player_code"/>
-        <xsl:text>`, gana contra: `</xsl:text>
+        <xsl:text>`, gewinnt gegen: `</xsl:text>
         <xsl:value-of select="//shapes[opp_code = current()/wins_against]/name"/>
-        <xsl:text>`, puntuación: </xsl:text>
+        <xsl:text>`, Punktzahl: </xsl:text>
         <xsl:value-of select="score"/>
         <xsl:text>), </xsl:text>
         <xsl:text>&#10;</xsl:text>
     </xsl:template>
 
+
     <xsl:template match="outcomes">
         <xsl:text>
-## Las puntuaciones de resultados son: </xsl:text>
+## Die Ergebnisbewertungen sind: </xsl:text>
         <xsl:text>
-- Ganar: </xsl:text>
+- Gewinnen: </xsl:text>
         <xsl:value-of select="win"/>
         <xsl:text>
-- Perder: </xsl:text>
+- Verlieren: </xsl:text>
         <xsl:value-of select="loss"/>
         <xsl:text>
-- Empate: </xsl:text>
+- Unentschieden: </xsl:text>
         <xsl:value-of select="draw"/>
         <xsl:text xml:space="preserve">
 </xsl:text>
@@ -134,10 +143,9 @@ Como no puedes estar seguro de si el Elf está tratando de ayudarte o engañarte
         <xsl:text>&#10;### </xsl:text>
         <xsl:value-of select="name"/>
         <xsl:text>
+Da Sie nicht sicher sein können, ob der Elf versucht, Ihnen zu helfen oder Sie zu täuschen, müssen Sie die Bewertung berechnen, die Sie erhalten würden, wenn Sie dem Strategieleitfaden folgen.
 
-Como no puedes estar seguro si el Elf está tratando de ayudarte o engañarte, debes calcular la puntuación que obtendrías si sigues la guía de estrategia.
-
-Por ejemplo, supongamos que se te ha dado la siguiente guía de estrategia:
+Zum Beispiel nehmen wir an, dass Ihnen der folgende Strategieleitfaden gegeben wurde:
 
 </xsl:text>
         <xsl:text>```
@@ -150,35 +158,34 @@ Por ejemplo, supongamos que se te ha dado la siguiente guía de estrategia:
         </xsl:for-each>
         <xsl:text>```
 </xsl:text>
-        <xsl:text>Esta guía de estrategia predice y recomienda lo siguiente:
+<xsl:text>Dieser Strategieleitfaden prognostiziert und empfiehlt Folgendes:
 
 </xsl:text>
         <xsl:for-each select="rounds">
-            <xsl:text>- El oponente eligió </xsl:text>
+            <xsl:text>- Der Gegner wählte </xsl:text>
             <xsl:value-of select="//shapes[opp_code=current()/opp_code]/name"/>
-            <xsl:text> (código </xsl:text>
+            <xsl:text> (Code </xsl:text>
             <xsl:value-of select="opp_code"/>
-            <xsl:text>), el jugador eligió </xsl:text>
+            <xsl:text>), der Spieler wählte </xsl:text>
             <xsl:value-of select="//shapes[player_code=current()/player_code]/name"/>
-            <xsl:text> (código </xsl:text>
+            <xsl:text> (Code </xsl:text>
             <xsl:value-of select="player_code"/>
             <xsl:text>)</xsl:text>
             <xsl:text>&#10;</xsl:text>
-            <xsl:text>la ronda fue un </xsl:text>
+            <xsl:text>Die Runde war ein </xsl:text>
             <xsl:value-of select="result"/>
-            <xsl:text>, con una puntuación de </xsl:text>
+            <xsl:text>, mit einer Punktzahl von </xsl:text>
             <xsl:value-of select="score"/>
             <xsl:text>&#10;</xsl:text>
-            <xsl:text>      puntuación de elección: </xsl:text>
+            <xsl:text>      Wahlpunktzahl: </xsl:text>
             <xsl:value-of select="choice_score"/>
-            <xsl:text>, puntuación de resultado: </xsl:text>
+            <xsl:text>, Ergebnispunktzahl: </xsl:text>
             <xsl:value-of select="outcome_score"/>
             <xsl:text>&#10;</xsl:text>
         </xsl:for-each>
-        <xsl:text>La puntuación final es: </xsl:text>
+        <xsl:text>Die Endpunktzahl ist: </xsl:text>
         <xsl:value-of select="sum(//games/rounds/score)"/>
         <xsl:text>&#10;</xsl:text>
     </xsl:template>
-
 
 </xsl:stylesheet>

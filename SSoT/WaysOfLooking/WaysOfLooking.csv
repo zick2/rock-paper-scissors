@@ -212,7 +212,7 @@ W07-JavaScript,Way07,JavaScript,"Please write an JavaScript program that can ans
 
 **NOTE: This is the ChatGPT Pompt that produced the static ""Fish"" recorded in (language specific main.xyz)**","Given the rps.json - write an algorithm that does not mention any specific shapes, codes or scores.","# ChatGPT Prompt
 
-**Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.",W07,,,,,XML,"Blade, Shield, Armor",Medeval
+**Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.",W07,/nodeconsoleproject1/app.js,/W07-NodeCLI-Fluid-Fish/app.js,,,XML,"Blade, Shield, Armor",Medeval
 W08-D3Visualization,Way08,D3Visualization,"Please write an D3Visualization program that can answer the Rock, Paper, Scissors prompt provided.","Given rps.json, Please write a D3Visualization Program that can answer the given Rock, Paper, Scissors prompt.","Given rps.json, Please write a _tool_ that can generate the original D3Visualization code created, that could answer the Rock, Paper, Scissors prompt provided","## ChatGPT Prompt 
 
 **NOTE: This is the ChatGPT Pompt that produced the static ""Fish"" recorded in (language specific main.xyz)**","Given the rps.json - write an algorithm that does not mention any specific shapes, codes or scores.","# ChatGPT Prompt
